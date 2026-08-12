@@ -1,0 +1,4 @@
+A21 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50 zero=5
+Diagnosis: expand as hard gate blocks quiet windows; removing it (A11) only inflated crash max. Dead windows need small probe entries.
+HYPOTHESIS STRUCTURAL: expand moves from entry gate to size regime — enter without expand_ok; size_boost=1.0 if expand else 0.35.

@@ -1,0 +1,4 @@
+A25 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50
+Diagnosis: shared cooldown clock blocks opposite-side entries after a stop; regime flips inside 240 bars never trade the new side.
+HYPOTHESIS STRUCTURAL: independent long/short cooldown clocks (reentry still same-side only).

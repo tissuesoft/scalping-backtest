@@ -1,0 +1,4 @@
+A104 BEFORE (=A100 KEEP)
+hits=0/59 med=1.539 ge2=20
+Diagnosis: A100 body 0.3 lifted ge2 19->20 via one 1.67->2.28 window. Push the same lever.
+HYPOTHESIS STRUCTURAL: body_min floor 0.3 -> 0.45 ATR.

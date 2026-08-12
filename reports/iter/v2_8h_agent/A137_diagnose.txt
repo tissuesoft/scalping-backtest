@@ -1,0 +1,4 @@
+A137 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A108 grace=8 dropped median+ge2. A42 5 KEEP. Median-band first bars may still wick-stop; +1 bar is a smaller step.
+HYPOTHESIS STRUCTURAL: sl_grace_bars 5 -> 6.

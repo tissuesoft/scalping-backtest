@@ -1,0 +1,5 @@
+A90 BEFORE (A89 unlock 4R)
+hits=0/59 med=1.539 max=43.903 ge2=19 mean=3.870 surv=25.4%
+lt2=40 ge10=5 wipe=44
+Diagnosis: A89 tiny median lift, max slipped 50->44. Unlock later helps stall windows keep SL tighter longer. Pair with slightly wider unlock mult now that unlock is later (1.5->1.75) so when it does unlock, runners extend toward 10000x.
+HYPOTHESIS STRUCTURAL: trail_unlock_mult 1.5 -> 1.75 at unlock_r=4.

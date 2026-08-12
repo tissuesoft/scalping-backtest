@@ -1,0 +1,2 @@
+B008 BEFORE=B002 liq=32 med=4.477
+HYP: cooldown 220->230 incremental (B004 260 REVERT).

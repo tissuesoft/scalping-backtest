@@ -1,0 +1,3 @@
+A278 BEFORE (=A277 KEEP) med=1.679 ge2=23
+Tiered boost lifted median cluster and recovered ge2.
+HYPOTHESIS STRUCTURAL: add 1.35 boost at range>=1.8 ATR for the fattest runner bars.

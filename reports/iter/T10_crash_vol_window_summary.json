@@ -1,0 +1,43 @@
+{
+  "tag": "T10_crash_vol",
+  "symbol": "BTCUSDT",
+  "params": {
+    "lookback": 240,
+    "atr_period": 14,
+    "min_atr_pct": 0.002,
+    "sl_atr": 0.8,
+    "trail_atr": 6.0,
+    "ht_ema": 20,
+    "ht_rule": "1h",
+    "breakout_buffer_atr": 0.5,
+    "cooldown_bars": 180,
+    "atr_expand_mult": 2.2,
+    "atr_sma_period": 200,
+    "daily_ema_period": 0,
+    "tp_atr": 0.0,
+    "body_min_atr": 1.0,
+    "allow_long": true,
+    "allow_short": true
+  },
+  "leverage": 100.0,
+  "pyramid_at_r": 0.0,
+  "pyramid_frac": 1.0,
+  "window_days": 60,
+  "step_days": 30,
+  "target_mult": 10000.0,
+  "summary": {
+    "n_windows": 59,
+    "n_hit": 0,
+    "hit_rate": 0.0,
+    "median_peak_mult": 1.0,
+    "mean_peak_mult": 1.3187728243620307,
+    "max_peak_mult": 4.299445923747044,
+    "median_final_mult": 0.0014521642554092661,
+    "pct_survived": 0.3728813559322034,
+    "best_window": {
+      "start": "2022-06-30 00:00:00+00:00",
+      "end": "2022-08-29 00:00:00+00:00",
+      "mult_peak": 4.299445923747044
+    }
+  }
+}

@@ -1,0 +1,1 @@
+A418: post-scale trail 0.001->0.0005

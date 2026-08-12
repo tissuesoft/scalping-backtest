@@ -1,0 +1,3 @@
+A260 BEFORE (=A257 KEEP) range>=0.8 ATR, ge2=23
+0.8 cut doji breaks and added a ge2 with 0 downs.
+HYPOTHESIS STRUCTURAL: raise floor to 0.9 ATR — more fake-break filter, same mechanism.

@@ -1,0 +1,5 @@
+A14 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 wipe=50 med_trades=30
+A13: daily filter must stay. wipe windows often have many reentries after first loss.
+HYPOTHESIS STRUCTURAL: disable same-side reentry (reentry=0) so cooldown fully blocks spam after a fire.

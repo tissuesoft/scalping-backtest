@@ -1,0 +1,3 @@
+A243 BEFORE (=A212 KEEP)
+5 early-2021 windows: 0 trades, no 200d EMA. A226 HTF-fill flooded Jan. A227 min_periods=60 made a noisy 200-span.
+HYPOTHESIS STRUCTURAL: fillna 50d EMA only while 200d is NaN; post-warmup identical to champion.

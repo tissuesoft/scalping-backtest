@@ -1,0 +1,3 @@
+A400 BEFORE (=A397 KEEP) hits=1 med=4.346 ge2=40; 2024-01 1217x
+A399 lev 1.6 no-op. Try expand_med shorter window for more expand_ok.
+HYPOTHESIS STRUCTURAL: expand_med rolling 500->300.

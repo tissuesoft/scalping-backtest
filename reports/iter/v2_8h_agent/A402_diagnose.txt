@@ -1,0 +1,2 @@
+A402 BEFORE (=A397 KEEP) hits=1 med=4.346; 2024-01 1217x needs ~8x more
+HYPOTHESIS STRUCTURAL: win_size_mult 1.75->1.85 (A352 2.0 failed; mild bump).

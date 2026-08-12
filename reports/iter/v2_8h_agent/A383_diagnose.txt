@@ -1,0 +1,3 @@
+A383 BEFORE (=A381 KEEP) hits=1 med=4.121 ge2=40
+A382 later 0.03 REVERT. Mid boost tier was load-bearing at 1.25 historically — retry 1.30 with new stack.
+HYPOTHESIS STRUCTURAL: size_boost 1.5ATR tier 1.25->1.30.

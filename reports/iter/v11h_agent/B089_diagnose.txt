@@ -1,0 +1,3 @@
+B089 BEFORE champion
+HYPOTHESIS: win_size_mult 1.75->1.80
+EDIT: compound_engine.py

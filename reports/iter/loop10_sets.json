@@ -1,0 +1,57 @@
+[
+  [
+    "T0_S5champ",
+    "T0_S5champ.json",
+    "S5 champion baseline re-eval"
+  ],
+  [
+    "T1_lev100",
+    "T1_lev100.json",
+    "S5 + lev100 tighter SL"
+  ],
+  [
+    "T2_nodaily_lev90",
+    "T2_nodaily_lev90.json",
+    "drop daily filter + lev90"
+  ],
+  [
+    "T3_pyramid05",
+    "T3_pyramid05.json",
+    "pyramid at 0.5R x1.5"
+  ],
+  [
+    "T4_long_lev100",
+    "T4_long_lev100.json",
+    "long-only lev100 wider trail"
+  ],
+  [
+    "T5_short_lev100",
+    "T5_short_lev100.json",
+    "short-only lev100 crash"
+  ],
+  [
+    "T6_look720",
+    "T6_look720.json",
+    "8h lookback ultra rare lev100"
+  ],
+  [
+    "T7_lev125_body",
+    "T7_lev125_body.json",
+    "lev125 + body filter + expand2"
+  ],
+  [
+    "T8_huge_tp",
+    "T8_huge_tp.json",
+    "fixed TP20 ATR no trail"
+  ],
+  [
+    "T9_pyramid_nodaily",
+    "T9_pyramid_nodaily.json",
+    "pyramid x2 + lev100 no daily"
+  ],
+  [
+    "T10_crash_vol",
+    "T10_crash_vol.json",
+    "high-vol only body1 ATR lev100"
+  ]
+]

@@ -1,0 +1,2 @@
+A300 BEFORE (=A299 KEEP) med=1.739 ge2=24; 2023-03 1.884; first partial chain diminishing.
+HYPOTHESIS STRUCTURAL: fat-bar second scale 0.28->0.16 so remainder after 0.12 first clip keeps riding.

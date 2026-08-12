@@ -1,0 +1,4 @@
+A85 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20
+Diagnosis: A71 expand OR atr% median helped. Soften further: OR ATR% > rolling 25th (more windows fire in moderate vol).
+HYPOTHESIS STRUCTURAL: expand_ok |= atr_pct >= rolling(500).quantile(0.25).

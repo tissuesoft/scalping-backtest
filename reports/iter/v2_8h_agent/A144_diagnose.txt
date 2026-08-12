@@ -1,0 +1,4 @@
+A144 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A86 n//6 (~60) and A114 n//4 (~90) faster fast-channel hurt median. A75 n=360 / n_fast=120 KEEP. Cap lookback 300 so slow=300 and n_fast=100 — between A75 and A114.
+HYPOTHESIS STRUCTURAL: lookback cap 360 -> 300.

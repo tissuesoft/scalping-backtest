@@ -1,0 +1,3 @@
+A317 BEFORE (=A316 KEEP) med=2.051 ge2=30; nearest below2: 2022-03 1.77, 2023-04 1.73
+Still linear. Push 0.30->0.25 until break.
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.25 after first scale.

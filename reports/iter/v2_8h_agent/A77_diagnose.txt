@@ -1,0 +1,4 @@
+A77 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977
+Diagnosis: ~39 windows still <2x; A75 added fast path but stall remains. Close location vs Donchian: many entries near channel mid after fast pierce. Require close in outer quartile of channel (long: close > ll+0.75*(hh-ll)).
+HYPOTHESIS STRUCTURAL: long entries need close in top 25% of Donchian; short in bottom 25%.

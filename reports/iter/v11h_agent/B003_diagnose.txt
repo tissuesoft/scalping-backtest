@@ -1,0 +1,8 @@
+B003 BEFORE (=B002 KEEP) hits=1 med=4.477 ge2=40 liq=32/18win
+
+FAILURE MODE: liq still 18 windows; size_mult stacks to win_size_max=5
+before adverse 1% move at 100x.
+
+HYPOTHESIS: win_size_max 5→4.5 caps anti-martingale ceiling → fewer liq.
+
+EDIT: compound_engine.py win_size_max 4.5

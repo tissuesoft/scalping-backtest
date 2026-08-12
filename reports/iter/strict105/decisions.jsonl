@@ -1,0 +1,5 @@
+{"set": 101, "diagnose": "boost chain; gap~4.5x to 10k", "edit": "size_boost=1.28", "before": 2221.594798010503, "after": 2379.1830165675183, "survived": "44.1->44.1", "mean_peak": "77.55->82.92", "decision": "KEEP"}
+{"set": 102, "diagnose": "boost still scales crash", "edit": "size_boost=1.31", "before": 2379.1830165675183, "after": 2544.772004360264, "survived": "44.1->44.1", "mean_peak": "82.92->88.55", "decision": "KEEP"}
+{"set": 103, "diagnose": "median=1; thresh too rare outside crash?", "edit": "boost_thresh 1.6->1.55", "before": 2544.772004360264, "after": 65.43055290822232, "survived": "44.1->42.4", "decision": "REVERT", "reason": "max collapsed 2545->65"}
+{"set": 104, "diagnose": "keep thresh 1.6; press magnitude", "edit": "size_boost=1.34", "before": 2544.772004360264, "after": 2718.617750187097, "survived": "44.1->44.1", "mean_peak": "88.55->94.47", "decision": "KEEP"}
+{"set": 105, "diagnose": "press only more extreme bars", "edit": "tiered boost 1.34@1.6 / 1.45@1.8", "before": 2718.617750187097, "after": 3105.5588750934817, "survived": "44.1->44.1", "mean_peak": "94.47->107.66", "decision": "KEEP"}

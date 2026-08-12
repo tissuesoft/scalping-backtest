@@ -1,0 +1,10 @@
+{"set": 11, "edit": "cascade 3 lower-closes short", "before": 83.456, "after": 4.863, "decision": "REVERT"}
+{"set":12,"edit":"volume>=2xSMA60","decision":"REVERT","reason":"identical metrics"}
+{"set": 13, "edit": "SL grace 30 bars", "before": 83.456, "after": 83.456, "survived": "66->50", "decision": "REVERT"}
+{"set":14,"edit":"deep profit trail 50% excursion","before":83.456,"after":44.254,"decision":"REVERT"}
+{"set":15,"edit":"force both long+short","before":83.456,"after":83.456,"survived":"66->28","decision":"REVERT"}
+{"set": 16, "edit": "cap initial SL risk at 0.4% of entry", "before": 83.456, "after": 101.396, "survived": "66->67.8", "decision": "KEEP"}
+{"set":17,"edit":"risk cap 0.25%","before":101.396,"after":72.017,"decision":"REVERT"}
+{"set":18,"edit":"reentry 120->180","before":101.396,"after":83.456,"decision":"REVERT"}
+{"set":19,"edit":"risk cap 0.5%","before":101.396,"after":83.456,"decision":"REVERT"}
+{"set": 20, "edit": "hardcode lookback 240", "before": 101.396, "after": 44.657, "decision": "REVERT"}

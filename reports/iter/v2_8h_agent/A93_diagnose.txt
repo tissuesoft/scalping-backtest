@@ -1,0 +1,4 @@
+A93 BEFORE (=champ after A92 REVERT)
+hits=0/59 med=1.539 max=43.903 ge2=19 n_1.0=21 trades0=5
+Diagnosis: 16 windows trade yet peak=1.0 (first losers wipe before any equity high). A67 floor 12% is fatal on cold start; post-win ramp should stay.
+HYPOTHESIS STRUCTURAL: while size_mult<=1 (no open win streak), cap risk_tgt at 8%. After a win, full 12-35% ramp * win_size_mult.

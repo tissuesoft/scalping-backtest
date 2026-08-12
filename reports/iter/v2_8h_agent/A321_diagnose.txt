@@ -1,0 +1,3 @@
+A321 BEFORE (=A319 KEEP) med=2.148 ge2=31
+A320 *0.10 REVERT (med identical, max-only). Trail floor ~0.15 on fat-bar.
+HYPOTHESIS STRUCTURAL: apply *0.15 after first scale at boost>=1.10 (include mild wide bars) to lift 2023-04/2022-09.

@@ -1,0 +1,23 @@
+R101 BEFORE DIAGNOSE
+====================
+hits=0/59 max=2221.595 med=1.000 mean=77.554
+survived=44.1% median_final=0.000000
+liq_sum=1 wipe=33 zero_trade=23
+peak<=1.01=43 peak>=2=14 peak>100=2
+
+TOP5:
+  2022-01-01 peak=2221.59 final=2221.5948 trades=7 liq=0 pf=55.85
+  2022-01-31 peak=2221.59 final=0.0000 trades=8 liq=0 pf=0.89
+  2023-01-26 peak=15.77 final=15.7707 trades=2 liq=0 pf=999.00
+  2023-02-25 peak=15.77 final=15.7707 trades=2 liq=0 pf=999.00
+  2022-06-30 peak=9.36 final=0.0000 trades=2 liq=0 pf=0.79
+
+GIVEBACK peak>=3 & final<0.5: 10
+
+FAILURE MODE
+- Champion: notional*2.15 * size_boost(1.25 when ATR>SMA*1.6). Max 2222 on 2022-01 crash only.
+- Boost chain 1.08..1.25 raised crash peak; survival ~44%; median still 1.0; 0 hits.
+- Gap to 10k: ~4.5x on best window. Same lever still responding without survival cliff at last step (44.1% flat R99->R100).
+
+HYPOTHESIS
+- Continue coherent lever: size_boost 1.25 -> 1.28 when ATR>SMA*1.6.

@@ -1,0 +1,3 @@
+A265 BEFORE (=A257 KEEP)
+Median 2025-07 peak 1.58 then giveback; always-on trail (arm_r=0) may clip the runner early.
+HYPOTHESIS STRUCTURAL: trail_arm_r 0→0.5 so SL/trail wait for +0.5R before locking.

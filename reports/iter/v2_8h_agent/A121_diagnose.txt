@@ -1,0 +1,4 @@
+A121 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A84 fast-buf 0.5x REVERT. Milder: cap all-path buffer 0.35->0.30 so Donchian/day entries fire slightly earlier on median-band windows.
+HYPOTHESIS STRUCTURAL: breakout_buffer cap 0.30 ATR.

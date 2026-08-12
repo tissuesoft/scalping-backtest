@@ -1,0 +1,1 @@
+R72 identical. R73: lock BE after +1R to cut giveback without early trail arm

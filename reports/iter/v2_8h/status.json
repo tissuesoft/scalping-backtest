@@ -1,0 +1,58 @@
+{
+  "set": 13,
+  "keeps": 1,
+  "reverts": 12,
+  "elapsed_h": 0.0712699963649114,
+  "remaining_h": 7.9287300036350885,
+  "last": {
+    "set": 13,
+    "decision": "REVERT",
+    "edit_name": "force_expand_1.20",
+    "edit": "force_expand=1.2",
+    "hypothesis": "force expand 1.20",
+    "reason": "no improvement on hits/median/min/coverage",
+    "before": {
+      "hits": 0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 106.14473904732338,
+      "mean": 5.072547292791444,
+      "surv": 0.15254237288135594,
+      "ge2": 15,
+      "ge10": 2,
+      "dead": 38,
+      "wipe": 50,
+      "liq": 44,
+      "med_trades": 30.0
+    },
+    "after": {
+      "hits": 0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 106.14473904732338,
+      "mean": 5.068224126432668,
+      "surv": 0.15254237288135594,
+      "ge2": 15,
+      "ge10": 2,
+      "dead": 38,
+      "wipe": 50,
+      "liq": 44,
+      "med_trades": 30.0
+    },
+    "ts": "2026-08-11T20:50:38.062310+00:00"
+  },
+  "champion_hint": {
+    "hits": 0,
+    "median": 1.0,
+    "min": 1.0,
+    "max": 106.14473904732338,
+    "mean": 5.072547292791444,
+    "surv": 0.15254237288135594,
+    "ge2": 15,
+    "ge10": 2,
+    "dead": 38,
+    "wipe": 50,
+    "liq": 44,
+    "med_trades": 30.0
+  }
+}

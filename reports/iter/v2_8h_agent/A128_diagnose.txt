@@ -1,0 +1,4 @@
+A128 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22 n_1.0=20
+Diagnosis: A26 1-day first-cross KEPT historically but wipe windows still overtrade day breaks in 1-day ranges. 2-day hi/lo is a stronger structure break.
+HYPOTHESIS STRUCTURAL: day path vs rolling 2-day high/low instead of prior day only.

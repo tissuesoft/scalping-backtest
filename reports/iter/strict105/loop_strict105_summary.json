@@ -1,0 +1,70 @@
+{
+  "sets": 5,
+  "rounds": "101-105",
+  "start_max": 2221.595,
+  "end_max": 3105.5588750934817,
+  "champion": "size_boost tiered 1.34@ATR>SMA*1.6, 1.45@ATR>SMA*1.8; notional*2.15",
+  "keeps": [
+    {
+      "set": 101,
+      "edit": "size_boost=1.28",
+      "after": 2379.1830165675183
+    },
+    {
+      "set": 102,
+      "edit": "size_boost=1.31",
+      "after": 2544.772004360264
+    },
+    {
+      "set": 104,
+      "edit": "size_boost=1.34",
+      "after": 2718.617750187097
+    },
+    {
+      "set": 105,
+      "edit": "tiered boost 1.34@1.6 / 1.45@1.8",
+      "after": 3105.5588750934817
+    }
+  ],
+  "n_keep": 4,
+  "n_revert": 1,
+  "all": [
+    {
+      "set": 101,
+      "decision": "KEEP",
+      "edit": "size_boost=1.28",
+      "before": 2221.594798010503,
+      "after": 2379.1830165675183
+    },
+    {
+      "set": 102,
+      "decision": "KEEP",
+      "edit": "size_boost=1.31",
+      "before": 2379.1830165675183,
+      "after": 2544.772004360264
+    },
+    {
+      "set": 103,
+      "decision": "REVERT",
+      "edit": "boost_thresh 1.6->1.55",
+      "before": 2544.772004360264,
+      "after": 65.43055290822232
+    },
+    {
+      "set": 104,
+      "decision": "KEEP",
+      "edit": "size_boost=1.34",
+      "before": 2544.772004360264,
+      "after": 2718.617750187097
+    },
+    {
+      "set": 105,
+      "decision": "KEEP",
+      "edit": "tiered boost 1.34@1.6 / 1.45@1.8",
+      "before": 2718.617750187097,
+      "after": 3105.5588750934817
+    }
+  ],
+  "hits_10000x": 0,
+  "process": "each set: eval(current)->diagnose->one code edit->eval(after)->keep/revert"
+}

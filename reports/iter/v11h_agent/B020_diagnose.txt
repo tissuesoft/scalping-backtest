@@ -1,0 +1,5 @@
+B020 BEFORE (=B018) med=4.506 liq=32
+
+HYPOTHESIS: later 0.019->0.018 continue runner chain (B019 REVERT cooldown).
+
+EDIT: compound_engine.py close_frac 0.018

@@ -1,0 +1,3 @@
+A174 BEFORE (=A154 KEEP)
+A144 lookback 300 dropped median. Longer channel may cut fake fast breaks in 1.0 overtrade windows.
+HYPOTHESIS STRUCTURAL: lookback floor 360 -> 390.

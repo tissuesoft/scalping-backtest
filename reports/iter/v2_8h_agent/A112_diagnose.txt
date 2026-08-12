@@ -1,0 +1,4 @@
+A112 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: every ge2 window and most median-band windows peak then go to 0. A70 no BE after partial. A separate BE-at-R while in trade can preserve equity for a second push without changing trail distance.
+HYPOTHESIS STRUCTURAL: be_at_r = 1.5 (move SL to entry after +1.5R).

@@ -1,0 +1,3 @@
+A206 BEFORE (=A205 KEEP)
+first partial 0.68 KEEP med +0.0019, 25 up / 14 dn.
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.68 -> 0.66.

@@ -1,0 +1,4 @@
+A149 BEFORE (=A147 KEEP)
+hits=0/59 med=1.551 ge2=22
+Diagnosis: A147 second scale-out 50% KEEP median. Leaving a larger tail (close 40% of remainder) lets the 1.5-2x runner extend further.
+HYPOTHESIS STRUCTURAL: second scale-out frac 0.5 -> 0.4.

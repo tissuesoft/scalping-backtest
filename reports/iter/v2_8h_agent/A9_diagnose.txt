@@ -1,0 +1,8 @@
+A9 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 med_trades=30
+A8 faster daily REVERT (wipe explosion).
+FAILURE: trail starts immediately and clips early; winners need room but chop needs protection - try time-stop instead of relying only on trail.
+HYPOTHESIS STRUCTURAL: add strategy column max_hold=480 and engine exit at max hold (need engine+strategy). Prefer strategy-only: set trail much wider via code trail=12 to let trends run (structural trail distance change).
+Actually use: trail = 12.0 forced in strategy (exit logic change magnitude).
+Better STRUCTURAL: only enter if breakout is ALSO beyond prior day high/low (daily structure confirm).

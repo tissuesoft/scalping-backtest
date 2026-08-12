@@ -1,0 +1,4 @@
+A155 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: scale-out 7 is saturating. Switch lever: A104 body 0.45 KEEP, A113 0.5 REVERT. Try 0.47 between.
+HYPOTHESIS STRUCTURAL: body_min floor 0.45 -> 0.47 ATR.

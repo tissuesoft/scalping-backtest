@@ -1,0 +1,4 @@
+A252 BEFORE (=A212 KEEP)
+A251 blocking underwater anti-martingale hurt the median window (needs that boost).
+1.0x chop often enters right as HTF slope flips.
+HYPOTHESIS STRUCTURAL: require HTF slope sign held for 30m (shift 30) in addition to current sign.

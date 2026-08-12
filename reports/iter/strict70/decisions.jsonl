@@ -1,0 +1,20 @@
+{"set": 51, "diagnose": "1.25 chain; probe 1.30", "edit": "notional*1.30", "before": 504.673, "after": 556.585, "decision": "KEEP"}
+{"set": 52, "diagnose": "1.30 keep probe 1.35", "edit": "notional*1.35", "before": 556.585, "after": 608.976, "decision": "KEEP"}
+{"set": 53, "diagnose": "1.35 keep probe 1.40", "edit": "notional*1.40", "before": 608.976, "after": 660.953, "decision": "KEEP"}
+{"set": 54, "diagnose": "1.40 keep probe 1.50", "edit": "notional*1.50", "before": 660.953, "after": 759.453, "decision": "KEEP"}
+{"set": 55, "diagnose": "1.50 keep probe 1.75", "edit": "notional*1.75", "before": 759.453, "after": 913.021, "decision": "KEEP"}
+{"set": 56, "diagnose": "1.75 keep probe 2.00", "edit": "notional*2.00", "before": 913.021, "after": 1138.393, "decision": "KEEP"}
+{"set": 57, "diagnose": "2.00 keep probe 2.50", "edit": "notional*2.50", "before": 1138.4, "after": 643.3, "decision": "REVERT"}
+{"set": 58, "diagnose": "2.0 peak 2.5 fail probe 2.20", "edit": "notional*2.20", "before": 1138.393, "after": 1176.229, "survived": "57.6->49.2", "decision": "KEEP"}
+{"set": 59, "diagnose": "2.20 keep probe 2.30", "edit": "notional*2.30", "before": 1176.2, "after": 1100.7, "decision": "REVERT"}
+{"set": 60, "diagnose": "retune risk with size2.2", "edit": "risk=0.0032", "before": 1176.2, "after": 92.9, "decision": "REVERT"}
+{"set": 61, "diagnose": "retune expand with size2.2", "edit": "expand=1.34", "before": 1176.2, "after": 89.3, "decision": "REVERT"}
+{"set": 62, "diagnose": "2.20 peak 2.30 fail probe 2.15", "edit": "notional*2.15", "before": 1176.229, "after": 1186.655, "survived": "49.2->50.8", "decision": "KEEP"}
+{"set": 63, "diagnose": "2.15 keep probe 2.12", "edit": "notional*2.12", "before": 1186.7, "after": 1185.7, "decision": "REVERT"}
+{"set": 64, "diagnose": "compound streaks", "edit": "win_size*1.2", "before": 1186.7, "after": 47.9, "decision": "REVERT"}
+{"set": 65, "diagnose": "daily EMA blocks dumps?", "edit": "daily_n=0", "before": 1186.7, "after": 7.7, "decision": "REVERT"}
+{"set": 66, "diagnose": "trail8 long holds", "edit": "trail=7", "before": 1186.7, "after": 833.8, "decision": "REVERT"}
+{"set": 67, "diagnose": "lookback480 late?", "edit": "lookback=400", "before": 1186.7, "after": 1186.7, "decision": "REVERT", "reason": "mean slightly worse"}
+{"set": 68, "diagnose": "2.15 champ probe 2.16", "edit": "notional*2.16", "before": 1186.7, "after": 1185.8, "decision": "REVERT"}
+{"set": 69, "diagnose": "reentry overadd?", "edit": "reentry=110", "before": 1186.7, "after": 1186.7, "decision": "REVERT", "reason": "identical"}
+{"set": 70, "diagnose": "buffer0.5 maybe late; probe 0.45", "edit": "buf=0.45*atr", "before": 1186.655, "after": 115.021, "decision": "REVERT"}

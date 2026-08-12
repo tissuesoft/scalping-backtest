@@ -1,0 +1,3 @@
+B088 BEFORE champion
+HYPOTHESIS: later 0.009->0.008
+EDIT: compound_engine.py

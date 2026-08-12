@@ -1,0 +1,3 @@
+A249 BEFORE (=A212 KEEP)
+ROC120 KEEP but 1.0x still enter when 60m momentum already flipped against.
+HYPOTHESIS STRUCTURAL: require ROC(60) sign too; ROC120 unchanged.

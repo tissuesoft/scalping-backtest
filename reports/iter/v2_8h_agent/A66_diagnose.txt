@@ -1,0 +1,4 @@
+A66 BEFORE
+hits=0/59 med=1.353 max=35.658 ge2=18 mean=3.317 surv=33.9%
+Diagnosis: A60 steeper ramp lifted med+ge2; A53 win_mult=2 hurt median. Try mild win_mult 1.75 for compound without A53 damage.
+HYPOTHESIS STRUCTURAL: win_size_mult 1.5 -> 1.75.

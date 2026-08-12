@@ -1,0 +1,4 @@
+A129 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A105 slope 120 dropped median. A55 180 KEEP. A117 faster EMA span KEEP. Try longer slope (240) with the faster EMA40 — more stable direction, less mid-trade flip.
+HYPOTHESIS STRUCTURAL: ema_slope = ema_ht.diff(240).

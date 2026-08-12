@@ -1,0 +1,12 @@
+R97 BEFORE DIAGNOSE (post-R96 KEEP)
+===================================
+hits=0/59 max=1625.091 med=1.000 mean=57.241
+survived=45.8% liq_sum=1
+boost chain: 1.08 KEEP -> 1.12 KEEP. Still far from 10000x (1625).
+
+FAILURE MODE
+- Size-on-extreme-expand continues to scale crash peak; survival slowly erodes.
+- Gap to 10k still ~6x on best window; need more press OR more windows compounding.
+
+HYPOTHESIS
+- Continue same lever: size_boost 1.12 -> 1.15 on ATR>SMA*1.6.

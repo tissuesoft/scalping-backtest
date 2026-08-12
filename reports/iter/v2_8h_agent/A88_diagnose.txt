@@ -1,0 +1,7 @@
+A88 BEFORE (A87 partial 0.67)
+hits=0/59 med=1.536 max=50.394 ge2=19 mean=3.931 surv=23.7%
+lt2=40 ge10=5 wipe=45
+Diagnosis: A87 raised median but ge2 20->19. Stall still ~40 windows. A55 slope 180 kept; try AND of slope 60+180 (stricter persistence) to lift quality of remaining ge2 without chasing.
+Wait: AND would reduce entries more. Opposite: A80 OR hurt ge2. Need something else.
+ge2 drop from A87: banking more leaves less runner. Pair with later unlock? A73 earlier unlock hurt.
+HYPOTHESIS STRUCTURAL: require ROC(60) AND ROC(120) same sign (shorter+medium momentum agree) to recover ge2 while keeping A87.

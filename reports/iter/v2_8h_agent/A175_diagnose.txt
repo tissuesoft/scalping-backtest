@@ -1,0 +1,3 @@
+A175 BEFORE (=A154 KEEP)
+Median-band peaks ~1.56 then trail clips. Width 0.27 REVERT; ATR floor still 6.
+HYPOTHESIS STRUCTURAL: trail_atr floor 6 -> 7 (wider when Donchian width is tight).

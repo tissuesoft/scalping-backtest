@@ -1,0 +1,4 @@
+A151 BEFORE (=A150 KEEP)
+hits=0/59 med=1.559 ge2=22
+Diagnosis: A147 then A150 staged scale-outs KEEP median twice (1.547->1.551->1.559). A149 larger tail REVERT. Continue the same lever: 4th 50% scale-out.
+HYPOTHESIS STRUCTURAL: fourth profitable trail SL closes 50% of remaining notional.

@@ -1,0 +1,3 @@
+A215 BEFORE (=A212 KEEP)
+3rd-trim 0.18 REVERT. A204 0.10 too little bank; A208 extra trim KEEP. Later 0.13 = slightly more bank than 0.12.
+HYPOTHESIS STRUCTURAL: later close_frac 0.12 -> 0.13.

@@ -1,0 +1,3 @@
+A269 BEFORE (=A257 KEEP) ge2=23 med=1.584
+A241 shrink-chop on risk-parity lost a ge2. Median 2025-07 1.58 runner needs more size on the quality bar, not less on chop.
+HYPOTHESIS STRUCTURAL: size_boost 1.15 when bar range>=1.2 ATR, and boost applies to risk-parity (not only lev_cap).

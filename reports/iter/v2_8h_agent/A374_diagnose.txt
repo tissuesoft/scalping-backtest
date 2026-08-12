@@ -1,0 +1,3 @@
+A374 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37
+A373 lookback300 REVERT. Tighter risk_cap raises size on wick SL setups.
+HYPOTHESIS STRUCTURAL: risk_cap_pct 0.0033->0.0028.

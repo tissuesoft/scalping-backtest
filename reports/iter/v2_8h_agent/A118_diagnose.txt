@@ -1,0 +1,4 @@
+A118 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: expand_sma still 1.15 vs SMA200. Milder gate lets more non-crash bars through expand_sma (A71 OR median already loose, but expand_sma path matters for day/Donchian in rising vol).
+HYPOTHESIS STRUCTURAL: atr_expand cap 1.15 -> 1.10.

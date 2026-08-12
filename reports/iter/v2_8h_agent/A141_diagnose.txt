@@ -1,0 +1,4 @@
+A141 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: some 1.5-2x windows have only 7-10 trades. A75 dual 1m Donchian KEEP. Add a 15m/4h first-cross path so those windows get more HTF breaks without A86's faster 1m n_fast.
+HYPOTHESIS STRUCTURAL: 15m Donchian(16) first-cross OR-ed into long/short_brk.

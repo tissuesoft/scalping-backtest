@@ -1,0 +1,3 @@
+B086 BEFORE champion
+HYP: trail 2.5e-7->1.25e-7
+EDIT: tr*1.25e-7

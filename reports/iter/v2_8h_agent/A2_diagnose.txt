@@ -1,0 +1,7 @@
+A2 BEFORE DIAGNOSE
+GOAL: all windows 10000x. Prefer STRUCTURAL strategy edits.
+hits=0/59 med=1.000 min=1.000 max=98.801 mean=4.851
+surv=15.3% ge2=16 dead=38 wipe=50 med_trades=28 liq=34
+A1 REVERT: EMA slope filter cut max and ge2; too strict / wrong axis.
+FAILURE: 1m Donchian(360) fires too often in noise; dual-side still chops.
+HYPOTHESIS STRUCTURAL: use 4h Donchian breakout mapped to 1m (fewer, larger structure breaks) instead of 1m rolling 360.

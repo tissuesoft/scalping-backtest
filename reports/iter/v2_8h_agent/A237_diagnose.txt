@@ -1,0 +1,4 @@
+A237 BEFORE (=A212 KEEP)
+A222 n_fast+10 was a no-op: max(60,n//3)=120 so +10 on the 60-floor never binds.
+Median-band 2025-07 (21 trades) and 1.0x 2025-05/06/09 are starved.
+HYPOTHESIS STRUCTURAL: n_fast = max(60, n//4)=90, more fast-path breaks without touching slow 360.

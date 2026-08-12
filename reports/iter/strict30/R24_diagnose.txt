@@ -1,0 +1,1 @@
+R24 DIAGNOSE: trail=8 holds long, slow recycle for compound; edit: trail=6 hardcode

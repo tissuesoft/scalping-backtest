@@ -1,0 +1,4 @@
+A170 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+15 windows overtrade (60-170 trades) and peak 1.0. reentry=0 REVERT; reentry>=cooldown REVERT. Gap: same-side reentry window 180==cooldown.
+HYPOTHESIS STRUCTURAL: cap reentry 180 -> 120 (block 120-180 same-side spam).

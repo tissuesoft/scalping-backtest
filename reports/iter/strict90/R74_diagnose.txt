@@ -1,0 +1,1 @@
+R73 BE killed runners. Median=1: too few windows fire. Soften expand cap 1.35->1.28

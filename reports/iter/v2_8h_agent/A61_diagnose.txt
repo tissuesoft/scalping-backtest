@@ -1,0 +1,4 @@
+A61 BEFORE
+hits=0/59 med=1.353 max=35.658 ge2=18
+Diagnosis: Donchian trail floor 0.25*width (A31); widen to 0.35 so unlocked trails still respect channel scale.
+HYPOTHESIS STRUCTURAL: width_tr = 0.35 * (hh-ll).

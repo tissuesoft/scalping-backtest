@@ -1,0 +1,4 @@
+A160 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: A89 later unlock 4.0 KEEP; A119 earlier 3.5 REVERT. Winners may still get trail-widened too soon.
+HYPOTHESIS STRUCTURAL: trail_unlock_r 4.0 -> 4.5.

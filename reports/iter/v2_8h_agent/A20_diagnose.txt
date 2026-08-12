@@ -1,0 +1,4 @@
+A20 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3%
+Diagnosis: expand gate blocks many bull-window longs (dead peak=1); shorts in crash need expand. A11 removed expand for both -> max-only.
+HYPOTHESIS STRUCTURAL: asymmetric expand — LONG skips expand_ok; SHORT keeps expand_ok.

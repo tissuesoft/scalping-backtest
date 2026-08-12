@@ -1,0 +1,3 @@
+A272 BEFORE (=A269 KEEP) 1.15 boost all range>=1.2ATR
+2024-07 lost ge2 from boost on wide-but-not-expanding bars.
+HYPOTHESIS STRUCTURAL: boost only when range>=1.2 ATR AND expand_sma (true expansion).

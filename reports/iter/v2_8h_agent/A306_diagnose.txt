@@ -1,0 +1,3 @@
+A306 BEFORE (=A303 KEEP) med=1.799 = 2023-08; ge2=25
+A305 all-entries *0.85 REVERT (max-only 44->46, med identical).
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.80 after first scale (tighter than KEEP 0.85) to lift 2023-08 median.

@@ -1,0 +1,1 @@
+R60 DIAG: size peaked 2.20; retune risk_cap 0.33->0.32

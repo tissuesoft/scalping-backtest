@@ -1,0 +1,4 @@
+A162 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Quiet 2025 windows: 11-18 trades peak 1.0. A145 vol 0.0018 collapsed median.
+HYPOTHESIS STRUCTURAL: vol_ok 0.0015 -> 0.0014 (more entries in quiet regimes).

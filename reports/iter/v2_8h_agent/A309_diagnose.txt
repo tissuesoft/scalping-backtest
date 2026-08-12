@@ -1,0 +1,3 @@
+A309 BEFORE (=A308 KEEP) med=1.873 ge2=27 (+2023-03,+2024-07); 34 up 0 dn
+Fat-bar trail 0.75->0.70 KEEP chain strong. 2023-08 1.97 near ge2.
+HYPOTHESIS STRUCTURAL: 0.70->0.65.

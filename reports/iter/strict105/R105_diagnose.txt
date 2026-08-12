@@ -1,0 +1,6 @@
+R105 BEFORE DIAGNOSE (post-R104 KEEP boost=1.34@1.6)
+hits=0/59 max=2718.618 med=1.000 mean=94.466
+survived=44.1%
+R103: widening thresh killed. Magnitude at strict 1.6 still climbs (2719) surv flat 44.1%.
+FAILURE: gap to 10k ~3.7x; need more press on the MOST violent bars without widening to 1.55.
+HYPOTHESIS: tiered boost - 1.34 if ATR>SMA*1.6, 1.45 if ATR>SMA*1.8 (extra only on extreme).

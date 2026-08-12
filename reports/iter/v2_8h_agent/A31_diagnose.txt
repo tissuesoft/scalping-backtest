@@ -1,0 +1,4 @@
+A31 BEFORE (A26+A28)
+hits=0/59 med=1.000 max=9.423 ge2=19 mean=2.044 surv=15.3%
+ge2 windows median peak=2.987 — winners stall ~2-9x; fixed 6*ATR trail clips trends in wide Donchian.
+HYPOTHESIS STRUCTURAL: adaptive trail = max(6*ATR, 0.25*(hh-ll)) so wide channels keep wider trail.

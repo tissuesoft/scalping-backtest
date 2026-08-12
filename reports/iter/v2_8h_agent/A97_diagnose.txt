@@ -1,0 +1,4 @@
+A97 BEFORE (=champ after A96 REVERT)
+hits=0/59 med=1.539 ge2=19 n_1.0=21 wipe-with-trades=16
+Diagnosis: wick SL can be << risk_cap 0.33%, so risk-parity notional hits lev_cap (~150x). 1% noise = liquidation. 16 windows peak=1.0 with pf~0 and liq.
+HYPOTHESIS STRUCTURAL: floor risk_frac at risk_cap_pct for sizing only (SL still wick). Tight-wick trades get ~36x not 150x.

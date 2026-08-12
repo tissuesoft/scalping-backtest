@@ -1,0 +1,3 @@
+A364 BEFORE (=A362 KEEP) med=3.068 ge2=38; max 4164 (!near 10000x on best)
+A363 n_fast 20 REVERT med 3.068->2.701. n_fast floor = max(30,n//5).
+HYPOTHESIS STRUCTURAL: size_boost top tier 1.35->1.45@1.8ATR (A291-era 1.45 was max-only without current trail/risk stack).

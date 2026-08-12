@@ -1,0 +1,1 @@
+A426: trail_scale_max 10->11

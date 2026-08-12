@@ -1,0 +1,4 @@
+A138 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A102 ROC90 dropped median; A58 120 KEEP. 1.5-2x windows may enter a bit late. ROC100 is a smaller step than 90.
+HYPOTHESIS STRUCTURAL: ROC 120 -> 100.

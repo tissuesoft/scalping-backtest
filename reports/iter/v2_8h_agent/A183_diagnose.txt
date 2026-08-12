@@ -1,0 +1,3 @@
+A183 BEFORE (=A154 KEEP)
+A180 n_fast+20: 4 ge2 windows up, 0 down, median unchanged. A103 n//2=180 mean-down.
+HYPOTHESIS STRUCTURAL: n_fast +30 (150) — more of A180 without going to 180.

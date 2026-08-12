@@ -1,0 +1,5 @@
+A10 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 med_trades=30
+A1-A9 all structural REVERT. Single-bar Donchian breaks are noisy.
+HYPOTHESIS STRUCTURAL: 2-bar persistence - breakout must hold for current and previous bar before entry.

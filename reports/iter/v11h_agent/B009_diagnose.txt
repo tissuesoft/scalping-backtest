@@ -1,0 +1,2 @@
+B009 BEFORE=B002 liq=32 med=4.477
+HYP: post-scale trail 5e-6->3e-6 locks profit tighter → fewer givebacks/liq.

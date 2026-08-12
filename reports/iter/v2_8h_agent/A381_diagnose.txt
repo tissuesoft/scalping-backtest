@@ -1,0 +1,2 @@
+A381 BEFORE (=A380 KEEP) hits=1 med=4.044 ge2=40
+HYPOTHESIS STRUCTURAL: later close_frac 0.08->0.05.

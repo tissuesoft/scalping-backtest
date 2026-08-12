@@ -1,0 +1,4 @@
+A123 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: 9 windows stuck 1.5-2x. A102 ROC90-only dropped median; A88 ROC60 AND 120 dropped median. OR of 90 and 120 catches turns without requiring both.
+HYPOTHESIS STRUCTURAL: bull/bear ROC = (ROC120 sign) OR (ROC90 sign).

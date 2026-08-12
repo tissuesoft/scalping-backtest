@@ -1,0 +1,5 @@
+B016 BEFORE (=B015) med=4.497 liq=32
+
+HYPOTHESIS: later 0.021->0.020 continue runner retention.
+
+EDIT: compound_engine.py close_frac 0.020

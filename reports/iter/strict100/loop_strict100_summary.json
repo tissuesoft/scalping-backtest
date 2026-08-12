@@ -1,0 +1,115 @@
+{
+  "sets": 10,
+  "rounds": "91-100",
+  "start_max": 1186.655,
+  "end_max": 2221.594798010503,
+  "champion_edit": "size_boost=1.25 when ATR>SMA200*1.6 (on top of notional*2.15)",
+  "keeps": [
+    {
+      "set": 95,
+      "edit": "size_boost=1.08 if ATR>SMA*1.6",
+      "after": 1467.7615774814622
+    },
+    {
+      "set": 96,
+      "edit": "size_boost=1.12 if ATR>SMA*1.6",
+      "after": 1625.0911961899455
+    },
+    {
+      "set": 97,
+      "edit": "size_boost=1.15",
+      "after": 1750.8746669208863
+    },
+    {
+      "set": 98,
+      "edit": "size_boost=1.18",
+      "after": 1883.593599214179
+    },
+    {
+      "set": 99,
+      "edit": "size_boost=1.22",
+      "after": 2071.7551656031155
+    },
+    {
+      "set": 100,
+      "edit": "size_boost=1.25",
+      "after": 2221.594798010503
+    }
+  ],
+  "n_keep": 6,
+  "n_revert": 4,
+  "all": [
+    {
+      "set": 91,
+      "decision": "REVERT",
+      "edit": "size_mult=0.5 after loss, 1.0 after win",
+      "before": 1186.655,
+      "after": 749.158
+    },
+    {
+      "set": 92,
+      "decision": "REVERT",
+      "edit": "loss_cooldown_bars=240",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 93,
+      "decision": "REVERT",
+      "edit": "daily_ema_force_50",
+      "before": 1186.655,
+      "after": 10.718
+    },
+    {
+      "set": 94,
+      "decision": "REVERT",
+      "edit": "freeze_entries_after_5x",
+      "before": 1186.655,
+      "after": 10.425
+    },
+    {
+      "set": 95,
+      "decision": "KEEP",
+      "edit": "size_boost=1.08 if ATR>SMA*1.6",
+      "before": 1186.6551812482614,
+      "after": 1467.7615774814622
+    },
+    {
+      "set": 96,
+      "decision": "KEEP",
+      "edit": "size_boost=1.12 if ATR>SMA*1.6",
+      "before": 1467.7615774814622,
+      "after": 1625.0911961899455
+    },
+    {
+      "set": 97,
+      "decision": "KEEP",
+      "edit": "size_boost=1.15",
+      "before": 1625.0911961899455,
+      "after": 1750.8746669208863
+    },
+    {
+      "set": 98,
+      "decision": "KEEP",
+      "edit": "size_boost=1.18",
+      "before": 1750.8746669208863,
+      "after": 1883.593599214179
+    },
+    {
+      "set": 99,
+      "decision": "KEEP",
+      "edit": "size_boost=1.22",
+      "before": 1883.593599214179,
+      "after": 2071.7551656031155
+    },
+    {
+      "set": 100,
+      "decision": "KEEP",
+      "edit": "size_boost=1.25",
+      "before": 2071.7551656031155,
+      "after": 2221.594798010503
+    }
+  ],
+  "hits_10000x": 0,
+  "process": "each set: eval(current)->diagnose file->one code edit->eval(after)->keep/revert"
+}

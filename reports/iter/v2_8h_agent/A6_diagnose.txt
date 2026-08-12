@@ -1,0 +1,8 @@
+A6 BEFORE DIAGNOSE
+GOAL: every window 10000x.
+hits=0/59 med=1.000 min=1.000 max=106.145 mean=5.073
+surv=15.3% ge2=15 dead=38 wipe=50 med_trades=30 liq=44
+dead_by_year={2021: 5, 2022: 6, 2023: 7, 2024: 8, 2025: 7, 2026: 5}
+PRIOR: A1-A5 structural REVERT (slope,4h,body,opp-lock,vol).
+FAILURE: wick SL at signal extreme is often inside noise; risk_cap then pins stop; early SL then re-entry grind.
+HYPOTHESIS STRUCTURAL: set SL to signal close +/- 0.5*ATR beyond wick direction (wider structure stop), not exact wick.

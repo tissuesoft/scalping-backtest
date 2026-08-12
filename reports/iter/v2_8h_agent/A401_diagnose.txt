@@ -1,0 +1,2 @@
+A401 BEFORE (=A397 KEEP) hits=1 med=4.346 ge2=40; n1=16 includes 5 early-2021 zero-trade (EMA200 warmup)
+HYPOTHESIS STRUCTURAL: daily EMA min_periods daily_n->daily_n//2 so early windows can trade.

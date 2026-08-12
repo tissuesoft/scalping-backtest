@@ -1,0 +1,4 @@
+A147 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A146 delayed size-up raised ge2 22->24 but dropped median. 1.5-2x band needs the runner to continue after first 0.70 bank. Second trail hit currently kills the remaining 30%. Scale out 50% of remainder instead, leave a tail.
+HYPOTHESIS STRUCTURAL: second profitable trail SL closes 50% of remaining notional.

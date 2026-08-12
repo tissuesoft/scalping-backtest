@@ -1,0 +1,2 @@
+A367 BEFORE (=A366 KEEP) hits=1 med=3.229; 2022-12 727x near path
+HYPOTHESIS STRUCTURAL: trail_atr cap 4->3.

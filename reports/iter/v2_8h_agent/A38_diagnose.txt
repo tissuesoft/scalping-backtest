@@ -1,0 +1,5 @@
+A38 BEFORE
+hits=0/59 med=1.161 max=13.859 ge2=7 mean=1.648 surv=66.1%
+stall_1_2=52 wipe=20
+Diagnosis: risk-parity caps compound speed; win_size_mult unused — after wins should anti-martingale size next entry.
+HYPOTHESIS STRUCTURAL (engine): enable win_size_mult=1.5 (max 4) — grow size after winning exits toward 10000x.

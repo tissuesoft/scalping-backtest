@@ -1,0 +1,42 @@
+{
+  "tag": "L0_champion",
+  "symbol": "BTCUSDT",
+  "params": {
+    "lookback": 30,
+    "atr_period": 14,
+    "min_atr_pct": 0.0004,
+    "sl_atr": 1.2,
+    "trail_atr": 2.0,
+    "ht_ema": 200,
+    "ht_rule": "15min",
+    "breakout_buffer_atr": 0.0,
+    "cooldown_bars": 0,
+    "atr_expand_mult": 0.0,
+    "atr_sma_period": 100,
+    "daily_ema_period": 0,
+    "tp_atr": 0.0,
+    "allow_long": true,
+    "allow_short": true
+  },
+  "leverage": 20.0,
+  "pyramid_at_r": 0.0,
+  "pyramid_frac": 1.0,
+  "window_days": 60,
+  "step_days": 30,
+  "target_mult": 10000.0,
+  "summary": {
+    "n_windows": 59,
+    "n_hit": 0,
+    "hit_rate": 0.0,
+    "median_peak_mult": 1.0,
+    "mean_peak_mult": 1.0130553940255957,
+    "max_peak_mult": 1.2022585413329805,
+    "median_final_mult": 5.348370386471005e-23,
+    "pct_survived": 0.0,
+    "best_window": {
+      "start": "2022-01-31 00:00:00+00:00",
+      "end": "2022-04-01 00:00:00+00:00",
+      "mult_peak": 1.2022585413329805
+    }
+  }
+}

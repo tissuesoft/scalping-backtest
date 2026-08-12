@@ -1,0 +1,1 @@
+Cooldown flat. risk_cap 0.33% may clip structure SL; probe 0.35%

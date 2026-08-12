@@ -1,0 +1,3 @@
+A236 BEFORE (=A212 KEEP)
+A224 buf*1.2 hurt true day-path winners. Overnight 00:00 first-cross is the fake subset.
+HYPOTHESIS STRUCTURAL: block day-path only in first 60 minutes UTC; Donchian unrestricted.

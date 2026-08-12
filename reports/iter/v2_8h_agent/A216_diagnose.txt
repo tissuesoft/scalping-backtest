@@ -1,0 +1,3 @@
+A216 BEFORE (=A212 KEEP)
+Scale-out schedule saturated. A156 slope 160 REVERT; A55 180 KEEP. 170 untried on new trail champ.
+HYPOTHESIS STRUCTURAL: ema_ht.diff 180 -> 170.

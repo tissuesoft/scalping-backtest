@@ -1,0 +1,5 @@
+A68 BEFORE
+hits=0/59 med=1.411 max=50.145 ge2=18 mean=3.725 surv=25.4%
+lt2=41 ge10=5 wipe=44
+Diagnosis: risk ramps help median but ge2 stuck ~18; need entry quality for more windows to clear 2x. Require close beyond mid-channel by 0.5 ATR on breakout bar (conviction).
+HYPOTHESIS STRUCTURAL: long only if close > mid+0.5*ATR; short if close < mid-0.5*ATR (in addition to existing gates).

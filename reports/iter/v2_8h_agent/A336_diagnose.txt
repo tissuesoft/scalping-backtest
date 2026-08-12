@@ -1,0 +1,3 @@
+A336 BEFORE (=A332 KEEP) med=2.276 ge2=32; 2023-04 1.969
+A335 body 0.50 REVERT. Trail floor reached.
+HYPOTHESIS STRUCTURAL: ROC period 120->90 for faster side agreement in stuck windows.

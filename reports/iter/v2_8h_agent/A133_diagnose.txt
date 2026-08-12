@@ -1,0 +1,4 @@
+A133 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A101 full directional close was noop with body 0.45. Wipe windows (56-86 trades, pf<1) still enter on closes in the middle of the bar. Require close in the breakout half.
+HYPOTHESIS STRUCTURAL: long close_loc>=0.55, short close_loc<=0.45.

@@ -1,0 +1,3 @@
+A209 BEFORE (=A208 KEEP)
+trail_scale_max 8 KEEP med +0.0038, 37 up / 2 dn. Later frac 0.12 still has room for another trim.
+HYPOTHESIS STRUCTURAL: trail_scale_max 8 -> 9.

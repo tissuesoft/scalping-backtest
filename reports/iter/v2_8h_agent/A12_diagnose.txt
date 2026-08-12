@@ -1,0 +1,5 @@
+A12 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 med_trades=30
+11 agent sets KEEP0. 1h EMA flips often -> dual-side chop.
+HYPOTHESIS STRUCTURAL: align to 4h EMA (slower trend filter) instead of 1h.

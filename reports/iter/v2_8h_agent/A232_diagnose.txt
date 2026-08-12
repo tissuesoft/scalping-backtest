@@ -1,0 +1,3 @@
+A232 BEFORE (=A212 KEEP)
+1.0x trading windows: wick SL often << risk_cap 0.33% → huge notional → first tick death, peak stuck $100.
+HYPOTHESIS STRUCTURAL: floor risk_frac at 0.20% for sizing (SL unchanged) so tight-wick entries are not 2x oversized.

@@ -1,0 +1,5 @@
+A84 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977 surv=23.7%
+lt2=39 ge10=5 wipe=45
+Diagnosis: ~39 windows stall <2x. Dual Donchian (A75) helped median. Fast path uses same buf as slow. Fast channel is tighter so same ATR buf is relatively huge — may miss or overshoot. Use smaller buffer on fast path only (0.5*buf).
+HYPOTHESIS STRUCTURAL: fast Donchian buffer = 0.5 * buf; slow/day unchanged.

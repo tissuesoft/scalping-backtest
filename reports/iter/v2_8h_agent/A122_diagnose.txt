@@ -1,0 +1,4 @@
+A122 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22 n_1.0=20 band_1.5_2=9
+Diagnosis: A116 cooldown 180 KEEP ge2 19->21 via extra opposite-side entries. A72 120 REVERT. Median still the 2nd of the 1.5-2.0 band. One more step toward 180 without A72 flood.
+HYPOTHESIS STRUCTURAL: cooldown cap 180 -> 150.

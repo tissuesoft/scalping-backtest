@@ -1,0 +1,13 @@
+R2 BEFORE DIAGNOSE
+GOAL: all windows 10000x. Primary hits then median/min.
+hits=0/59 max=40.750 median=1.000 min=1.000 surv=10.2%
+dead peak<=1.01=38 ge2=13 wipe=53 liq=46
+median trades=80 mean trades=71.4
+
+FROM R1: shrinking size 1.5->1.0 raised survival but did NOT raise hits/median/min/ge2; REVERTED.
+FAILURE MODE (updated): problem is not only size - it is ENTRY QUALITY. median ~80 trades/window at lev100 = fee+chop death before compound.
+Mild expand<=1.15 lets too many low-edge breakouts through on both sides.
+
+HYPOTHESIS (one coherent strategy edit)
+Raise expand floor: min(expand, 1.15) -> min(expand, 1.25) so only stronger ATR expansions enter.
+Goal: fewer trades, less wipe, higher fraction of windows that get a real trend multiple (median/ge2/hits path).

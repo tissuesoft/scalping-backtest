@@ -1,0 +1,4 @@
+A42 BEFORE
+hits=0/59 med=1.161 max=33.380 ge2=7 mean=2.139 surv=64.4%
+Diagnosis: A41 showed ge2 can rise with freer exits but median falls — early SL noise under risk_cap kills many windows before they start.
+HYPOTHESIS STRUCTURAL: sl_grace_bars=5 — ignore initial SL for first 5 bars (liq still on) to let breakouts breathe.

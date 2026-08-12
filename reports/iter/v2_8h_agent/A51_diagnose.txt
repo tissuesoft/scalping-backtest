@@ -1,0 +1,4 @@
+A51 BEFORE
+hits=0/59 med=1.203 max=29.121 ge2=15
+Diagnosis: A41 unlock@2R x1.5 lifted ge2 but cut median. Try milder unlock@3R x1.25.
+HYPOTHESIS STRUCTURAL: trail_unlock_r=3.0, trail_unlock_mult=1.25.

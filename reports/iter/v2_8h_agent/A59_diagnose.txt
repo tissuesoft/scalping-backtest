@@ -1,0 +1,4 @@
+A59 BEFORE (A58 on)
+hits=0/59 med=1.286 max=30.763 ge2=17 mean=3.137
+Diagnosis: partial_trail 0.5 banks early; try 0.33 to leave more runner for 10000x path while keeping some bank.
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.5 -> 0.33.

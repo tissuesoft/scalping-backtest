@@ -1,0 +1,3 @@
+A349 BEFORE (=A348 KEEP) med=2.734 ge2=36; 2025-12 1.993; 33 up 12 dn
+Risk ramp KEEP. 2025-12 one tick from ge2.
+HYPOTHESIS STRUCTURAL: risk_tgt max 0.40->0.45 slope 0.28->0.33.

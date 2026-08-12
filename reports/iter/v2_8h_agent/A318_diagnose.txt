@@ -1,0 +1,2 @@
+A318 BEFORE (=A317 KEEP) med=2.073 ge2=30; still 35 up 0
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.20 after first scale.

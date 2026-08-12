@@ -1,0 +1,4 @@
+A154 BEFORE (=A153 KEEP)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: scale-out depth 2..6 all KEEP median, diminishing. Test 7th.
+HYPOTHESIS STRUCTURAL: trail_scale_max = 7 (counter, 7th 50% remainder scale-out).

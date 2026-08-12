@@ -1,0 +1,1 @@
+R64 DIAG: size fixed 2.15; try mild win_size*1.2 to compound streaks

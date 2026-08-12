@@ -1,0 +1,3 @@
+B093 BEFORE champion
+HYPOTHESIS: trail_unlock_mult 1.3->1.25
+EDIT: compound_engine.py

@@ -1,0 +1,4 @@
+A145 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: wipe windows grind 40-80 trades in thin vol. R4 0.0015 KEEP historically; round-trip fees+slip ~0.001 so 0.0015 is thin. Raise floor to 0.0018.
+HYPOTHESIS STRUCTURAL: vol_ok atr_pct >= 0.0018.

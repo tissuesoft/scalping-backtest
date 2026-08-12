@@ -1,0 +1,3 @@
+A256 BEFORE (=A212 KEEP)
+A99 strategy loss-cd was max-only. 1.0x still chain losses (88-133 trades, peak $100).
+HYPOTHESIS STRUCTURAL: engine-side 45-bar pause after full losing exit only (wins/partials unchanged).

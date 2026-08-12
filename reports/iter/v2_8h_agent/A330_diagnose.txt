@@ -1,0 +1,2 @@
+A330 BEFORE (=A329 KEEP) med=2.256 ge2=32; 2023-04 1.933
+HYPOTHESIS STRUCTURAL: all-entry trail *0.05->0.03 after first scale.

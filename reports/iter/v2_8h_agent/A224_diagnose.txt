@@ -1,0 +1,3 @@
+A224 BEFORE (=A212 KEEP)
+Overtrade 1.0x windows fire many day-path breaks. A110 no-buf REVERT. Stricter day path only.
+HYPOTHESIS STRUCTURAL: day first-cross uses 1.2*buf; Donchian buf unchanged.

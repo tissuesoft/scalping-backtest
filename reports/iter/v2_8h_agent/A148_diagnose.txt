@@ -1,0 +1,4 @@
+A148 BEFORE (=A147 KEEP)
+hits=0/59 med=1.551 ge2=22
+Diagnosis: A95 size_mult-on-partial was noop because the remaining 33% often exited red and RESET size_mult. A147 leaves a smaller tail after two scale-outs; that reset still kills anti-martingale after a net-winning trade.
+HYPOTHESIS STRUCTURAL: if pos_partial_done, do not reset size_mult on the final tail exit.

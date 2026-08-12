@@ -1,0 +1,3 @@
+A335 BEFORE (=A332 KEEP) med=2.276 ge2=32
+A334 body 0.40 REVERT med 2.276->2.263. Try stricter.
+HYPOTHESIS STRUCTURAL: body floor 0.45->0.50 ATR to skip weak-body losers in stuck windows.

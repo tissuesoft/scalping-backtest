@@ -1,0 +1,153 @@
+{
+  "sets": 20,
+  "rounds": "71-90",
+  "start_max": 1186.655,
+  "end_max": 1186.655,
+  "keeps": [],
+  "n_keep": 0,
+  "n_revert": 20,
+  "all": [
+    {
+      "set": 71,
+      "decision": "REVERT",
+      "edit": "trail_arm_r=1.0",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 72,
+      "decision": "REVERT",
+      "edit": "sl_grace_bars=2",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 73,
+      "decision": "REVERT",
+      "edit": "be_at_r=1.0",
+      "before": 1186.655,
+      "after": 18.273
+    },
+    {
+      "set": 74,
+      "decision": "REVERT",
+      "edit": "expand_cap=1.28",
+      "before": 1186.655,
+      "after": 115.021
+    },
+    {
+      "set": 75,
+      "decision": "REVERT",
+      "edit": "expand_cap=1.40",
+      "before": 1186.655,
+      "after": 145.436
+    },
+    {
+      "set": 76,
+      "decision": "REVERT",
+      "edit": "sl_wick+0.1atr",
+      "before": 1186.655,
+      "after": 917.395
+    },
+    {
+      "set": 77,
+      "decision": "REVERT",
+      "edit": "require_bearish_bar",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 78,
+      "decision": "REVERT",
+      "edit": "notional*2.17",
+      "before": 1186.655,
+      "after": 1184.392
+    },
+    {
+      "set": 79,
+      "decision": "REVERT",
+      "edit": "ht_rule_force_4h",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 80,
+      "decision": "REVERT",
+      "edit": "cooldown=360",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 81,
+      "decision": "REVERT",
+      "edit": "risk_cap=0.0035",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 82,
+      "decision": "REVERT",
+      "edit": "unlock_r=2 mult=1.5",
+      "before": 1186.655,
+      "after": 347.315
+    },
+    {
+      "set": 83,
+      "decision": "REVERT",
+      "edit": "pyramid_at_r=1 frac=0.5",
+      "before": 1186.655,
+      "after": 3.647
+    },
+    {
+      "set": 84,
+      "decision": "REVERT",
+      "edit": "size*1.1 if eq>=10x",
+      "before": 1186.655,
+      "after": 794.887
+    },
+    {
+      "set": 85,
+      "decision": "REVERT",
+      "edit": "skip_weekend_entries",
+      "before": 1186.655,
+      "after": 31.885
+    },
+    {
+      "set": 86,
+      "decision": "REVERT",
+      "edit": "lookback=360",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 87,
+      "decision": "REVERT",
+      "edit": "trail=10",
+      "before": 1186.655,
+      "after": 730.712
+    },
+    {
+      "set": 88,
+      "decision": "REVERT",
+      "edit": "vol_surge_1.5x_48h",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 89,
+      "decision": "REVERT",
+      "edit": "reentry=240",
+      "before": 1186.655,
+      "after": 1186.655
+    },
+    {
+      "set": 90,
+      "decision": "REVERT",
+      "edit": "force_allow_long",
+      "before": 1186.655,
+      "after": 1186.655
+    }
+  ],
+  "hits_10000x": 0,
+  "note": "No KEEP. Champion remains notional*2.15 / risk0.33% / expand1.35 / wickSL / reentry120. Most probes identical or worse; BE/pyramid/weekend catastrophic."
+}

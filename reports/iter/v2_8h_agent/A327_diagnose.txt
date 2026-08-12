@@ -1,0 +1,2 @@
+A327 BEFORE (=A326 KEEP) med=2.244 ge2=32; 43 up 0 dn
+HYPOTHESIS STRUCTURAL: all-entry trail *0.12->0.10 after first scale.

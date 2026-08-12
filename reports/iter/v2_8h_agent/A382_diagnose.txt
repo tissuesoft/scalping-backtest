@@ -1,0 +1,2 @@
+A382 BEFORE (=A381 KEEP) hits=1 med=4.121 ge2=40
+HYPOTHESIS STRUCTURAL: later close_frac 0.05->0.03.

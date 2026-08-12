@@ -1,0 +1,10 @@
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 480, 'atr_period': 14, 'min_atr_pct': 0.0012, 'sl_atr': 0.7, 'trail_atr': 0.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.5, 'cooldown_bars': 480, 'atr_expand_mult': 1.6, 'atr_sma_period': 200, 'daily_ema_period': 0, 'tp_atr': 20.0, 'body_min_atr': 0.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=90.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.737 max=6.124
+final_mult median=0.000  survived=16.9%
+best={'start': '2025-12-11 00:00:00+00:00', 'end': '2026-02-09 00:00:00+00:00', 'mult_peak': 6.123958169878537}
+[saved] reports\iter\T8_huge_tp_window_summary.json

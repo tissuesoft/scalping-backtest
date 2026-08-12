@@ -1,0 +1,3 @@
+A372 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37
+A371 grace7 REVERT. Faster HTF EMA for stuck windows.
+HYPOTHESIS STRUCTURAL: ht_ema span cap 40->30.

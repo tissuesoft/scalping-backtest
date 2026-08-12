@@ -1,0 +1,4 @@
+A26 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 zero=5 dead=44
+Diagnosis: 1m Donchian+expand misses many regime days; prior-day high/low breaks are structural daily momentum unused (A9 was prior-day as sole filter).
+HYPOTHESIS STRUCTURAL: OR prior-day Hi/Lo break into long_brk/short_brk (additional path), still gated by HTF/daily/vol/expand.

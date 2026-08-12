@@ -1,0 +1,4 @@
+A124 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A67 floor 0.12 KEEP. A93 cold cap 0.08 crushed ge2. A82 late cap 0.40 REVERT. Median-band 1.5-2x needs more punch on the first run, not less.
+HYPOTHESIS STRUCTURAL: risk_tgt floor 0.12 -> 0.14, same 0.35 cap (0.14+0.21*progress).

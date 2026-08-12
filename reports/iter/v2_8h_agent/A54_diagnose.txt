@@ -1,0 +1,5 @@
+A54 BEFORE
+hits=0/59 med=1.233 max=25.507 ge2=16 mean=2.339 surv=33.9%
+stall_1_2=43 wipe=39
+Diagnosis: many windows die after first adverse move during/after grace; require signal bar range >= ATR (decisive impulse).
+HYPOTHESIS STRUCTURAL: entry only if (high-low) >= ATR on signal bar.

@@ -1,0 +1,3 @@
+A165 BEFORE (=A154 KEEP)
+A164 yield-after-3 was peak-identical. Recycle still blocked until 3 partials; leftover 30% after first partial is the real blocker.
+HYPOTHESIS STRUCTURAL: yield leftover after first scale-out on fresh same-side breakout.

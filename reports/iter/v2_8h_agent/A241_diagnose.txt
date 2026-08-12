@@ -1,0 +1,3 @@
+A241 BEFORE (=A212 KEEP)
+A240 chop size_boost 0.65 only hit lev_cap so almost no-op (2 up 0 dn).
+HYPOTHESIS STRUCTURAL: apply size_boost to risk-parity notional too, with 0.65 on non-expand_sma.

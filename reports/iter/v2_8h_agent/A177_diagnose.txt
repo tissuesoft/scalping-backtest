@@ -1,0 +1,3 @@
+A177 BEFORE (=A154 KEEP)
+A66 win_size 1.75 KEEP; A139 1.85 REVERT. Full-close winners then wipe 1.0/median band.
+HYPOTHESIS STRUCTURAL: win_size_mult 1.75 -> 1.65.

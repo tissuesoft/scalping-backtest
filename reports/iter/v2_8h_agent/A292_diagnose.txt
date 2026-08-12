@@ -1,0 +1,3 @@
+A292 BEFORE (=A288 KEEP) med=1.735 = 2025-01 (69 trades, final 0)
+A256 always-pause-after-loss was max-only. 2025-01 grinds to 0 after a 1.735 peak.
+HYPOTHESIS STRUCTURAL: after a full loss, pause 90m ONLY if equity < 85% of window peak (protect DD, not compounding).

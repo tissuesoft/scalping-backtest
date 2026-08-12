@@ -1,0 +1,5 @@
+A82 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977 surv=23.7%
+lt2=39 ge10=5 wipe=45
+Diagnosis: ~39 windows stall <2x. A69 steeper risk (0.14-0.40) raised ge2 but cut median. A67 at 0.12-0.35 is champ. Try raising only the CEILING keeping floor 0.12 (late-window aggression without early oversize).
+HYPOTHESIS STRUCTURAL: risk_tgt = min(0.40, 0.12 + 0.28 * progress) — same floor, higher cap.

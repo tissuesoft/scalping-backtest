@@ -1,0 +1,3 @@
+A284 BEFORE (=A278 KEEP)
+1.0x chop often hugs daily EMA200 (regime filter is True but trend is dead).
+HYPOTHESIS STRUCTURAL: require |daily close/EMA-1| >= 0.4% so we are not glued to the 200d.

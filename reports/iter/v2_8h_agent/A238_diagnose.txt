@@ -1,0 +1,3 @@
+A238 BEFORE (=A212 KEEP)
+Median-band windows (2025-07 1.58 final 0.15) DID get a runner then gave it back.
+HYPOTHESIS STRUCTURAL: trail_unlock_r 4.0→3.0 so trail widens earlier and 1.58 peaks can extend.

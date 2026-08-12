@@ -1,0 +1,4 @@
+A250 BEFORE (=A212 KEEP)
+A242 scale-out only after +4R: full-exits before unlock, med down.
+Median-band 1.58 runners get first partial on any tiny profit trail.
+HYPOTHESIS STRUCTURAL: allow partial only after +1.5R (between any-profit and 4R).

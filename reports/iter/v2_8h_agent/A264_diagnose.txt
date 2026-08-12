@@ -1,0 +1,3 @@
+A264 BEFORE (=A257 KEEP)
+A261 close-location was max-only. Wick-dominated wide bars still pass range_ok 0.8ATR + body 0.45ATR.
+HYPOTHESIS STRUCTURAL: body >= 50% of bar range (real body, not wick break).

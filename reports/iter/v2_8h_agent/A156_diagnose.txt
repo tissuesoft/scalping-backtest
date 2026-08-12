@@ -1,0 +1,4 @@
+A156 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: scale-out lever saturated. A117 EMA40 KEEP; A105 slope 120 dropped median; A55 180 KEEP. With faster EMA, a slightly shorter slope (160) may flip in time for the 1.5-2x band without A105's noise.
+HYPOTHESIS STRUCTURAL: ema_ht.diff(180) -> diff(160).

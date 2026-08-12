@@ -1,0 +1,3 @@
+A370 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37
+A369 width 0.20 REVERT med collapse. Try earlier unlock with current trail stack.
+HYPOTHESIS STRUCTURAL: trail_unlock_r 4.0->3.5.

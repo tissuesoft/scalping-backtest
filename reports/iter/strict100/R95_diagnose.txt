@@ -1,0 +1,19 @@
+R95 BEFORE DIAGNOSE
+===================
+hits=0/59 max=1186.655 med=1.000 mean=42.293
+survived=50.8% median_final=0.010495
+best trades=7 liq=0 pf=36.34 mdd=-81.6
+
+PRIOR LOOPS
+- R91 loss haircut: survival up, peak down
+- R92 loss cooldown: flat peak
+- R93 daily50: destroyed
+- R94 freeze@5x: destroyed compound path (max 10x)
+
+FAILURE MODE
+- 10k path needs MANY full-size compounds inside crash (R94 proved).
+- Calm windows never start the compound ladder (43/59 peak<=1.01).
+- Selective SIZE UP only on extreme ATR expand could raise crash peak without changing calm entry count.
+
+HYPOTHESIS
+- When ATR > SMA200(ATR)*1.6 at signal, apply notional boost x1.08 (on top of 2.15). Mild expands stay at 2.15; only violent dumps press harder toward 10k.

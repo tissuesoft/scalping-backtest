@@ -1,0 +1,4 @@
+A63 BEFORE
+hits=0/59 med=1.353 max=35.658 ge2=18
+Diagnosis: ROC sign (A58) helps but tiny ROC noise still enters. Require |ROC120| >= 0.3%.
+HYPOTHESIS STRUCTURAL: |roc| >= 0.003 with side sign.

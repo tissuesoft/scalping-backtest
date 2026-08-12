@@ -1,0 +1,4 @@
+A119 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A89 unlock 4.0 KEEP median; A90 mult 1.75 REVERT. Try earlier unlock (3.5R) so median-band runners (1.55-2) get the 1.5x trail sooner without A90's wider mult.
+HYPOTHESIS STRUCTURAL: trail_unlock_r 4.0 -> 3.5.

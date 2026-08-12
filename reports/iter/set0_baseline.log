@@ -1,0 +1,12 @@
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[cfg] capital=100.0 lev=20.0x target=1000000.0
+[params] {'lookback': 30, 'atr_period': 14, 'min_atr_pct': 0.0004, 'sl_atr': 1.2, 'trail_atr': 2.0, 'ht_ema': 200, 'ht_rule': '15min', 'allow_long': True, 'allow_short': True}
+
+========== RESULT ==========
+final=$0.00  multiple=0.0000x
+Traceback (most recent call last):
+  File "c:\Users\Foryoucom\Desktop\scalping-backtest\run_compound.py", line 102, in <module>
+    main()
+  File "c:\Users\Foryoucom\Desktop\scalping-backtest\run_compound.py", line 93, in main
+    print(f"weekly\u2248{m['weekly_pct']:.3f}%  MDD={m['max_drawdown_pct']:.2f}%")
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2248' in position 6: illegal multibyte sequence

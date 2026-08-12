@@ -1,0 +1,3 @@
+A242 BEFORE (=A212 KEEP)
+Median-band (2025-07 1.58) gets a runner then first trail touch dumps 68% too early.
+HYPOTHESIS STRUCTURAL: scale-out only after trail_unlock (+4R), so small winners can reach 2x before cutting.

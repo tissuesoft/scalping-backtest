@@ -1,0 +1,165 @@
+
+============================================================
+RUN L0_champion
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 30, 'atr_period': 14, 'min_atr_pct': 0.0004, 'sl_atr': 1.2, 'trail_atr': 2.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.0, 'cooldown_bars': 0, 'atr_expand_mult': 0.0, 'atr_sma_period': 100, 'daily_ema_period': 0, 'tp_atr': 0.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=20.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.013 max=1.202
+final_mult median=0.000  survived=0.0%
+best={'start': '2022-01-31 00:00:00+00:00', 'end': '2022-04-01 00:00:00+00:00', 'mult_peak': 1.2022585413329805}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\L0_champion_window_summary.json
+DECISION L0_champion: CHAMPION | hits=0/59 max_peak=1.20x
+
+============================================================
+RUN S1_rare_lev50
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 240, 'atr_period': 14, 'min_atr_pct': 0.001, 'sl_atr': 1.0, 'trail_atr': 4.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.3, 'cooldown_bars': 240, 'atr_expand_mult': 1.5, 'atr_sma_period': 100, 'daily_ema_period': 0, 'tp_atr': 0.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=50.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.169 max=2.786
+final_mult median=0.002  survived=33.9%
+best={'start': '2022-05-01 00:00:00+00:00', 'end': '2022-06-30 00:00:00+00:00', 'mult_peak': 2.785684452976466}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\S1_rare_lev50_window_summary.json
+DECISION S1_rare_lev50: KEEP | hits=0/59 max_peak=2.79x
+
+============================================================
+RUN S2_long_daily
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 120, 'atr_period': 14, 'min_atr_pct': 0.0007, 'sl_atr': 1.5, 'trail_atr': 5.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.2, 'cooldown_bars': 120, 'atr_expand_mult': 1.3, 'atr_sma_period': 100, 'daily_ema_period': 200, 'tp_atr': 0.0, 'allow_long': True, 'allow_short': False}
+[cfg] capital=100.0 lev=30.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.130 max=2.199
+final_mult median=0.328  survived=98.3%
+best={'start': '2025-01-15 00:00:00+00:00', 'end': '2025-03-16 00:00:00+00:00', 'mult_peak': 2.19943248419572}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\S2_long_daily_window_summary.json
+DECISION S2_long_daily: REVERT | hits=0/59 max_peak=2.20x
+
+============================================================
+RUN S3_asymmetric_tp
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 90, 'atr_period': 14, 'min_atr_pct': 0.0006, 'sl_atr': 1.0, 'trail_atr': 0.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.2, 'cooldown_bars': 90, 'atr_expand_mult': 1.4, 'atr_sma_period': 120, 'daily_ema_period': 0, 'tp_atr': 12.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=25.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.128 max=2.517
+final_mult median=0.008  survived=44.1%
+best={'start': '2022-06-30 00:00:00+00:00', 'end': '2022-08-29 00:00:00+00:00', 'mult_peak': 2.5172351657226564}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\S3_asymmetric_tp_window_summary.json
+DECISION S3_asymmetric_tp: REVERT | hits=0/59 max_peak=2.52x
+
+============================================================
+RUN S4_pyramid
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 60, 'atr_period': 14, 'min_atr_pct': 0.0005, 'sl_atr': 1.2, 'trail_atr': 3.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.1, 'cooldown_bars': 60, 'atr_expand_mult': 1.2, 'atr_sma_period': 100, 'daily_ema_period': 0, 'tp_atr': 0.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=20.0 pyramid_at_r=1.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.001 max=1.082
+final_mult median=0.000  survived=0.0%
+best={'start': '2022-06-30 00:00:00+00:00', 'end': '2022-08-29 00:00:00+00:00', 'mult_peak': 1.0818851595432026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\S4_pyramid_window_summary.json
+DECISION S4_pyramid: REVERT | hits=0/59 max_peak=1.08x
+
+============================================================
+RUN S5_ultra_rare_lev75
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 480, 'atr_period': 14, 'min_atr_pct': 0.0012, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.5, 'cooldown_bars': 480, 'atr_expand_mult': 1.6, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=75.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.473 max=7.152
+final_mult median=0.064  survived=72.9%
+best={'start': '2022-01-01 00:00:00+00:00', 'end': '2022-03-02 00:00:00+00:00', 'mult_peak': 7.151696120364967}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\S5_ultra_rare_lev75_window_summary.json
+DECISION S5_ultra_rare_lev75: KEEP | hits=0/59 max_peak=7.15x
+
+========== LOOP5 DONE ==========
+{
+  "goal": "every 60d window: $100 -> 10000x",
+  "champion": "S5_ultra_rare_lev75",
+  "sets": [
+    {
+      "tag": "L0_champion",
+      "edit": "baseline champion",
+      "decision": "CHAMPION",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.2022585413329805,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.0
+    },
+    {
+      "tag": "S1_rare_lev50",
+      "edit": "rare entries + lev50",
+      "decision": "KEEP",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.785684452976466,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.3389830508474576
+    },
+    {
+      "tag": "S2_long_daily",
+      "edit": "long-only + daily EMA200",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.19943248419572,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.9830508474576272
+    },
+    {
+      "tag": "S3_asymmetric_tp",
+      "edit": "SL1 ATR / TP12 ATR",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.5172351657226564,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.4406779661016949
+    },
+    {
+      "tag": "S4_pyramid",
+      "edit": "pyramid at +1R",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.0818851595432026,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.0
+    },
+    {
+      "tag": "S5_ultra_rare_lev75",
+      "edit": "ultra rare + lev75 + 1h EMA",
+      "decision": "KEEP",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 7.151696120364967,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7288135593220338
+    }
+  ]
+}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\loop5_window_summary.json

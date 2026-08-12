@@ -1,0 +1,3 @@
+A185 BEFORE (=A154 KEEP)
+A159 later-frac 0.55: 11 up 28 down, med 1.563->1.561. More leftover (0.48) is the opposite lever.
+HYPOTHESIS STRUCTURAL: later close_frac 0.5 -> 0.48.

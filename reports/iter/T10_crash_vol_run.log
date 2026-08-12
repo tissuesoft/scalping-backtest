@@ -1,0 +1,10 @@
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 240, 'atr_period': 14, 'min_atr_pct': 0.002, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 20, 'ht_rule': '1h', 'breakout_buffer_atr': 0.5, 'cooldown_bars': 180, 'atr_expand_mult': 2.2, 'atr_sma_period': 200, 'daily_ema_period': 0, 'tp_atr': 0.0, 'body_min_atr': 1.0, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=100.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=0  hit_rate=0.00%
+peak_mult median=1.000 mean=1.319 max=4.299
+final_mult median=0.001  survived=37.3%
+best={'start': '2022-06-30 00:00:00+00:00', 'end': '2022-08-29 00:00:00+00:00', 'mult_peak': 4.299445923747044}
+[saved] reports\iter\T10_crash_vol_window_summary.json

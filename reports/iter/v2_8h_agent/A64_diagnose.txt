@@ -1,0 +1,4 @@
+A64 BEFORE
+hits=0/59 med=1.353 max=35.658 ge2=18 mean=3.317 surv=33.9%
+Diagnosis: A63 showed ge2 can rise with stricter ROC but median fell — try longer ROC horizon (240) for cleaner momentum without hard magnitude cut.
+HYPOTHESIS STRUCTURAL: ROC period 120 -> 240 (sign only, keep A58).

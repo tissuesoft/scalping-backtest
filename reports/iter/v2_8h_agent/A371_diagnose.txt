@@ -1,0 +1,3 @@
+A371 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37
+A370 unlock 3.5 REVERT. Give early bars more SL grace to lift weak windows without cutting the hit.
+HYPOTHESIS STRUCTURAL: sl_grace_bars 5->7.

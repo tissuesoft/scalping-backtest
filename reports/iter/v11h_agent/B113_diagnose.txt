@@ -1,0 +1,4 @@
+B113 BASELINE hits=1/59 med=4.5878 ge2=40 liq=32
+DEAD~1: 17 windows
+HYPOTHESIS: second scale 0.015/0.065->0.014/0.06
+EDIT: compound_engine.py

@@ -1,0 +1,4 @@
+A115 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: 16 wipe windows have pf~0 and often trade vol spikes. R4 min ATR remains; add a climax skip.
+HYPOTHESIS STRUCTURAL: skip entries when ATR% is in the top decile of the past 1440 bars.

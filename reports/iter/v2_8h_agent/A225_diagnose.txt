@@ -1,0 +1,4 @@
+A225 BEFORE (=A212 KEEP)
+A216 fillna(True) wrecked 2022 because BOTH sides True on NaN.
+5 early-2021 windows have 0 trades: daily EMA200 min_periods blocks warmup.
+HYPOTHESIS STRUCTURAL: fillna(bull/bear) so NaN uses HTF-only, never both-True.

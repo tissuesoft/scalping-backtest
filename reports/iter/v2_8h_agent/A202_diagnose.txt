@@ -1,0 +1,3 @@
+A202 BEFORE (=A201 KEEP)
+0.18/0.16 KEEP. up/dn 15/24 but median still up.
+HYPOTHESIS STRUCTURAL: later close_frac 0.16 -> 0.14.

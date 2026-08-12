@@ -1,0 +1,4 @@
+A125 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: 1m ROC(120) is only 2h of noise and may flip mid-breakout. A102 90-only hurt; A123 OR hurt mean. Replace with 1h ROC(12h) aligned with HTF EMA.
+HYPOTHESIS STRUCTURAL: ROC = 1h close pct_change(12), shifted 1 bar, ffilled to 1m.

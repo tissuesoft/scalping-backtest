@@ -1,0 +1,5 @@
+B015 BEFORE (=B014) med=4.497 liq=32
+
+HYPOTHESIS: post-scale trail 2e-6->1e-6 (B012 chain) locks gains tighter.
+
+EDIT: compound_engine.py tr * 1e-6

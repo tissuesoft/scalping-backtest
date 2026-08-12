@@ -1,0 +1,2 @@
+A329 BEFORE (=A328 KEEP) med=2.251 ge2=32; 2023-04 1.909
+HYPOTHESIS STRUCTURAL: all-entry trail *0.08->0.05 to push 2023-04 over ge2.

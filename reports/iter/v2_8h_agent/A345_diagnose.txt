@@ -1,0 +1,3 @@
+A345 BEFORE (=A344 KEEP) med=2.675 ge2=36; 2025-12 1.970
+First-partial chain near floor (0.01). Second scale still 0.28 on non-fat.
+HYPOTHESIS STRUCTURAL: second scale unify 0.10 for all entries.

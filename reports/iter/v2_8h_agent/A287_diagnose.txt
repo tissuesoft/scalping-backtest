@@ -1,0 +1,3 @@
+A287 BEFORE (=A278 KEEP) med=1.725 ge2=23
+Range-tier boost lifted bars that are wide. Median 2025-07 runner may be strong ROC on a mid-range bar.
+HYPOTHESIS STRUCTURAL: also 1.15 boost when |ROC120|>=0.5%, take max with range tiers.

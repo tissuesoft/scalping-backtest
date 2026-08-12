@@ -1,0 +1,3 @@
+A283 BEFORE (=A278 KEEP) med=1.725 ge2=23
+A274 unlock_mult 1.65 widened ALL trails and hurt median. A278 fat-bar size (1.15–1.35) is trailed with the same ATR as 1.0 size.
+HYPOTHESIS STRUCTURAL: multiply trail distance by the entry size_boost so only oversized wide-bar trades get more room.

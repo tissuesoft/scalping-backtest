@@ -1,0 +1,2 @@
+A320 BEFORE (=A319 KEEP) med=2.148 = 2023-12; ge2=31; below2 nearest 2023-04 1.85
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.10 after first scale.

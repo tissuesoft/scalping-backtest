@@ -1,0 +1,14 @@
+R1 BEFORE DIAGNOSE
+GOAL: EVERY window 10000x from $100. Keep order: hits > median/min > ge2. Max-only is NOT keep.
+hits=0/59 median=1.0000 min=1.0000 max=40.7498 mean=2.8089
+surv=10.2% ge2=13 ge10=2 dead=38 wipe=53 liq=46
+zero_trade=5 med_trades=80.0 mean_trades=71.4
+
+FAILURE MODE
+- Overtrading chop at high leverage: many trades then wipe before compound.
+- Majority of windows never get a meaningful peak (dead ~1.0).
+- Liquidations frequent: size/risk too aggressive for dual-side.
+- No path yet to all-window 10000x; need coverage + survival, not one-window max.
+
+HYPOTHESIS: stricter expand 1.30
+EDIT: force_expand_1.30

@@ -1,0 +1,1 @@
+A449: ema_slope diff 200->210 (A447 KEEP ge2 41->42)

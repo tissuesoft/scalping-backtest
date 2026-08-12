@@ -1,0 +1,127 @@
+{
+  "goal": "every 60d window: $100 -> 10000x",
+  "champion": "T5_short_lev100",
+  "sets": [
+    {
+      "tag": "T0_S5champ",
+      "edit": "S5 champion baseline re-eval",
+      "decision": "CHAMPION",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 7.151696120364967,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7288135593220338
+    },
+    {
+      "tag": "T1_lev100",
+      "edit": "S5 + lev100 tighter SL",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 3.133529108784421,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.6610169491525424
+    },
+    {
+      "tag": "T2_nodaily_lev90",
+      "edit": "drop daily filter + lev90",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 4.562944004237618,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.22033898305084745
+    },
+    {
+      "tag": "T3_pyramid05",
+      "edit": "pyramid at 0.5R x1.5",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.0,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.3728813559322034
+    },
+    {
+      "tag": "T4_long_lev100",
+      "edit": "long-only lev100 wider trail",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 4.351972670688711,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7966101694915254
+    },
+    {
+      "tag": "T5_short_lev100",
+      "edit": "short-only lev100 crash",
+      "decision": "KEEP",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 13.687033209878932,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7796610169491526
+    },
+    {
+      "tag": "T6_look720",
+      "edit": "8h lookback ultra rare lev100",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 5.086798852763738,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7457627118644068
+    },
+    {
+      "tag": "T7_lev125_body",
+      "edit": "lev125 + body filter + expand2",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 4.607509183744927,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.2033898305084746
+    },
+    {
+      "tag": "T8_huge_tp",
+      "edit": "fixed TP20 ATR no trail",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 6.123958169878537,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.1694915254237288
+    },
+    {
+      "tag": "T9_pyramid_nodaily",
+      "edit": "pyramid x2 + lev100 no daily",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.0,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.0
+    },
+    {
+      "tag": "T10_crash_vol",
+      "edit": "high-vol only body1 ATR lev100",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 4.299445923747044,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.3728813559322034
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+A207 BEFORE (=A205 KEEP)
+first 0.68 / later 0.12. Scale-out fracs saturated. A180 n_fast+20: 4 ge2 up, 0 down, median-flat.
+HYPOTHESIS STRUCTURAL: n_fast +20 on new trail champion.

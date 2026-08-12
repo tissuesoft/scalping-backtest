@@ -1,0 +1,3 @@
+A303 BEFORE (=A301 KEEP) med=1.740 ge2=24
+A302 trail*1.20 after fat-bar scale REVERT med 1.740->1.726 (peak is realized; wider trail delays lock-in).
+HYPOTHESIS STRUCTURAL: trail*0.85 after first fat-bar scale so remainder realizes while size is still large.

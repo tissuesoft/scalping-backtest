@@ -1,0 +1,4 @@
+A161 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+15 windows trade a lot and peak 1.0 (first trades lose). A124 floor 0.14 REVERT.
+HYPOTHESIS STRUCTURAL: risk_tgt 0.12+0.23p -> 0.10+0.25p (smaller first-trade risk, same 0.35 cap).

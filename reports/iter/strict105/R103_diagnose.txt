@@ -1,0 +1,7 @@
+R103 BEFORE DIAGNOSE (post-R102 KEEP)
+hits=0/59 max=2544.772 med=1.000 mean=88.552
+survived=44.1%
+peak<=1.01=43 peak>=2=14
+boost magnitude KEEP chain works on crash; median still 1.0 (43/59 dead).
+FAILURE: threshold ATR>SMA*1.6 may be too rare outside crash - secondary dumps under-boosted.
+HYPOTHESIS: keep boost=1.31 but lower trigger 1.6 -> 1.55 so more dump bars get size_boost.

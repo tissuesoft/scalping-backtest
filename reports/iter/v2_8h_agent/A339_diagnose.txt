@@ -1,0 +1,2 @@
+A339 BEFORE (=A338 KEEP) med=2.437 ge2=32; 2025-12 1.885
+HYPOTHESIS STRUCTURAL: non-fat first partial 0.30->0.20.

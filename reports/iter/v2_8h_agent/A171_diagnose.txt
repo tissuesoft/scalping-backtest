@@ -1,0 +1,3 @@
+A171 BEFORE (=A154 KEEP)
+Overtrade 1.0x windows fire while price hugs HTF EMA (chop). ROC/slope already on; no min distance.
+HYPOTHESIS STRUCTURAL: require |close-ema_ht|/close >= 0.1%.

@@ -1,0 +1,4 @@
+A134 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: 1h HTF with span 40 (A117 KEEP) still lets chop through. A120 span 34 REVERT. Switch the HTF clock to 2h (same span 40) for slower regime without going back to span 50.
+HYPOTHESIS STRUCTURAL: ht_ema_on_1m(..., '2h').

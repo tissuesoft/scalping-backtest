@@ -1,0 +1,9 @@
+V2 BASELINE (strategy reset)
+GOAL: EVERY window must hit 10000x from $100. One-window max is NOT success.
+hits=0/59
+peak max=40.750 median=1.000 mean=2.809 min=1.000
+survived=10.2%
+zero_trade=5 peak<=1.01=38 peak>=2=13 peak>=10=2
+liq_sum=46 wipe=53
+v1 crash-farm context: max~3106 median=1 hits=0 FAILED goal.
+NEXT: raise hits and median/min across ALL windows; do not Keep max-only edits.

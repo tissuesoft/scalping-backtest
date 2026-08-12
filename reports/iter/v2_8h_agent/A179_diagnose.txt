@@ -1,0 +1,3 @@
+A179 BEFORE (=A154 KEEP)
+A58 ROC120 KEEP; 90/100/240 REVERT. 150 untried — slightly slower momentum agree.
+HYPOTHESIS STRUCTURAL: ROC 120 -> 150.

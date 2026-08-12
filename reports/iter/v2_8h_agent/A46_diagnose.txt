@@ -1,0 +1,5 @@
+A46 BEFORE
+hits=0/59 med=1.192 max=46.394 ge2=8 mean=2.448 surv=37.3% wipe=37
+bands: <1.1=26 1.1-2=25 ge2=8
+Diagnosis: stall band 1.1-2 dominates; entries often at EMA hug. Require separation from HTF EMA.
+HYPOTHESIS STRUCTURAL: |close-ema_ht| >= 0.5*ATR for entries (trend extension, not EMA touch).

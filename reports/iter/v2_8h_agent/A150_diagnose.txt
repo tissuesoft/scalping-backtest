@@ -1,0 +1,4 @@
+A150 BEFORE (=A147 KEEP)
+hits=0/59 med=1.551 ge2=22
+Diagnosis: A147 second 50% scale-out KEEP median 1.547->1.551 across 39 windows. A149 leaving a larger tail (0.4) slightly dropped median. Push staged banking: allow a third 50% scale-out so the 1.5-2x runner locks more without A91's single 0.75 dump.
+HYPOTHESIS STRUCTURAL: third profitable trail SL closes 50% of remaining notional.

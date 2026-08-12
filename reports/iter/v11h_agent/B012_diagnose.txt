@@ -1,0 +1,5 @@
+B012 BEFORE (=B011 KEEP) med=4.487 liq=32
+
+HYPOTHESIS: post-scale trail 3e-6->2e-6 tighter profit lock (B009 chain).
+
+EDIT: compound_engine.py tr * 2e-6

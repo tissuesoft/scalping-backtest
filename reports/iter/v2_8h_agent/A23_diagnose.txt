@@ -1,0 +1,4 @@
+A23 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50
+Diagnosis: chase-breakout entries at channel extreme get immediate adverse excursion -> wipe under risk_cap 0.33% / 100x.
+HYPOTHESIS STRUCTURAL: breakout-then-pullback — require Donchian break in last 90 bars, then enter on retest (low dips to ema_ht, close reclaim) while still above mid-channel.

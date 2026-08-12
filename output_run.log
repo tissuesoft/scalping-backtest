@@ -1,0 +1,29 @@
+[data] parquet dir=data\BTCUSDT\1m start=None end=None
+[data] rows=2,630,880  range=2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[cfg] capital=$500.00 notional=$500.00 fee=0.040% slip=0.010% lev=10.0x
+
+=== vwap_mean_reversion ===
+return=-10065.60%  trades=100596  win=14.6%  PF=0.369  MDD=-10055.78%  fees=$40238.40  final=$-49828.01
+
+=== bollinger_reentry ===
+return=-1772.98%  trades=18330  win=21.1%  PF=0.370  MDD=-1773.14%  fees=$7332.00  final=$-8364.91
+
+=== rsi_reversion ===
+return=-2306.02%  trades=23143  win=62.6%  PF=0.112  MDD=-2306.02%  fees=$9257.20  final=$-11030.11
+
+=== ema_pullback ===
+return=-18514.00%  trades=278640  win=24.7%  PF=0.179  MDD=-18512.16%  fees=$74578.80  final=$-92070.02
+
+=== sfp ===
+return=-17223.89%  trades=172710  win=23.3%  PF=0.217  MDD=-17223.89%  fees=$69084.00  final=$-85619.46
+
+========== COMPARISON ==========
+           strategy  total_return_%  final_equity  win_rate_%  trades  avg_win_%  avg_loss_%  profit_factor  max_dd_%  total_fees  avg_bars_held  liquidations
+vwap_mean_reversion       -10065.60     -49828.01       14.58  100596     0.4820     -0.1057          0.369 -10055.78     40238.4          22.71             0
+  bollinger_reentry        -1772.98      -8364.91       21.06   18330     0.3502     -0.1146          0.370  -1773.14      7332.0           9.57             0
+      rsi_reversion        -2306.02     -11030.11       62.60   23143     0.1000     -0.2199          0.112  -2306.02      9257.2          15.63             0
+       ema_pullback       -18514.00     -92070.02       24.73  278640     0.1969     -0.0504          0.179 -18512.16     74578.8           5.81             0
+                sfp       -17223.89     -85619.46       23.32  172710     0.1987     -0.0862          0.217 -17223.89     69084.0           5.92             0
+
+[saved] output\BTCUSDT\comparison.csv
+[saved] equity/trades under output\BTCUSDT

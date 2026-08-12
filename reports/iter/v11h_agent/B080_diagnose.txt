@@ -1,0 +1,9 @@
+B080 BEFORE (=B074 champion restored) hits=1/59 med=4.526 ge2=40 liq=32/18win
+
+GOAL: every window 10,000x + liq=0; fees/slippage ON.
+
+FAILURE MODE: 18 liq windows; 17 dead ~1x; only 1 hit (2023-01).
+
+HYPOTHESIS: later close_frac 0.015->0.014 keeps more runner (B010-B074 chain).
+
+EDIT: compound_engine.py later scale 0.014

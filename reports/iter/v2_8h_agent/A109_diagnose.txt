@@ -1,0 +1,4 @@
+A109 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: wipe windows 40-80 trades. Same-side reentry within 180 bars of a 240 cooldown lets chop refill. A74 reentry>=cooldown was REVERT (different). Hard-disable reentry.
+HYPOTHESIS STRUCTURAL: reentry_bars forced 0.

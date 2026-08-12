@@ -1,0 +1,4 @@
+A71 BEFORE
+hits=0/59 med=1.421 max=50.145 ge2=19
+Diagnosis: expand gate still binary; allow expand OR ATR% above rolling median (vol regime) for more windows.
+HYPOTHESIS STRUCTURAL: expand_ok = expand_ok | (atr_pct >= atr_pct.rolling(500).median()).

@@ -1,0 +1,4 @@
+A92 BEFORE (=A91_before after A91 REVERT)
+hits=0/59 med=1.539 max=43.903 ge2=19 n_1.0=21 trades0=5
+Diagnosis: first 5 windows (2021-08..2022-01) have 0 trades because daily EMA200 min_periods=200 + fillna(False) blocks until ~200 daily bars exist. Median is 30th of 59; 21 windows sit at 1.0x.
+HYPOTHESIS STRUCTURAL: daily EMA min_periods=min(50,200); NaN daily gate passes (HTF+ROC remain). Unlock early-data windows without loosening later-window regime.

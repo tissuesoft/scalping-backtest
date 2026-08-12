@@ -1,0 +1,4 @@
+A116 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A115 climax skip collapsed median to 1.0. A72 cooldown 120 REVERT. Milder: cap cooldown 240->180 to allow one extra same-trend entry per 4h without A72's flood.
+HYPOTHESIS STRUCTURAL: cooldown = min(param, 180).

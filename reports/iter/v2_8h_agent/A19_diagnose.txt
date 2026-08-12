@@ -1,0 +1,4 @@
+A19 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50
+Diagnosis: wipe-heavy dead windows often enter narrow chop channels (Donchian tight) with 100x.
+HYPOTHESIS STRUCTURAL: require channel width (hh-ll)/close >= 2% so entries need a real range, not micro-chop.

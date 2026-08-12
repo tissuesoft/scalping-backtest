@@ -1,0 +1,2 @@
+B006 BEFORE=B002 liq=32 med=4.477
+HYP: win_size_mult 1.75->1.72 slower size ramp → fewer liq.

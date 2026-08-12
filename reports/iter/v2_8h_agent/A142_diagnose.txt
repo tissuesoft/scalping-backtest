@@ -1,0 +1,4 @@
+A142 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A71 expand_med is 500-bar (~8h) median so ~50% of bars always pass. A 1d median is a real session vol regime and may skip dead Asian hours in wipe windows without A78's hard UTC skip.
+HYPOTHESIS STRUCTURAL: expand_med rolling 500 -> 1440 (min_periods 300).

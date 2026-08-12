@@ -1,0 +1,8 @@
+A4 BEFORE DIAGNOSE
+GOAL: every window 10000x. Primary hits/median/min/ge2.
+hits=0/59 med=1.000 min=1.000 max=98.801 mean=4.851
+surv=15.3% ge2=16 dead=38 wipe=50 med_trades=28 liq=34
+high_trade_wipe=41
+A1-A3 structural REVERTs: slope, 4h channel, body-dir.
+FAILURE: long and short both allowed; within a window opposite-side flips chop equity after small wins.
+HYPOTHESIS STRUCTURAL: opposite-side lockout - after a long signal, suppress shorts for 720 bars (and vice versa), independent of same-side reentry.

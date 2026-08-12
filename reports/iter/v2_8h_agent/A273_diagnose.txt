@@ -1,0 +1,3 @@
+A273 BEFORE (=A269 KEEP) med=1.637 ge2=22
+2024-07 2.02->1.85 from wide-bar boost on early entries. Median cluster already goes above start then runs.
+HYPOTHESIS STRUCTURAL: apply size_boost only when equity > start; underwater/first trades stay 1.0.

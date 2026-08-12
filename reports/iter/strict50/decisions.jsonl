@@ -1,0 +1,20 @@
+{"set":31,"diagnose":"buffer late","edit":"buf=0.25","before":143.6,"after":67.9,"decision":"REVERT"}
+{"set": 32, "diagnose": "1.3 good 1.2 bad;probe 1.35", "edit": "expand_cap=1.35", "before": 143.566, "after": 256.385, "decision": "KEEP"}
+{"set":33,"diagnose":"probe 1.4 after 1.35","edit":"expand_cap=1.4","before":256.4,"after":78.0,"decision":"REVERT"}
+{"set":34,"diagnose":"probe 1.32","edit":"expand=1.32","before":256.4,"after":143.6,"decision":"REVERT"}
+{"set":35,"diagnose":"probe 1.36","edit":"expand=1.36","before":256.4,"after":78.0,"decision":"REVERT"}
+{"set": 36, "diagnose": "retune risk with expand1.35", "edit": "risk_cap=0.0034", "before": 256.385, "after": 260.964, "decision": "KEEP"}
+{"set": 37, "diagnose": "0.34 keep probe 0.33", "edit": "risk_cap=0.0033", "before": 260.964, "after": 265.543, "decision": "KEEP"}
+{"set":38,"diagnose":"probe 0.31","edit":"risk=0.0031","before":265.5,"after":137.1,"decision":"REVERT"}
+{"set":39,"diagnose":"reentry overtrade?","edit":"reentry=100","before":265.5,"after":265.5,"decision":"REVERT","reason":"no meaningful gain"}
+{"set":40,"diagnose":"sma200 slow","edit":"atr_sma=150","before":265.5,"after":108.0,"decision":"REVERT"}
+{"set": 41, "diagnose": "wick 2bps vs risk_cap", "edit": "wick_buffer=1bp", "before": 265.543, "after": 269.978, "decision": "KEEP"}
+{"set": 42, "diagnose": "1bp keep probe 0.5bp", "edit": "wick=0.5bp", "before": 269.978, "after": 272.196, "decision": "KEEP"}
+{"set": 43, "diagnose": "0.5bp keep probe exact wick", "edit": "wick_buffer=0", "before": 272.196, "after": 274.413, "decision": "KEEP"}
+{"set": 44, "diagnose": "faster compound", "edit": "notional*1.05", "before": 274.413, "after": 315.059, "decision": "KEEP"}
+{"set": 45, "diagnose": "1.05 keep probe 1.08", "edit": "notional*1.08", "before": 315.059, "after": 340.92, "survived": "67.8->66.1", "decision": "KEEP"}
+{"set": 46, "diagnose": "1.08 keep probe 1.10", "edit": "notional*1.10", "before": 340.92, "after": 358.743, "decision": "KEEP"}
+{"set": 47, "diagnose": "1.10 keep probe 1.12", "edit": "notional*1.12", "before": 358.743, "after": 377.008, "decision": "KEEP"}
+{"set": 48, "diagnose": "1.12 keep probe 1.15", "edit": "notional*1.15", "before": 377.008, "after": 405.184, "survived": "66.1->64.4", "decision": "KEEP"}
+{"set": 49, "diagnose": "1.15 keep probe 1.20", "edit": "notional*1.20", "before": 405.184, "after": 453.996, "decision": "KEEP"}
+{"set": 50, "diagnose": "1.20 keep probe 1.25", "edit": "notional*1.25", "before": 453.996, "after": 504.673, "survived": "64.4->62.7", "decision": "KEEP"}

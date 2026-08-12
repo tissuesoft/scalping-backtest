@@ -1,0 +1,4 @@
+A81 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20
+Diagnosis: day first-cross (A28 KEEP) still gated by ATR expand; daily impulse is already a vol event. Expand may block valid day breaks in quiet-to-trend windows.
+HYPOTHESIS STRUCTURAL: expand_ok applies to Donchian/fast paths only; day first-cross skips expand.

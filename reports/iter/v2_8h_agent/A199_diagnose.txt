@@ -1,0 +1,3 @@
+A199 BEFORE (=A198 KEEP)
+0.24/0.22 KEEP. Continue leftover.
+HYPOTHESIS STRUCTURAL: later close_frac 0.22 -> 0.20.

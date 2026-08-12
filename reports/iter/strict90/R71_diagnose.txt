@@ -1,0 +1,1 @@
+R71 DIAG: early trail may clip crash winners; arm trail only after +1R

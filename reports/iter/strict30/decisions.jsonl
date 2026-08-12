@@ -1,0 +1,10 @@
+{"set":21,"diagnose":"median=1 quiet grind","edit":"atr_pct>=0.002","before":101.4,"after":67.8,"decision":"REVERT"}
+{"set":22,"diagnose":"winners give back","edit":"BE at +1R","before":101.4,"after":68.7,"decision":"REVERT"}
+{"set":23,"diagnose":"cooldown sparse","edit":"cooldown=240","before":101.4,"after":101.4,"survived_worse":true,"decision":"REVERT"}
+{"set":24,"diagnose":"slow recycle","edit":"trail=6","before":101.4,"after":60.0,"decision":"REVERT"}
+{"set": 25, "diagnose": "0.4 best,0.25 worse;probe 0.35", "edit": "risk_cap=0.0035", "before": 101.396, "after": 111.339, "survived": "67.8->71.2", "decision": "KEEP"}
+{"set":26,"diagnose":"probe tighter than 0.35","edit":"risk_cap=0.0032","before":111.3,"after":57.5,"decision":"REVERT"}
+{"set":27,"diagnose":"probe 0.37 near 0.35","edit":"risk_cap=0.0037","before":111.3,"after":107.4,"decision":"REVERT"}
+{"set":28,"diagnose":"noise shorts","edit":"require prior day low break","before":111.3,"after":10.9,"decision":"REVERT"}
+{"set": 29, "diagnose": "expand1.6 blocks dump legs", "edit": "cap expand_mult<=1.3", "before": 111.339, "after": 143.566, "decision": "KEEP"}
+{"set": 30, "diagnose": "probe expand<=1.2", "edit": "expand_mult cap 1.2", "before": 143.566, "after": 97.648, "decision": "REVERT"}

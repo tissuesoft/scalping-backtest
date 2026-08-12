@@ -1,0 +1,4 @@
+A87 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20
+Diagnosis: A70 no-BE after partial kept. Partial 0.5 banks early; A59 0.33 slightly cut median. Try 0.67 to bank more and lift stall-window survival/median.
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.5 -> 0.67.

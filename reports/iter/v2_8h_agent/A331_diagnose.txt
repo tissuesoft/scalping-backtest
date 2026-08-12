@@ -1,0 +1,2 @@
+A331 BEFORE (=A330 KEEP) med=2.259 ge2=32; 2023-04 1.949 near ge2
+HYPOTHESIS STRUCTURAL: all-entry trail *0.03->0.01 after first scale (near BE trail) to clear 2023-04.

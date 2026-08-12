@@ -1,0 +1,4 @@
+A95 BEFORE (=champ after A94 REVERT)
+hits=0/59 med=1.539 ge2=19
+Diagnosis: partial 0.67 banks then runner often exits red, which RESETS size_mult to 1 and kills anti-martingale after a net-winning trade. Median band 1.5-2x never compounds.
+HYPOTHESIS STRUCTURAL: bump size_mult on profitable partial; do not reset if the remaining runner loses.

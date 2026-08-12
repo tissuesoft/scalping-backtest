@@ -1,0 +1,35 @@
+R1 BEFORE DIAGNOSE (v2 dual-side baseline)
+GOAL: EVERY window 10000x from $100. Primary=hits, then median/min peak. NOT max-only.
+
+hits=0/59
+peak max=40.750 median=1.000 mean=2.809 min=1.000
+survived=10.2% median_final=0.000000
+zero_trade=5 peak<=1.01=38 peak 1-10=19 peak>=10=2
+wipe=53 liq_sum=46 grind trades>=5&wipe=53 idle0trade=5
+mean trades=71.4 median trades=80
+
+TOP by peak:
+  2022-01-01 peak=40.75 final=6.5553 trades=15 liq=0 pf=1.12 mdd=-87.9
+  2022-01-31 peak=40.75 final=0.0000 trades=58 liq=1 pf=0.98 mdd=-100.0
+  2025-09-12 peak=4.39 final=0.0001 trades=41 liq=0 pf=0.85 mdd=-100.0
+  2025-12-11 peak=3.86 final=0.0000 trades=97 liq=1 pf=0.86 mdd=-100.0
+  2022-08-29 peak=3.84 final=0.0000 trades=86 liq=1 pf=0.75 mdd=-100.0
+  2025-04-15 peak=3.76 final=0.0000 trades=56 liq=0 pf=0.79 mdd=-100.0
+  2024-07-19 peak=3.21 final=0.0000 trades=93 liq=1 pf=0.72 mdd=-100.0
+  2022-04-01 peak=3.15 final=0.0000 trades=122 liq=1 pf=0.68 mdd=-100.0
+WORST survivors / wipe samples:
+  2022-03-02 peak=1.00 final=0.0000 trades=104 liq=1
+  2022-05-01 peak=1.00 final=0.0000 trades=134 liq=2
+  2022-05-31 peak=1.00 final=0.0000 trades=126 liq=1
+  2022-07-30 peak=1.00 final=0.0000 trades=108 liq=3
+  2022-10-28 peak=1.00 final=0.0000 trades=83 liq=4
+
+FAILURE MODE
+- Dual-side + milder filters: more activity than short-only idle, but survival crashed to ~10%.
+- Most windows either never get a runaway compound (median peak=1) or trade then wipe (fees/SL/liq at lev100).
+- Best window only ~41x (far from 10000). So we need BOTH: (1) not die in calm windows (2) still compound hard in trends.
+- Likely cause of wipe: lev100 * 1.5 notional too hot when long+short both fire and chop; wick SL + trail6 may be tight.
+
+HYPOTHESIS (one coherent engine edit)
+- Cut base size 1.5 -> 1.0 to reduce early wipe so more windows keep equity long enough to catch a trend leg.
+- Expect: survival up, median/min may rise; max may fall. Keep only if hits/median/min improve toward goal.

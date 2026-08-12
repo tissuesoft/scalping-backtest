@@ -1,0 +1,4 @@
+A27 BEFORE (A26 champ)
+hits=0/59 med=1.000 max=6.767 ge2=16 surv=10.2% wipe=53 mean=1.714
+Diagnosis: A26 day-path ge2+1 but max/mean collapsed — weak day pierces consume cooldown and wipe under 100x.
+HYPOTHESIS STRUCTURAL: path-aware size — Donchian entries size_boost=1.0; day-only breaks size_boost=0.4.

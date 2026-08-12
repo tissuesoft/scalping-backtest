@@ -1,0 +1,3 @@
+A266 BEFORE (=A257 KEEP)
+A249 ROC60 must-agree cut median. 1.0x still enter as 20m already reversing against 120m ROC.
+HYPOTHESIS STRUCTURAL: block only if ROC20 is strongly against (long: roc20<=-0.1%), not require agreement.

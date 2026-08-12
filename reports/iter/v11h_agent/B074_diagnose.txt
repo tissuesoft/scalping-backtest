@@ -1,0 +1,14 @@
+B074 BEFORE (=B024 restored; auto B025-B073 stopped)
+
+GOAL: all windows 10,000x, liq=0, fees+slippage ON.
+
+METRICS hits=1/59 med=4.521 min=1.0 max=127069 ge2=40 liq=32/18win dead=17 wipe=49
+
+FAILURE MODE
+- 18 windows still liquidate (32 total); high trade count chop at 100x.
+- 17 dead windows never leave ~1x.
+- Single hit 2023-01; 2024 runner ~2105x.
+
+HYPOTHESIS: later close_frac 0.016->0.015 keeps more runner (manual B010-B024 chain).
+
+EDIT: compound_engine.py later scale 0.015

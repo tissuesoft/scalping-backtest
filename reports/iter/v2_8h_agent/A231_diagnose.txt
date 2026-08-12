@@ -1,0 +1,4 @@
+A231 BEFORE (=A212 KEEP)
+A224 1.2*buf hurt ge2 day-path winners. A230 size shrink wrecked compounding.
+Day-path first-cross is the noisy extra entries in chop 1.0x windows.
+HYPOTHESIS STRUCTURAL: day path only when expand_sma (true ATR expand); Donchian still gets expand_ok OR.

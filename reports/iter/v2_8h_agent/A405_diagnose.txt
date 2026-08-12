@@ -1,0 +1,2 @@
+A405 BEFORE (=A397 KEEP) hits=1 med=4.346; 2024-01 1217x
+HYPOTHESIS STRUCTURAL: n_fast max(30,n//5)->max(35,n//5) slightly slower (between A361 45 and A362 30).

@@ -1,0 +1,1 @@
+A442: post-scale trail mult -> 0 (lock at peak)

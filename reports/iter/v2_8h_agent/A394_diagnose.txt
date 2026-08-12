@@ -1,0 +1,2 @@
+A394 BEFORE (=A392 KEEP) med=4.254 hits=1
+HYPOTHESIS: first partial 0.01->0.005

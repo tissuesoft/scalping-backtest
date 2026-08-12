@@ -1,0 +1,3 @@
+A210 BEFORE (=A208 KEEP)
+max=8 KEEP; later 0.12 KEEP; 0.10 all-later REVERT. 8th trim (more bank) KEEP.
+HYPOTHESIS STRUCTURAL: second scale-out 0.20, rest stay 0.12 (bank more while leftover is still large).

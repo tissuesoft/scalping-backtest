@@ -1,0 +1,5 @@
+A36 BEFORE
+hits=0/59 med=1.161 max=13.859 ge2=7 mean=1.648 surv=66.1%
+bands: <1.2=33 1.2-2=19 ge2=7
+Diagnosis: many windows stall 1.2-2x then stop out; expand gate still blocks some continuation entries after first push.
+HYPOTHESIS STRUCTURAL: soft expand — allow entry if expand_ok OR price beyond mid-channel by >1 ATR (trend continuation without ATR expand).

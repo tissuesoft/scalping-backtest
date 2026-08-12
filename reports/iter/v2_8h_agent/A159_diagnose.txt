@@ -1,0 +1,4 @@
+A159 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: A149 (later frac 0.4) slightly hurt; A147-A154 deeper banking KEEP. Later scale-outs still leave 50% of remainder.
+HYPOTHESIS STRUCTURAL: later close_frac 0.5 -> 0.55 (not another depth bump).

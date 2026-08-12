@@ -1,0 +1,5 @@
+A44 BEFORE
+hits=0/59 med=1.192 max=46.394 ge2=8 mean=2.448 surv=37.3% wipe=37
+Diagnosis: wipe high after grace; many losers are counter-regime pierces. Reset size_mult after loss unused — after loss should cut risk streak.
+HYPOTHESIS STRUCTURAL: on losing exit, reset size_mult to 1.0 AND cut next risk via loss_size_mult=0.5 once (need add loss handling).
+Simpler coherent: after loss, size_mult = 1.0 (already might not reset). Check code then add loss_size_mult.

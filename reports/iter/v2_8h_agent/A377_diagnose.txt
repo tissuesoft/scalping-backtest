@@ -1,0 +1,3 @@
+A377 BEFORE (=A375 KEEP) hits=1 med=3.811 ge2=39
+A376 risk_cap 0.0022 REVERT. Small risk_tgt bump above A350 floor.
+HYPOTHESIS STRUCTURAL: risk_tgt max 0.50->0.52 slope 0.38->0.40.

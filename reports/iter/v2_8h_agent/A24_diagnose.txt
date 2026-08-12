@@ -1,0 +1,4 @@
+A24 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50
+Diagnosis: engine risk_cap 0.33% nullifies wick SL -> noise stops at 100x wipe equity. A6 SL tweaks were nullified by this.
+HYPOTHESIS STRUCTURAL (engine): disable risk_cap (0.0) so signal wick SL is honored — fewer noise stops, real structure risk.

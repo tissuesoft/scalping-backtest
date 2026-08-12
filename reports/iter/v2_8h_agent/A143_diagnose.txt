@@ -1,0 +1,4 @@
+A143 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A131 partial 0.70 banks any in-profit trail touch, including scratches. That cuts runners before 2x on the 1.5-2 band. Require +1R before partial so only real runs are banked.
+HYPOTHESIS STRUCTURAL: do_partial only if |exit-entry| >= initial risk (1R).

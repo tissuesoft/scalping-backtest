@@ -1,0 +1,4 @@
+A35 BEFORE (A26+A28+A31+A33+A34)
+hits=0/59 med=1.141 max=4.351 ge2=8 mean=1.518 surv=61.0% wipe=23
+Diagnosis: median lifted via risk-parity but ge2 only 8; many windows peak in 1.0-1.5 band — need more quality entries that reach 2x without killing median.
+HYPOTHESIS STRUCTURAL: require HTF EMA slope aligned with side (ema_ht rising for long / falling for short over 60 bars).

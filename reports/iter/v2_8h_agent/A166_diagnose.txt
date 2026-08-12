@@ -1,0 +1,3 @@
+A166 BEFORE (=A154 KEEP)
+A117 ht_ema 40 KEEP; A120 34 dropped median. Try 38.
+HYPOTHESIS STRUCTURAL: ht_ema span cap 40 -> 38.

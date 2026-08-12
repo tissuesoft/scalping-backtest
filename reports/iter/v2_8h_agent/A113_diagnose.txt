@@ -1,0 +1,4 @@
+A113 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A100 0.3 KEEP ge2; A104 0.45 KEEP median. Next step on same lever.
+HYPOTHESIS STRUCTURAL: body_min floor 0.45 -> 0.5 ATR.

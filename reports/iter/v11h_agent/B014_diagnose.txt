@@ -1,0 +1,7 @@
+B014 BEFORE (=B013 KEEP) med=4.492 liq=32/18win hits=1
+
+FAILURE MODE: liq still 18 windows; med climbing via later-scale chain (B010-B013).
+
+HYPOTHESIS: later close_frac 0.022->0.021 keeps more runner; same chain as B011-B013.
+
+EDIT: compound_engine.py later scale 0.021

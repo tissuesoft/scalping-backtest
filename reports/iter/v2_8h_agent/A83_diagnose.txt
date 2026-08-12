@@ -1,0 +1,4 @@
+A83 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20
+Diagnosis: stall windows often enter then get clipped by 6*ATR trail before 2x. A31 width floor 0.25 kept. Widen ATR trail component (6 -> use max with 8*ATR) structurally in strategy trail column.
+HYPOTHESIS STRUCTURAL: base_tr = 8 * ATR (was 6) while keeping width floor 0.25*(hh-ll).

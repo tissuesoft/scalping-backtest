@@ -1,0 +1,4 @@
+A29 BEFORE (A26+A28 champ)
+hits=0/59 med=1.000 max=9.423 ge2=19 mean=2.044 surv=15.3% wipe=50 zero=5
+Dead windows still 40/59. Failure: HTF 1h EMA lags; many dead are range days where 1h filter blocks or late.
+HYPOTHESIS STRUCTURAL: dual HTF — allow entry if 1h OR 15m EMA aligns (bull/bear OR of two timeframes).

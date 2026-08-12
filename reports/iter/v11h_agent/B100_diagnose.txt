@@ -1,0 +1,1 @@
+B100 HYP: trail_atr soft-cap 3.0->3.1

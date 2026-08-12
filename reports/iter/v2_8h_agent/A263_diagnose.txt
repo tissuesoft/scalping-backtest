@@ -1,0 +1,3 @@
+A263 BEFORE (=A257 KEEP)
+A224 1.2*buf on day-path hurt ge2. Fast Donchian is the choppy extra path (A75 OR).
+HYPOTHESIS STRUCTURAL: 1.2*buf on fast Donchian only; slow + day unchanged.

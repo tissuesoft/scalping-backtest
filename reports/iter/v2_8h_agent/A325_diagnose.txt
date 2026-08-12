@@ -1,0 +1,4 @@
+A325 BEFORE (=A319 KEEP) med=2.148 ge2=31
+A324 range_ok 0.7 REVERT (hurt 2024-12 -2.0x). Stuck windows need trail on non-fat entries.
+A305 *0.85 on all was max-only; try the KEEP *0.15 on ALL after first scale.
+HYPOTHESIS STRUCTURAL: trail *0.15 after first scale on every entry (drop fat-bar gate).

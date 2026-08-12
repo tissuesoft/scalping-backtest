@@ -1,0 +1,5 @@
+A78 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977 surv=23.7%
+lt2=39 ge10=5 wipe=45
+Diagnosis: ~39 windows still <2x; A77 outer-quartile cut median. Need more windows to start compounding without chasing. Hour-of-day unused after A22 (UTC 12-21) hurt. Try London+NY overlap AND Asia open (UTC 0-2) instead of exclusive US.
+HYPOTHESIS STRUCTURAL: session_ok = hour in [0,2] U [7,21] (Asia open + London/NY), skip thin 3-6 UTC.

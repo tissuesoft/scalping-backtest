@@ -1,0 +1,2 @@
+B116 hits=1/59 med=4.5682 liq=32
+HYP: size_boost 1.2ATR 1.10->1.12

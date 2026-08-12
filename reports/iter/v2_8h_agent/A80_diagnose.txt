@@ -1,0 +1,5 @@
+A80 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977 surv=23.7%
+lt2=39 ge10=5 wipe=45
+Diagnosis: ~39 windows stall <2x. A75 dual Donchian lifted median; dead windows may miss because HTF slope 180 is too slow to flip. Dual slope: allow if 60-bar OR 180-bar slope agrees (not AND).
+HYPOTHESIS STRUCTURAL: ema_slope_ok = (diff60 same sign) OR (diff180 same sign).

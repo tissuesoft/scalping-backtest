@@ -1,0 +1,4 @@
+A16 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50 dead_lt2=44
+Failure: late/chase breakouts after already outside channel get chopped then wiped.
+HYPOTHESIS STRUCTURAL: first-cross only — require prior close still inside Donchian+/-buf (fresh breakout).

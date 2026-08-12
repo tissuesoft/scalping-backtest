@@ -1,0 +1,3 @@
+A223 BEFORE (=A212 KEEP)
+A170 reentry 120 dropped one ge2 window. 160 is between 120 and 180.
+HYPOTHESIS STRUCTURAL: reentry cap 180 -> 160.

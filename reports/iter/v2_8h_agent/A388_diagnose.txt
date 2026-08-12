@@ -1,0 +1,2 @@
+A388 BEFORE (=A387 KEEP) hits=1 med=4.164 ge2=40
+HYPOTHESIS STRUCTURAL: post-first-scale trail *0.003->0.002.

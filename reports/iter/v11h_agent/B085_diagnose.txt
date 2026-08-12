@@ -1,0 +1,5 @@
+B085 BEFORE (=B084 KEEP) med=4.545 liq=32 hits=1/59
+
+HYPOTHESIS: later scale 0.011->0.010 keeps more runner notional on weak windows.
+
+EDIT: compound_engine.py close_frac 0.010

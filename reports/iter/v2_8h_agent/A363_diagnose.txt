@@ -1,0 +1,2 @@
+A363 BEFORE (=A362 KEEP) med=3.068 ge2=38 (+2025-01); max 4164
+HYPOTHESIS STRUCTURAL: n_fast max(30,n//5)->max(20,n//6).

@@ -1,0 +1,4 @@
+A139 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A66 win_size 1.75 KEEP mean. A79 2.0 REVERT med+ge2. 1.5-2x windows that do win once may need a bit more size-up to clear 2x, without 2.0's wipe.
+HYPOTHESIS STRUCTURAL: win_size_mult 1.75 -> 1.85.

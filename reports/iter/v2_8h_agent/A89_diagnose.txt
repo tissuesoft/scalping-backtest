@@ -1,0 +1,4 @@
+A89 BEFORE
+hits=0/59 med=1.536 max=50.394 ge2=19
+Diagnosis: A87 ge2 dip from banking more. Unlock later so remaining runner after 0.67 partial can trend (unlock_r 3->4).
+HYPOTHESIS STRUCTURAL: trail_unlock_r 3.0 -> 4.0 keep mult 1.5.

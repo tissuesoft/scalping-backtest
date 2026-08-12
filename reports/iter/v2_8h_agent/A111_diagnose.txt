@@ -1,0 +1,4 @@
+A111 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A97 floored sizing but kept tight wick SL (easy stop). A98 cut lev headroom and killed runners. Place SL at least 0.5 ATR away so risk-parity sizes down AND noise is less likely to stop out.
+HYPOTHESIS STRUCTURAL: sl_long = min(wick, close-0.5ATR); sl_short symmetric.

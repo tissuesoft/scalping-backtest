@@ -1,0 +1,5 @@
+A62 BEFORE
+hits=0/59 med=1.353 max=35.658 ge2=18 mean=3.317 surv=33.9%
+lt2=41 ge10=3 wipe=39
+Diagnosis: still 0 hits; sl_grace=5 helps start but wipe high. Extend grace slightly for breakout breathe without disabling SL forever.
+HYPOTHESIS STRUCTURAL: sl_grace_bars 5 -> 8.

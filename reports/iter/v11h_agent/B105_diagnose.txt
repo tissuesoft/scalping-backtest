@@ -1,0 +1,1 @@
+B105 HYP: trail floor value 5.0->4.8 in np.maximum

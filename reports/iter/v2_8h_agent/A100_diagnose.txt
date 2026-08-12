@@ -1,0 +1,4 @@
+A100 BEFORE (=champ after A99 REVERT)
+hits=0/59 med=1.539 ge2=19
+Diagnosis: wipe windows enter weak Donchian/day ticks (doji). A99 12h pause after loss raised max (79) but crushed median (1.21) — max-only trap.
+HYPOTHESIS STRUCTURAL: require |close-open| >= 0.3 ATR on the signal bar.

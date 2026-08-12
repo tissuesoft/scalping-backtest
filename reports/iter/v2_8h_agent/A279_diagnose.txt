@@ -1,0 +1,3 @@
+A279 BEFORE (=A278 KEEP) med=1.725 ge2=23
+Top-tier 1.35@1.8ATR lifted 2025-07 to 1.78. 2023-06 1.03->1.0 is noise.
+HYPOTHESIS STRUCTURAL: raise top tier 1.35→1.45 on the fattest bars.

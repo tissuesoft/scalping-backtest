@@ -1,0 +1,2 @@
+A344 BEFORE (=A343 KEEP) med=2.606 ge2=36; 2025-12 1.964 near ge2
+HYPOTHESIS STRUCTURAL: first partial 0.03->0.01 all entries.

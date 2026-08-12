@@ -1,0 +1,1 @@
+R44 DIAG: need faster compound on winners; EDIT notional*1.05

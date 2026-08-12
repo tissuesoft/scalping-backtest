@@ -1,0 +1,4 @@
+A146 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A139 faster size-up hurt median. A47 time-progress risk KEEP. Early-window size_mult after the first win likely blows the 1.5-2x band. Delay anti-martingale until 25% of the window; late half still compounds toward 10000x.
+HYPOTHESIS STRUCTURAL: win_size_mult only if bar_progress >= 0.25.

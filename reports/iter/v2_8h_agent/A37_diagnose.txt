@@ -1,0 +1,4 @@
+A37 BEFORE
+hits=0/59 med=1.161 max=13.859 ge2=7 mean=1.648
+Diagnosis: after +1R many trades give back to initial SL under risk_cap noise; BE lock unused (be_at_r=0).
+HYPOTHESIS STRUCTURAL: enable be_at_r=1.0 — move SL to entry after +1R.

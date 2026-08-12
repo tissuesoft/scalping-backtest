@@ -1,0 +1,4 @@
+A153 BEFORE (=A152 KEEP)
+hits=0/59 med=1.562 ge2=22
+Diagnosis: scale-out depth 2->5 all KEEP median, diminishing. Test saturation at 6th.
+HYPOTHESIS STRUCTURAL: sixth profitable trail SL closes 50% of remaining notional.

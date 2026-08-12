@@ -1,0 +1,4 @@
+A110 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A109 fewer trades crushed median / raised max. Need earlier entries on stall windows. Day path currently waits for day_hi+buf.
+HYPOTHESIS STRUCTURAL: day first-cross at prior day high/low with no ATR buffer (Donchian buffer unchanged).

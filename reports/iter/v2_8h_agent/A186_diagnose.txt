@@ -1,0 +1,3 @@
+A186 BEFORE (=A185 KEEP)
+later frac 0.48 KEEP med +0.00044. A159 0.55 hurt. More leftover is the KEEP direction.
+HYPOTHESIS STRUCTURAL: later close_frac 0.48 -> 0.46.

@@ -1,0 +1,3 @@
+A304 BEFORE (=A303 KEEP) med=1.799 = 2023-08 (was ge2 2.17, now 1.80); ge2 25 (gained 2025-07/08, lost 2023-08)
+0.85 trail after fat-bar first scale realized remainder (KEEP) but over-cut the new median window.
+HYPOTHESIS STRUCTURAL: 0.85->0.90; lift 2023-08 without giving back 2025-07/08 ge2.

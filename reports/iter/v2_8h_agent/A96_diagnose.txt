@@ -1,0 +1,4 @@
+A96 BEFORE (=champ after A95 REVERT)
+hits=0/59 med=1.539 ge2=19 n_1.0=21 (16 traded and wiped)
+Diagnosis: day first-cross (A26) fires whenever expand_ok, and expand_med is ~50% by construction — chop day-breaks likely feed the 16 wipe windows.
+HYPOTHESIS STRUCTURAL: day path requires expand_sma (true ATR expansion vs SMA200), Donchian paths unchanged.

@@ -1,0 +1,34 @@
+{
+  "sets": 2,
+  "folder": "v2_s2",
+  "goal": "every window 10000x",
+  "start": {
+    "hits": 0,
+    "median": 1.0,
+    "min": 1.0,
+    "max": 40.749837796152526,
+    "mean": 2.808915726781968,
+    "surv": 0.1016949152542373,
+    "ge2": 13,
+    "dead": 38,
+    "wipe": 53,
+    "med_trades": 80.0
+  },
+  "n_keep": 0,
+  "n_revert": 2,
+  "all": [
+    {
+      "set": 1,
+      "decision": "REVERT",
+      "edit": "base_size 1.5->1.0",
+      "reason": "hits/median/min unchanged (0/1/1); max slightly down; survival alone is not Keep under new goal metrics"
+    },
+    {
+      "set": 2,
+      "decision": "REVERT",
+      "edit": "expand_cap min(.,1.25) [intended floor]",
+      "reason": "metrics identical; edit was no-op because params atr_expand_mult=1.15 and code used min(.,1.25) so effective expand stayed 1.15. Next must FORCE expand=1.25 not raise cap."
+    }
+  ],
+  "note": "R1 size cut: surv up but hits/median/min flat -> REVERT. R2 expand edit no-op -> REVERT. Champion remains v2 dual-side size*1.5 expand<=1.15."
+}

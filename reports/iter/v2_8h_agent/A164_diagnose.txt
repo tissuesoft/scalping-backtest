@@ -1,0 +1,4 @@
+A164 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Leftover after scale-outs blocks new breakouts for hours. Median-band windows miss the next runner.
+HYPOTHESIS STRUCTURAL: after 3 scale-outs, flatten leftover on a fresh same-side signal and re-enter.

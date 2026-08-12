@@ -1,0 +1,1 @@
+A435: trail soft-cap 3.0->3.2

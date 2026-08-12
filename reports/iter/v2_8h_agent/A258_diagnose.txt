@@ -1,0 +1,3 @@
+A258 BEFORE (=A257 KEEP) ge2=23 med=1.584
+A228 grace-vs-liq was 0 dn 1 up on A212 but keep-metrics flat.
+HYPOTHESIS STRUCTURAL: during SL grace, if bar would liquidate, take SL instead. Stack on A257 range_ok.

@@ -1,0 +1,2 @@
+A333 BEFORE (=A332 KEEP) med=2.276 ge2=32; 2023-04 1.969
+HYPOTHESIS STRUCTURAL: after first scale set trail distance to 0 (SL snaps to peak) — last step of tighten chain.

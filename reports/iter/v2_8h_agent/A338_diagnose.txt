@@ -1,0 +1,3 @@
+A338 BEFORE (=A337 KEEP) med=2.402 ge2=32; n1 16->15; 29 up 0
+Non-fat first partial 0.68->0.40 KEEP (big med lift).
+HYPOTHESIS STRUCTURAL: non-fat first partial 0.40->0.30.

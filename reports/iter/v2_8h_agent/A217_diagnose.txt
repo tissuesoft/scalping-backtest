@@ -1,0 +1,3 @@
+A217 BEFORE (=A212 KEEP)
+Scale-out saturated. A58 ROC120 KEEP; A179 150 dropped median. 135 untried.
+HYPOTHESIS STRUCTURAL: ROC 120 -> 135.

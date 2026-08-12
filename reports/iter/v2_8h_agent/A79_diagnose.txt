@@ -1,0 +1,4 @@
+A79 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977
+Diagnosis: A66 win 1.75 kept; A53 at 2.0 hurt earlier weaker champ. Base is stronger (med 1.51 ge2 20). Retry win_size_mult=2.0.
+HYPOTHESIS STRUCTURAL: win_size_mult 1.75 -> 2.0.

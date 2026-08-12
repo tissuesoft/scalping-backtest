@@ -1,0 +1,5 @@
+A48 BEFORE (A47 time-risk)
+hits=0/59 med=1.203 max=29.121 ge2=15 mean=2.437 surv=30.5% wipe=41
+stall=44 dead_lt1.05=24
+Diagnosis: ge2 recovered to 15; still 0 hits. Combine time ramp with equity growth (max of both) so winners press harder toward 10000x.
+HYPOTHESIS STRUCTURAL: risk_tgt = max(time_ramp, equity_ramp).

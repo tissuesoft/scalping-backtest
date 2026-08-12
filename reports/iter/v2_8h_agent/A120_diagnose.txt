@@ -1,0 +1,4 @@
+A120 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A117 ht_ema 50->40 KEEP ge2 21->22 and mean up. Push the same lever.
+HYPOTHESIS STRUCTURAL: HTF EMA span cap 40 -> 34.

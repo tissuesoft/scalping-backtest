@@ -1,0 +1,5 @@
+A60 BEFORE
+hits=0/59 med=1.286 max=30.763 ge2=17 mean=3.137 surv=35.6%
+stall=42 ge10=3
+Diagnosis: still far from 10000x; risk floor 8% may be timid early. Raise linear time-ramp floor/ceiling together for faster compound without equity gate.
+HYPOTHESIS STRUCTURAL: risk_tgt = min(0.30, 0.10 + 0.20 * progress) (was 0.08+0.17->0.25).

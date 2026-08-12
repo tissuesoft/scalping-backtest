@@ -1,0 +1,22 @@
+{
+  "reset": "v2_all_windows",
+  "discarded": "short-only + tiered size_boost crash farm",
+  "new": "dual-side regime breakout, uniform size*1.5, milder expand",
+  "baseline_summary": {
+    "n_windows": 59,
+    "n_hit": 0,
+    "hit_rate": 0.0,
+    "median_peak_mult": 1.0,
+    "mean_peak_mult": 2.808915726781968,
+    "max_peak_mult": 40.749837796152526,
+    "median_final_mult": 3.845035421678643e-14,
+    "pct_survived": 0.1016949152542373,
+    "best_window": {
+      "start": "2022-01-01 00:00:00+00:00",
+      "end": "2022-03-02 00:00:00+00:00",
+      "mult_peak": 40.749837796152526
+    }
+  },
+  "min_peak": 1.0,
+  "dead_windows_peak_le_1_01": 38
+}

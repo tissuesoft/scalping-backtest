@@ -1,0 +1,5 @@
+B082 BEFORE champion med~4.531 liq=32
+
+HYPOTHESIS: later 0.014->0.013 runner chain.
+
+EDIT: compound_engine.py close_frac 0.013

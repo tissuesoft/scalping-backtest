@@ -1,0 +1,3 @@
+A254 BEFORE (=A212 KEEP)
+1.0x with 88-133 trades: too many fast+slow OR breaks. Slow Donchian 360 is relatively short on 1m.
+HYPOTHESIS STRUCTURAL: slow Donchian 420 bars; fast path stays 120 from lookback 360.

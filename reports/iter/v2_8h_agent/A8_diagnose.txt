@@ -1,0 +1,6 @@
+A8 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 med_trades=30
+A7 max-only REVERT. Need coverage of dead windows without crash-only amplification.
+FAILURE: daily EMA200 flips slowly; many 60d windows stay in mixed regime and dual-side chops.
+HYPOTHESIS STRUCTURAL: use daily EMA50 for regime (faster bull/bear switch) so more windows get a clear one-sided regime.

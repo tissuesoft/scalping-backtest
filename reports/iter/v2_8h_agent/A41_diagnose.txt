@@ -1,0 +1,4 @@
+A41 BEFORE
+hits=0/59 med=1.161 max=33.380 ge2=7 mean=2.139
+Diagnosis: winners stall; trail_unlock unused (0). After +2R should widen trail to compound toward 10000x.
+HYPOTHESIS STRUCTURAL: trail_unlock_r=2.0, trail_unlock_mult=1.5.

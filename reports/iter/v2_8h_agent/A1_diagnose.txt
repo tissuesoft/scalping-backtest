@@ -1,0 +1,17 @@
+A1 BEFORE DIAGNOSE (agent strict - strategy structure focus)
+GOAL: EVERY window $100 -> 10000x. Keep: hits > median/min > ge2. Reject max-only.
+hits=0/59 median=1.000 min=1.000 max=106.145 mean=5.073
+surv=15.3% ge2=15 dead=38 wipe=50 liq=44
+med_trades=30 zero_trade=5
+BY YEAR:
+  2021: n=5 med=1.00 ge2=0 wipe=0 med_trades=0
+  2022: n=13 med=1.30 ge2=4 wipe=12 med_trades=56
+  2023: n=12 med=1.00 ge2=3 wipe=12 med_trades=27
+  2024: n=12 med=1.00 ge2=3 wipe=12 med_trades=36
+  2025: n=12 med=1.00 ge2=5 wipe=9 med_trades=22
+  2026: n=5 med=1.00 ge2=0 wipe=5 med_trades=35
+FAILURE MODE
+- min_atr KEEP cut trades but median still 1; dual-side chop wipes most windows.
+- Price>EMA is level-only; EMA slope not required, so counter-trend breakouts fire.
+HYPOTHESIS
+- STRUCTURAL: require HTF EMA slope aligned with trade side (rise for long, fall for short).

@@ -1,0 +1,4 @@
+A49 BEFORE
+hits=0/59 med=1.203 max=29.121 ge2=15 mean=2.437
+Diagnosis: A48 max() hurt ge2 via early oversize on equity winners. Steepen late-only time ramp instead.
+HYPOTHESIS STRUCTURAL: convex time ramp risk_tgt = min(0.35, 0.08 + 0.27 * progress**2).

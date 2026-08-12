@@ -1,0 +1,5 @@
+A15 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50
+A10: 2-bar both sides raised surv but cut ge2/max. Longs often chop in dual-side; shorts need fast dump entries.
+HYPOTHESIS STRUCTURAL: asymmetric persistence - 2-bar confirm for LONG only; SHORT stays 1-bar.

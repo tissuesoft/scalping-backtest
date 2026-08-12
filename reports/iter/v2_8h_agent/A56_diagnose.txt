@@ -1,0 +1,4 @@
+A56 BEFORE
+hits=0/59 med=1.248 max=23.962 ge2=17 mean=2.411 surv=32.2%
+Diagnosis: A51 unlock@3R helped; try slightly wider unlock mult 1.5 at same 3R (A41 was 2R x1.5 and hurt median).
+HYPOTHESIS STRUCTURAL: trail_unlock_mult 1.25 -> 1.5 keeping unlock_r=3.

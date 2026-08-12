@@ -1,0 +1,1248 @@
+[16:29:00] 11h loop start until 2026-08-13 02:21:19
+[16:29:00] ===== B025 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B025_before_window_summary.json
+[16:29:17] B025 edit applied: win_size_mult 1.75->1.72
+[16:29:17] ===== B025 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.467 max=121795.978
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 121795.97834181294}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B025_after_window_summary.json
+[16:29:33] B025 REVERT (liq worse) keeps=0 reverts=1 med 4.5208->4.4673 liq 32->34
+[16:29:33] ===== B026 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B026_before_window_summary.json
+[16:29:51] B026 edit applied: lev_cap 1.5->1.45
+[16:29:51] ===== B026 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=122887.782
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 122887.78166010276}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B026_after_window_summary.json
+[16:30:13] B026 REVERT (liq worse) keeps=0 reverts=2 med 4.5208->4.5208 liq 32->33
+[16:30:13] ===== B027 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B027_before_window_summary.json
+[16:30:33] B027 edit applied: reentry_cap 120
+[16:30:33] ===== B027 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.467 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B027_after_window_summary.json
+[16:30:52] B027 REVERT (liq worse) keeps=0 reverts=3 med 4.5208->4.4673 liq 32->34
+[16:30:52] ===== B028 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B028_before_window_summary.json
+[16:31:13] B028 edit applied: later_scale 0.016->0.015
+[16:31:13] ===== B028 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B028_after_window_summary.json
+[16:31:31] B028 KEEP (median up) keeps=1 reverts=3 med 4.5208->4.5257 liq 32->32
+[16:31:31] ===== B029 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B029_before_window_summary.json
+[16:31:52] B029 edit applied: trail_mult 5e-07->2.5e-07
+[16:31:52] ===== B029 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B029_after_window_summary.json
+[16:32:14] B029 KEEP (median up) keeps=2 reverts=3 med 4.5257->4.5257 liq 32->32
+[16:32:14] ===== B030 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B030_before_window_summary.json
+[16:32:31] B030 edit applied: slope_diff 200->205
+[16:32:31] ===== B030 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B030_after_window_summary.json
+[16:32:52] B030 REVERT (no primary improve) keeps=2 reverts=4 med 4.5257->4.5257 liq 32->32
+[16:32:52] ===== B031 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B031_before_window_summary.json
+[16:33:11] B031 edit applied: slope_diff 200->195
+[16:33:11] ===== B031 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B031_after_window_summary.json
+[16:33:31] B031 REVERT (no primary improve) keeps=2 reverts=5 med 4.5257->4.5257 liq 32->32
+[16:33:31] ===== B032 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B032_before_window_summary.json
+[16:33:50] B032 edit applied: risk_cap 0.0024->0.00235
+[16:33:50] ===== B032 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B032_after_window_summary.json
+[16:34:10] B032 KEEP (median up) keeps=3 reverts=5 med 4.5257->4.5311 liq 32->32
+[16:34:10] ===== B033 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B033_before_window_summary.json
+[16:34:30] B033 edit applied: risk_cap 0.00235->0.0024
+[16:34:30] ===== B033 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.244
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.24443194352}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B033_after_window_summary.json
+[16:34:51] B033 REVERT (no primary improve) keeps=3 reverts=6 med 4.5311->4.5257 liq 32->32
+[16:34:51] ===== B034 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B034_before_window_summary.json
+[16:35:11] B034 edit applied: cooldown_cap 220->215
+[16:35:11] ===== B034 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B034_after_window_summary.json
+[16:35:30] B034 REVERT (liq worse) keeps=3 reverts=7 med 4.5311->4.5311 liq 32->39
+[16:35:30] ===== B035 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B035_before_window_summary.json
+[16:35:52] B035 edit applied: later_scale 0.015->0.016
+[16:35:52] ===== B035 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B035_after_window_summary.json
+[16:36:10] B035 KEEP (median up) keeps=4 reverts=7 med 4.5311->4.5313 liq 32->32
+[16:36:10] ===== B036 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B036_before_window_summary.json
+[16:36:29] B036 edit applied: cooldown_cap 220->230
+[16:36:29] ===== B036 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=3.430 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B036_after_window_summary.json
+[16:36:49] B036 REVERT (no primary improve) keeps=4 reverts=8 med 4.5313->3.4301 liq 32->28
+[16:36:49] ===== B037 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B037_before_window_summary.json
+[16:37:06] B037 edit applied: win_size_mult 1.75->1.72
+[16:37:06] ===== B037 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.493 max=127784.229
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127784.22850436071}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B037_after_window_summary.json
+[16:37:22] B037 REVERT (liq worse) keeps=4 reverts=9 med 4.5313->4.4931 liq 32->34
+[16:37:22] ===== B038 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B038_before_window_summary.json
+[16:37:36] B038 edit applied: lev_cap 1.5->1.45
+[16:37:36] ===== B038 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=128950.610
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 128950.6102929608}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B038_after_window_summary.json
+[16:37:52] B038 REVERT (liq worse) keeps=4 reverts=10 med 4.5313->4.5313 liq 32->33
+[16:37:52] ===== B039 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B039_before_window_summary.json
+[16:38:10] B039 edit applied: reentry_cap 120
+[16:38:10] ===== B039 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.314 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B039_after_window_summary.json
+[16:38:25] B039 REVERT (liq worse) keeps=4 reverts=11 med 4.5313->4.3142 liq 32->34
+[16:38:25] ===== B040 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B040_before_window_summary.json
+[16:38:42] B040 edit applied: later_scale 0.016->0.015
+[16:38:42] ===== B040 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.861
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.8610974669}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B040_after_window_summary.json
+[16:38:59] B040 REVERT (no primary improve) keeps=4 reverts=12 med 4.5313->4.5311 liq 32->32
+[16:38:59] ===== B041 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.851
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.85087790395}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B041_before_window_summary.json
+[16:39:14] B041 edit applied: trail_mult 2.5e-07->1.25e-07
+[16:39:14] ===== B041 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B041_after_window_summary.json
+[16:39:32] B041 KEEP (median up) keeps=5 reverts=12 med 4.5313->4.5313 liq 32->32
+[16:39:32] ===== B042 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B042_before_window_summary.json
+[16:39:46] B042 edit applied: slope_diff 200->205
+[16:39:46] ===== B042 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B042_after_window_summary.json
+[16:40:03] B042 REVERT (no primary improve) keeps=5 reverts=13 med 4.5313->4.5313 liq 32->32
+[16:40:03] ===== B043 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B043_before_window_summary.json
+[16:40:21] B043 edit applied: slope_diff 200->195
+[16:40:21] ===== B043 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B043_after_window_summary.json
+[16:40:36] B043 REVERT (no primary improve) keeps=5 reverts=14 med 4.5313->4.5313 liq 32->32
+[16:40:36] ===== B044 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B044_before_window_summary.json
+[16:40:55] B044 edit applied: risk_cap 0.00235->0.0023
+[16:40:55] ===== B044 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.586 max=140058.730
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 140058.73042714188}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B044_after_window_summary.json
+[16:41:11] B044 REVERT (liq worse) keeps=5 reverts=15 med 4.5313->4.5857 liq 32->36
+[16:41:11] ===== B045 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B045_before_window_summary.json
+[16:41:27] B045 edit applied: risk_cap 0.00235->0.0024
+[16:41:27] ===== B045 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.521 max=127068.870
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.86972453292}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B045_after_window_summary.json
+[16:41:44] B045 REVERT (no primary improve) keeps=5 reverts=16 med 4.5313->4.5208 liq 32->32
+[16:41:44] ===== B046 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B046_before_window_summary.json
+[16:41:58] B046 edit applied: cooldown_cap 220->215
+[16:41:58] ===== B046 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B046_after_window_summary.json
+[16:42:11] B046 REVERT (liq worse) keeps=5 reverts=17 med 4.5313->4.5313 liq 32->39
+[16:42:11] ===== B047 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B047_before_window_summary.json
+[16:42:22] B047 edit applied: later_scale 0.016->0.017
+[16:42:22] ===== B047 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B047_after_window_summary.json
+[16:42:38] B047 KEEP (median up) keeps=6 reverts=17 med 4.5313->4.5315 liq 32->32
+[16:42:38] ===== B048 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B048_before_window_summary.json
+[16:42:55] B048 edit applied: cooldown_cap 220->230
+[16:42:55] ===== B048 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=3.430 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B048_after_window_summary.json
+[16:43:11] B048 REVERT (no primary improve) keeps=6 reverts=18 med 4.5315->3.4296 liq 32->28
+[16:43:11] ===== B049 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B049_before_window_summary.json
+[16:43:27] B049 edit applied: win_size_mult 1.75->1.72
+[16:43:27] ===== B049 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.488 max=127849.758
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127849.75808347703}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B049_after_window_summary.json
+[16:43:42] B049 REVERT (liq worse) keeps=6 reverts=19 med 4.5315->4.4882 liq 32->34
+[16:43:42] ===== B050 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B050_before_window_summary.json
+[16:43:59] B050 edit applied: lev_cap 1.5->1.45
+[16:43:59] ===== B050 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=129016.922
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 129016.9217448864}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B050_after_window_summary.json
+[16:44:15] B050 REVERT (liq worse) keeps=6 reverts=20 med 4.5315->4.5315 liq 32->33
+[16:44:15] ===== B051 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B051_before_window_summary.json
+[16:44:31] B051 edit applied: reentry_cap 120
+[16:44:31] ===== B051 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.316 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B051_after_window_summary.json
+[16:44:47] B051 REVERT (liq worse) keeps=6 reverts=21 med 4.5315->4.3159 liq 32->34
+[16:44:47] ===== B052 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B052_before_window_summary.json
+[16:45:02] B052 edit applied: later_scale 0.017->0.016
+[16:45:02] ===== B052 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133337.893
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133337.89327914026}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B052_after_window_summary.json
+[16:45:18] B052 REVERT (no primary improve) keeps=6 reverts=22 med 4.5315->4.5313 liq 32->32
+[16:45:18] ===== B053 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.421
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4205856687}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B053_before_window_summary.json
+[16:45:34] B053 edit applied: trail_mult 1.25e-07->6.25e-08
+[16:45:34] ===== B053 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B053_after_window_summary.json
+[16:45:50] B053 KEEP (median up) keeps=7 reverts=22 med 4.5315->4.5315 liq 32->32
+[16:45:50] ===== B054 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B054_before_window_summary.json
+[16:46:05] B054 edit applied: slope_diff 200->205
+[16:46:05] ===== B054 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B054_after_window_summary.json
+[16:46:21] B054 REVERT (no primary improve) keeps=7 reverts=23 med 4.5315->4.5315 liq 32->32
+[16:46:21] ===== B055 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B055_before_window_summary.json
+[16:46:35] B055 edit applied: slope_diff 200->195
+[16:46:35] ===== B055 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B055_after_window_summary.json
+[16:46:49] B055 REVERT (no primary improve) keeps=7 reverts=24 med 4.5315->4.5315 liq 32->32
+[16:46:49] ===== B056 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B056_before_window_summary.json
+[16:47:03] B056 edit applied: risk_cap 0.00235->0.0023
+[16:47:03] ===== B056 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.581 max=140130.912
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 140130.91187996638}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B056_after_window_summary.json
+[16:47:17] B056 REVERT (liq worse) keeps=7 reverts=25 med 4.5315->4.5808 liq 32->36
+[16:47:17] ===== B057 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B057_before_window_summary.json
+[16:47:32] B057 edit applied: risk_cap 0.00235->0.0024
+[16:47:32] ===== B057 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.516 max=127134.035
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127134.03516511564}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B057_after_window_summary.json
+[16:47:48] B057 REVERT (no primary improve) keeps=7 reverts=26 med 4.5315->4.5159 liq 32->32
+[16:47:48] ===== B058 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B058_before_window_summary.json
+[16:48:03] B058 edit applied: cooldown_cap 220->215
+[16:48:03] ===== B058 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B058_after_window_summary.json
+[16:48:17] B058 REVERT (liq worse) keeps=7 reverts=27 med 4.5315->4.5315 liq 32->39
+[16:48:17] ===== B059 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B059_before_window_summary.json
+[16:48:34] B059 edit applied: later_scale 0.017->0.018
+[16:48:34] ===== B059 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B059_after_window_summary.json
+[16:48:48] B059 KEEP (median up) keeps=8 reverts=27 med 4.5315->4.5318 liq 32->32
+[16:48:48] ===== B060 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B060_before_window_summary.json
+[16:48:59] B060 edit applied: cooldown_cap 220->230
+[16:48:59] ===== B060 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=3.429 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B060_after_window_summary.json
+[16:49:09] B060 REVERT (no primary improve) keeps=8 reverts=28 med 4.5318->3.4291 liq 32->28
+[16:49:09] ===== B061 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B061_before_window_summary.json
+[16:49:21] B061 edit applied: win_size_mult 1.75->1.72
+[16:49:21] ===== B061 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.483 max=127914.828
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127914.82768033273}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B061_after_window_summary.json
+[16:49:32] B061 REVERT (liq worse) keeps=8 reverts=29 med 4.5318->4.4834 liq 32->34
+[16:49:32] ===== B062 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B062_before_window_summary.json
+[16:49:43] B062 edit applied: lev_cap 1.5->1.45
+[16:49:43] ===== B062 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=129082.768
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 129082.76778812516}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B062_after_window_summary.json
+[16:49:55] B062 REVERT (liq worse) keeps=8 reverts=30 med 4.5318->4.5318 liq 32->33
+[16:49:55] ===== B063 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B063_before_window_summary.json
+[16:50:09] B063 edit applied: reentry_cap 120
+[16:50:09] ===== B063 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.317 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B063_after_window_summary.json
+[16:50:21] B063 REVERT (liq worse) keeps=8 reverts=31 med 4.5318->4.3175 liq 32->34
+[16:50:21] ===== B064 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B064_before_window_summary.json
+[16:50:35] B064 edit applied: later_scale 0.018->0.017
+[16:50:35] ===== B064 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133406.442
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133406.4417957261}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B064_after_window_summary.json
+[16:50:48] B064 REVERT (no primary improve) keeps=8 reverts=32 med 4.5318->4.5315 liq 32->32
+[16:50:48] ===== B065 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.509
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.5090364508}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B065_before_window_summary.json
+[16:51:03] B065 edit applied: trail_mult 6.25e-08->3.125e-08
+[16:51:03] ===== B065 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B065_after_window_summary.json
+[16:51:18] B065 KEEP (median up) keeps=9 reverts=32 med 4.5318->4.5318 liq 32->32
+[16:51:18] ===== B066 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B066_before_window_summary.json
+[16:51:30] B066 edit applied: slope_diff 200->205
+[16:51:30] ===== B066 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B066_after_window_summary.json
+[16:51:43] B066 REVERT (no primary improve) keeps=9 reverts=33 med 4.5318->4.5318 liq 32->32
+[16:51:43] ===== B067 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B067_before_window_summary.json
+[16:51:55] B067 edit applied: slope_diff 200->195
+[16:51:55] ===== B067 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B067_after_window_summary.json
+[16:52:09] B067 REVERT (no primary improve) keeps=9 reverts=34 med 4.5318->4.5318 liq 32->32
+[16:52:09] ===== B068 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B068_before_window_summary.json
+[16:52:22] B068 edit applied: risk_cap 0.00235->0.0023
+[16:52:22] ===== B068 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.576 max=140202.598
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 140202.59778380618}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B068_after_window_summary.json
+[16:52:34] B068 REVERT (liq worse) keeps=9 reverts=35 med 4.5318->4.5759 liq 32->36
+[16:52:34] ===== B069 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B069_before_window_summary.json
+[16:52:47] B069 edit applied: risk_cap 0.00235->0.0024
+[16:52:47] ===== B069 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.511 max=127198.753
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127198.75311312631}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B069_after_window_summary.json
+[16:53:00] B069 REVERT (no primary improve) keeps=9 reverts=36 med 4.5318->4.5110 liq 32->32
+[16:53:00] ===== B070 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B070_before_window_summary.json
+[16:53:11] B070 edit applied: cooldown_cap 220->215
+[16:53:11] ===== B070 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B070_after_window_summary.json
+[16:53:21] B070 REVERT (liq worse) keeps=9 reverts=37 med 4.5318->4.5318 liq 32->39
+[16:53:21] ===== B071 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B071_before_window_summary.json
+[16:53:30] B071 edit applied: later_scale 0.018->0.019
+[16:53:30] ===== B071 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B071_after_window_summary.json
+[16:53:41] B071 KEEP (median up) keeps=10 reverts=37 med 4.5318->4.5320 liq 32->32
+[16:53:41] ===== B072 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B072_before_window_summary.json
+[16:53:53] B072 edit applied: cooldown_cap 220->230
+[16:53:53] ===== B072 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=3.429 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B072_after_window_summary.json
+[16:54:08] B072 REVERT (no primary improve) keeps=10 reverts=38 med 4.5320->3.4287 liq 32->28
+[16:54:08] ===== B073 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B073_before_window_summary.json
+[16:54:22] B073 edit applied: win_size_mult 1.75->1.72
+[16:54:22] ===== B073 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.479 max=127979.450
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127979.44971885666}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B073_after_window_summary.json
+[16:54:36] B073 REVERT (liq worse) keeps=10 reverts=39 med 4.5320->4.4787 liq 32->34
+[16:54:36] ===== B074 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B074_before_window_summary.json
+[16:54:51] B074 edit applied: lev_cap 1.5->1.45
+[16:54:51] ===== B074 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=129148.161
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 129148.16099167289}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B074_after_window_summary.json
+[16:55:05] B074 REVERT (liq worse) keeps=10 reverts=40 med 4.5320->4.5320 liq 32->33
+[16:55:05] ===== B075 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B075_before_window_summary.json
+[16:55:21] B075 edit applied: reentry_cap 120
+[16:55:21] ===== B075 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.467 max=127068.749
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127068.7487884948}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B075_after_window_summary.json
+[16:55:38] B075 REVERT (liq worse) keeps=10 reverts=41 med 4.5320->4.4673 liq 32->34
+[16:55:38] ===== B076 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B076_before_window_summary.json
+[16:55:52] B076 edit applied: later_scale 0.019->0.018
+[16:55:52] ===== B076 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133474.520
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133474.519646165}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B076_after_window_summary.json
+[16:56:08] B076 REVERT (no primary improve) keeps=10 reverts=42 med 4.5320->4.5318 liq 32->32
+[16:56:09] ===== B077 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.129
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.1292272032}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B077_before_window_summary.json
+[16:56:24] B077 edit applied: trail_mult 3.125e-08->1.5625e-08
+[16:56:24] ===== B077 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.532 max=133542.135
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133542.13453438747}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B077_after_window_summary.json
+[16:56:39] B077 KEEP (median up) keeps=11 reverts=42 med 4.5320->4.5320 liq 32->32
+[16:56:39] ===== B078 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.506 max=127263.031
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127263.03089385101}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B078_before_window_summary.json
+[16:56:54] B078 edit applied: slope_diff 200->205
+[16:56:54] ===== B078 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B078_after_window_summary.json
+[16:57:08] B078 KEEP (median up) keeps=12 reverts=42 med 4.5062->4.5257 liq 32->32
+[16:57:08] ===== B079 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B079_before_window_summary.json
+[16:57:25] B079 edit applied: slope_diff 205->200
+[16:57:25] ===== B079 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B079_after_window_summary.json
+[16:57:40] B079 REVERT (no primary improve) keeps=12 reverts=43 med 4.5257->4.5257 liq 32->32
+[16:57:40] ===== B080 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.526 max=127003.164
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 127003.16384398997}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B080_before_window_summary.json
+[16:57:57] B080 edit applied: risk_cap 0.0024->0.00235
+[16:57:57] ===== B080 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.776
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.77633302842}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B080_after_window_summary.json
+[16:58:19] B080 KEEP (median up) keeps=13 reverts=43 med 4.5257->4.5311 liq 32->32
+[16:58:19] ===== B081 BEFORE eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0
+
+========== WINDOW RESULT ==========
+windows=59  hits_10000x=1  hit_rate=1.69%
+peak_mult median=4.531 max=133268.776
+survived=16.9%  best={'start': '2023-01-26 00:00:00+00:00', 'end': '2023-03-27 00:00:00+00:00', 'mult_peak': 133268.77633302842}
+[saved] C:\Users\Foryoucom\Desktop\scalping-backtest\reports\iter\v11h_agent\B081_before_window_summary.json
+[16:58:38] B081 edit applied: risk_cap 0.00235->0.0024
+[16:58:38] ===== B081 AFTER eval =====
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0008, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 0.35, 'cooldown_bars': 240, 'atr_expand_mult': 1.15, 'atr_sma_period': 200, 'daily_ema_period': 200, 'tp_atr': 0.0, 'body_min_atr': 0.0, 'reentry_bars': 180, 'allow_long': True, 'allow_short': True}
+[cfg] lev=100.0 pyramid_r=0.0 unlock_r=4.0

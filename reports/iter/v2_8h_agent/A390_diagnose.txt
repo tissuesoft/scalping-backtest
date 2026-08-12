@@ -1,0 +1,2 @@
+A390 BEFORE (=A389 KEEP) hits=1 med=4.188 ge2=40
+HYPOTHESIS STRUCTURAL: second scale fat 0.08->0.06, non-fat 0.20->0.16.

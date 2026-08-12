@@ -1,0 +1,5 @@
+R21 DIAGNOSE
+champ: max=101.4 mean=4.68 median=1.0 survived=67.8% hits=0
+failure: most windows never compound; quiet-regime trades grind equity
+edit: hardcode vol_ok atr_pct>=0.002 (only violent bars)
+

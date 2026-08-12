@@ -1,0 +1,3 @@
+A219 BEFORE (=A212 KEEP)
+A166 ht_ema 38 dropped median; A117 40 KEEP. 39 untried.
+HYPOTHESIS STRUCTURAL: ht_ema cap 40 -> 39.

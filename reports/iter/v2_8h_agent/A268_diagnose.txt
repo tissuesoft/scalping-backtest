@@ -1,0 +1,4 @@
+A268 BEFORE (=A257 KEEP)
+Cooldown blocks opposite side too, so after a failed long the short fade cannot fire for 180m.
+1.0x are ranging: failed break then reverse.
+HYPOTHESIS STRUCTURAL: same-side cooldown only; opposite entries allowed.

@@ -1,0 +1,4 @@
+A108 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: trail width both ways hurt. Median-band trades may die on wick SL in first minutes; A42 grace=5. Give 8 bars.
+HYPOTHESIS STRUCTURAL: sl_grace_bars 5 -> 8.

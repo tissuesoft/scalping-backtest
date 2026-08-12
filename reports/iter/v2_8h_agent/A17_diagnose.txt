@@ -1,0 +1,4 @@
+A17 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50 zero_trade_windows=5
+Failure modes: many windows stay mult=1 with 0 trades (filters too strict for quiet regimes); others wipe at first trade.
+HYPOTHESIS STRUCTURAL: dual Donchian — also fire on faster lookback n//3 so non-crash windows get entries without removing expand.

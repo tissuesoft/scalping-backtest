@@ -1,0 +1,2 @@
+A351 BEFORE (=A350 KEEP) med=2.866 ge2=37; 2025-11 1.978
+HYPOTHESIS STRUCTURAL: risk_tgt max 0.55 floor 0.14 slope 0.41.

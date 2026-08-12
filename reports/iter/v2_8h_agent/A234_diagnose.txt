@@ -1,0 +1,3 @@
+A234 BEFORE (=A212 KEEP)
+A232 0.20%: ge2+1 n1-1 but med down (runner 37.9->23.3). A233 0.12%: no-op.
+HYPOTHESIS STRUCTURAL: floor 0.17% — catch tight-wick oversize, keep more runner size than 0.20%.

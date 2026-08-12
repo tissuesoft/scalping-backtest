@@ -1,0 +1,4 @@
+A101 BEFORE (=A100 KEEP)
+hits=0/59 med=1.539 ge2=20 max=37.2
+Diagnosis: A100 body size helped one 1.67->2.28 window. Remaining median-band entries can still be counter-direction closes (red bar on long break).
+HYPOTHESIS STRUCTURAL: require close>open on longs and close<open on shorts.

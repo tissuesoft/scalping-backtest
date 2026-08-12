@@ -1,0 +1,25 @@
+LOADED T0_S5champ: CHAMPION max_peak=7.15x
+LOADED T1_lev100: REVERT max_peak=3.13x
+LOADED T2_nodaily_lev90: REVERT max_peak=4.56x
+LOADED T3_pyramid05: REVERT max_peak=1.00x
+LOADED T4_long_lev100: REVERT max_peak=4.35x
+LOADED T5_short_lev100: KEEP max_peak=13.69x
+LOADED T6_look720: REVERT max_peak=5.09x
+
+============================================================
+RUN T7_lev125_body
+============================================================
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[params] {'lookback': 360, 'atr_period': 14, 'min_atr_pct': 0.0012, 'sl_atr': 0.8, 'trail_atr': 6.0, 'ht_ema': 50, 'ht_rule': '1h', 'breakout_buffer_atr': 1.0, 'cooldown_bars': 360, 'atr_expand_mult': 2.0, 'atr_sma_period': 200, 'daily_ema_period': 0, 'tp_atr': 0.0, 'body_min_atr': 0.8, 'allow_long': True, 'allow_short': True}
+[cfg] capital=100.0 lev=125.0 pyramid_at_r=0.0 window=60d step=30d target_mult=10000.0
+Traceback (most recent call last):
+  File "c:\Users\Foryoucom\Desktop\scalping-backtest\run_loop10_resume.py", line 106, in <module>
+    main()
+  File "c:\Users\Foryoucom\Desktop\scalping-backtest\run_loop10_resume.py", line 77, in main
+    payload = run_one(tag, params_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Foryoucom\Desktop\scalping-backtest\run_loop10_resume.py", line 25, in run_one
+    subprocess.check_call(cmd, cwd=str(ROOT))
+  File "C:\Users\Foryoucom\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['C:\\Users\\Foryoucom\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', '-u', 'C:\\Users\\Foryoucom\\Desktop\\scalping-backtest\\eval_windows.py', '--symbol', 'BTCUSDT', '--capital', '100', '--window-days', '60', '--step-days', '30', '--target-mult', '10000', '--params-json', 'C:\\Users\\Foryoucom\\Desktop\\scalping-backtest\\reports\\iter\\T7_lev125_body.json', '--tag', 'T7_lev125_body', '--out-dir', 'C:\\Users\\Foryoucom\\Desktop\\scalping-backtest\\reports\\iter']' returned non-zero exit status 1.

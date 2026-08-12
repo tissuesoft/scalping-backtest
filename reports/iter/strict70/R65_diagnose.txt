@@ -1,0 +1,1 @@
+R65 DIAG: daily EMA200 may block valid dump shorts; EDIT force daily_n=0

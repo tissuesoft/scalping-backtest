@@ -1,0 +1,3 @@
+A347 BEFORE (=A344 KEEP) med=2.675 ge2=36; 2025-12 1.970
+A346 non-fat second 0.20 REVERT. Later scale-outs still 0.12.
+HYPOTHESIS STRUCTURAL: later close_frac 0.12->0.08.

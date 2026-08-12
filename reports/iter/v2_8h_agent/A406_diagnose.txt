@@ -1,0 +1,3 @@
+A406 BEFORE (=A397 KEEP) hits=1 med=4.346
+A405 no-op (n//5 with max35 still 72). Try n//4 -> 90.
+HYPOTHESIS STRUCTURAL: n_fast max(30,n//5)->max(30,n//4).

@@ -1,0 +1,3 @@
+A308 BEFORE (=A307 KEEP) med=1.851 = 2025-01; ge2=25; 2023-03 1.985 near ge2
+Fat-bar trail 0.80->0.75 KEEP. 2023-03 / 2024-07 approaching 2.0.
+HYPOTHESIS STRUCTURAL: 0.75->0.70.

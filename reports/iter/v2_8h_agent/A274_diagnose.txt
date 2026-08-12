@@ -1,0 +1,3 @@
+A274 BEFORE (=A269 KEEP)
+A273 gating boost until above-start undid the median lift. Bigger wide-bar size needs more trail room after unlock.
+HYPOTHESIS STRUCTURAL: trail_unlock_mult 1.5→1.65 so A269 oversized runners are not clipped as tight.

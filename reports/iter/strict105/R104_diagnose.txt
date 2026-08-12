@@ -1,0 +1,6 @@
+R104 BEFORE DIAGNOSE (post-R103 REVERT, champ boost=1.31 @1.6)
+hits=0/59 max=2544.772 med=1.000 mean=88.552
+survived=44.1%
+R103 lowering thresh to 1.55 destroyed crash (2545->65): must keep trigger strict at 1.6.
+FAILURE: magnitude lever still open; thresh must stay 1.6.
+HYPOTHESIS: size_boost 1.31 -> 1.34 at ATR>SMA*1.6.

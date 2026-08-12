@@ -1,0 +1,1 @@
+R28 DIAGNOSE: many shorts are noise not day-breakdown; edit: require close < prior day low

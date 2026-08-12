@@ -1,0 +1,2 @@
+A392 BEFORE (=A391) med=4.232
+HYPOTHESIS: second fat0.02 nonfat0.08

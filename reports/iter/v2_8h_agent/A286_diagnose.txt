@@ -1,0 +1,3 @@
+A286 BEFORE (=A278 KEEP)
+Starved median-band windows have ~21-38 trades. A254 slower 420 Donchian hurt. Fast n_fast+ hurt.
+HYPOTHESIS STRUCTURAL: slow Donchian 360→330, fast path still 120 from lookback 360.

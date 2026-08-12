@@ -1,0 +1,4 @@
+A99 BEFORE (=champ after A98 REVERT)
+hits=0/59 med=1.539 ge2=19
+Diagnosis: 16 wipe windows take 40-80 trades with pf~0. Signal cooldown 4h is not enough; they grind to 0. A72 halve cooldown was REVERT.
+HYPOTHESIS STRUCTURAL: after a full losing exit, block new entries for 720 bars (12h). Winners/partials unchanged.

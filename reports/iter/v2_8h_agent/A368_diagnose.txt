@@ -1,0 +1,2 @@
+A368 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37
+HYPOTHESIS STRUCTURAL: trail_atr cap 3->2.5.

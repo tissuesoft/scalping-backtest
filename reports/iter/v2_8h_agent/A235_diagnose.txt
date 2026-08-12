@@ -1,0 +1,3 @@
+A235 BEFORE (=A212 KEEP)
+Risk-frac floor axis exhausted (0.20/0.17/0.12). Chop 1.0x still take many one-bar fake Donchians.
+HYPOTHESIS STRUCTURAL: Donchian requires 2 consecutive closes beyond band; day first-cross unchanged.

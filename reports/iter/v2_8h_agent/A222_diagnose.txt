@@ -1,0 +1,3 @@
+A222 BEFORE (=A212 KEEP)
+A207 +20: 4 ge2 up 0 down median-flat. +10 may tick the 1.58 median band without A183's crash.
+HYPOTHESIS STRUCTURAL: n_fast +10.

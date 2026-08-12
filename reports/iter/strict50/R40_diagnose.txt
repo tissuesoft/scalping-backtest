@@ -1,0 +1,1 @@
+R40 DIAG: atr_sma200 slow to unlock expand; EDIT sma period 150

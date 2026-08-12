@@ -1,0 +1,43 @@
+{
+  "tag": "set0_baseline",
+  "symbol": "BTCUSDT",
+  "params": {
+    "lookback": 30,
+    "atr_period": 14,
+    "min_atr_pct": 0.0004,
+    "sl_atr": 1.2,
+    "trail_atr": 2.0,
+    "ht_ema": 200,
+    "ht_rule": "15min",
+    "allow_long": true,
+    "allow_short": true
+  },
+  "config": {
+    "capital": 100.0,
+    "leverage": 20.0,
+    "fee": 0.0004,
+    "slippage": 0.0001,
+    "target": 1000000.0,
+    "start": "2021-08-04 00:00:00+00:00",
+    "end": "2026-08-04 23:59:00+00:00"
+  },
+  "metrics": {
+    "final_equity": 9.4e-323,
+    "multiple": 0.0,
+    "total_return_pct": -100.0,
+    "max_drawdown_pct": -100.0,
+    "weekly_pct": -100.0,
+    "weeks": 260.9999007936508,
+    "trades": 60513.0,
+    "win_rate_pct": 8.679126799200173,
+    "profit_factor": 0.17144476233081057,
+    "total_fees": 49.5042467005193,
+    "avg_bars_held": 3.2475831639482426,
+    "liquidations": 3.0,
+    "hit_target": 0.0,
+    "bars_to_target": -1.0,
+    "max_roll60d_mult": 4.5
+  },
+  "hit_target": false,
+  "time_to_target": null
+}

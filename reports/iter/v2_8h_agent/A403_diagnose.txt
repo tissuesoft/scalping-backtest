@@ -1,0 +1,2 @@
+A403 BEFORE (=A397 KEEP) hits=1 med=4.346 ge2=40; 2024-01 1217x
+HYPOTHESIS STRUCTURAL: add size_boost 1.40@2.0ATR tier above 1.35@1.8.

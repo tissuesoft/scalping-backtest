@@ -1,0 +1,4 @@
+A130 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: v2 banned crash size_boost (max-only farm). A67 higher risk KEEP. Mild size_boost only on expand_sma (ATR vs SMA200) should punch median-band expanding-vol windows without crash-window special case.
+HYPOTHESIS STRUCTURAL: size_boost 1.15 when expand_sma else 1.0.

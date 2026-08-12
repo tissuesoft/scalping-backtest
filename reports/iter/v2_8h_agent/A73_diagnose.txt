@@ -1,0 +1,4 @@
+A73 BEFORE
+hits=0/59 med=1.460 max=50.145 ge2=20
+Diagnosis: unlock@3R helps; A41@2R hurt median. Try middle ground unlock_r=2.5 keep mult=1.5.
+HYPOTHESIS STRUCTURAL: trail_unlock_r 3.0 -> 2.5.

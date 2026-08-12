@@ -1,0 +1,5 @@
+A40 BEFORE
+hits=0/59 med=1.161 max=33.380 ge2=7 mean=2.139 surv=64.4%
+lt1.2=33 1.2-2=19
+Diagnosis: trail arms immediately (trail_arm_r=0) — early noise trail stops kill trades before 2x.
+HYPOTHESIS STRUCTURAL: trail_arm_r=1.0 — do not ATR-trail until +1R progress.

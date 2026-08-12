@@ -1,0 +1,1 @@
+A447: HTF ema_slope diff 180->200

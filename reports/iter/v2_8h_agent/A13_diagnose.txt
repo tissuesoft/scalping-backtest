@@ -1,0 +1,5 @@
+A13 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 zero_trade=5 wipe=50
+12 REVERTs. Daily EMA200 may block multi-week swings inside 60d windows (zero_trade/dead).
+HYPOTHESIS STRUCTURAL: disable daily EMA regime filter (rely on HTF+Donchian+min_atr only).

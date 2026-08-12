@@ -1,0 +1,4 @@
+A58 BEFORE
+hits=0/59 med=1.286 max=26.983 ge2=16 mean=2.717 surv=32.2% wipe=40
+Diagnosis: A56 raised median but ge2 slipped 17->16; need quality filter that lifts ge2 without cutting median. Close momentum ROC sign with side.
+HYPOTHESIS STRUCTURAL: require ROC(120) > 0 for long / < 0 for short (alongside existing bull/bear).

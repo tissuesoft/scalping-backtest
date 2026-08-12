@@ -1,0 +1,4 @@
+A158 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22 n1=20 (5 zero-trade warmup, 15 overtrade+wipe)
+Diagnosis: 1.0-with-trades windows fire 11-122 times and never peak. Chop path vs ROC sign.
+HYPOTHESIS STRUCTURAL: Kaufman ER(60)>=0.18 gate on entries.

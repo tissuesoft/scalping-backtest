@@ -1,0 +1,4 @@
+A126 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22 n_1.0=20
+Diagnosis: wipe windows enter on barely-positive ROC in chop. A100/A104 body filter helped ge2/median; add a minimum |ROC| so flat 2h drifts are not 'momentum'.
+HYPOTHESIS STRUCTURAL: ROC120 >= +0.1% for longs, <= -0.1% for shorts.

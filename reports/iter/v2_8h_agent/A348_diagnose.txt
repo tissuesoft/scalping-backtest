@@ -1,0 +1,3 @@
+A348 BEFORE (=A344 KEEP) med=2.675 ge2=36; scale-out soften REVERTs
+Hits still 0 — need size aggression for compounding toward 10000x while protecting med.
+HYPOTHESIS STRUCTURAL: risk_tgt ramp max 0.35->0.40 slope 0.23->0.28.

@@ -1,0 +1,3 @@
+A189 BEFORE (=A188 KEEP)
+0.48/0.46/0.44/0.42 all KEEP median ticks. A149 0.4 was old 2-step context.
+HYPOTHESIS STRUCTURAL: later close_frac 0.42 -> 0.40.

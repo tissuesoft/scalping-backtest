@@ -1,0 +1,3 @@
+A324 BEFORE (=A319 KEEP) med=2.148 ge2=31
+A323 unlock_r 3.0 REVERT med 2.148->2.119. Stuck: 2025-12/04/07 quiet windows.
+HYPOTHESIS STRUCTURAL: range_ok 0.8ATR->0.7ATR to admit quieter valid breakouts in stuck windows.

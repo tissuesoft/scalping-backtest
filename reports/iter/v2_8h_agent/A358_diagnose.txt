@@ -1,0 +1,3 @@
+A358 BEFORE (=A350 KEEP) med=2.866 ge2=37; 2025-11 1.978
+A357 buffer 0.25 REVERT. A351 max 0.55 REVERT. Try early-window size without raising max.
+HYPOTHESIS STRUCTURAL: risk_tgt floor 0.12->0.15, slope 0.38->0.35 (same max 0.50).

@@ -1,0 +1,3 @@
+A184 BEFORE (=A154 KEEP)
+A3/A30 body direction were identical when body_min=0. Now abs floor 0.45 allows large opposite-color bars on breakouts.
+HYPOTHESIS STRUCTURAL: require body in trade direction (>=0.45 ATR).

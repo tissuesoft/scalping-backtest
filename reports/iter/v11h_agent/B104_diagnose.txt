@@ -1,0 +1,1 @@
+B104 HYP: trail floor soft-cap 5.0->4.8

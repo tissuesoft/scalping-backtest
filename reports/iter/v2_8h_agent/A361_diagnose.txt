@@ -1,0 +1,3 @@
+A361 BEFORE (=A359 KEEP) med=2.893 ge2=36
+A360 unlock 1.2 REVERT med 2.893->2.808 (max-only 5867). Try more breakouts.
+HYPOTHESIS STRUCTURAL: dual Donchian n_fast max(60,n//3)->max(45,n//4).

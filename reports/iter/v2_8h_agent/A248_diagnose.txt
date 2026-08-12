@@ -1,0 +1,3 @@
+A248 BEFORE (=A212 KEEP)
+A75 dual Donchian is OR so fast-only fake breaks fire in chop 1.0x.
+HYPOTHESIS STRUCTURAL: Donchian path requires slow AND fast; day first-cross unchanged.

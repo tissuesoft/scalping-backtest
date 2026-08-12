@@ -1,0 +1,3 @@
+A411 BEFORE (=A408) hits=1 med=4.351 ge2=41
+A410 REVERT: |ROC|>=0.002 lost 2023 hit (max collapsed to 1706).
+HYPOTHESIS: later-scale close_frac 0.05->0.04 keeps more of runners (2024~1282x nearest).

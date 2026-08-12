@@ -1,0 +1,3 @@
+A322 BEFORE (=A319 KEEP) med=2.148 ge2=31
+A321 1.10-tier REVERT max-only; stuck windows unchanged (no mild-boost scaleouts).
+HYPOTHESIS STRUCTURAL: after second fat-bar scale also trail*0.70 (extra tighten on multi-scale runners).

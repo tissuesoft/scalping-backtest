@@ -1,0 +1,4 @@
+A32 BEFORE (A26+A28+A31)
+hits=0/59 med=1.000 max=14.677 ge2=19 mean=2.355 wipe=50
+Diagnosis: dead windows still majority; weekly momentum unused. Extend A28 pattern to weekly first-cross.
+HYPOTHESIS STRUCTURAL: OR weekly Hi/Lo first-cross (+/- buf) into long_brk/short_brk.

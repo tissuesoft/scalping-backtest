@@ -1,0 +1,6 @@
+R102 BEFORE DIAGNOSE (post-R101 KEEP)
+hits=0/59 max=2379.183 med=1.000 mean=82.917
+survived=44.1% liq_sum=1 wipe=33
+R101: 1.25->1.28 KEEP, surv flat 44.1%, max 2222->2379.
+FAILURE: 0 hits; median 1.0; best needs ~4.2x more to 10k.
+HYPOTHESIS: size_boost 1.28 -> 1.31 on ATR>SMA*1.6.

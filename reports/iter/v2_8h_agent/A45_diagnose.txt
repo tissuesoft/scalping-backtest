@@ -1,0 +1,4 @@
+A45 BEFORE
+hits=0/59 med=1.192 max=46.394 ge2=8 mean=2.448
+Diagnosis: single-shot size limits compound; pyramid unused. Add to winners at +1R with BE.
+HYPOTHESIS STRUCTURAL: pyramid_at_r=1.0, pyramid_frac=0.5, pyramid_be=True.

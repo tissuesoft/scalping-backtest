@@ -1,0 +1,2 @@
+B007 BEFORE=B002 liq=32
+HYP: reentry cap 180->150 blocks late cooldown re-entries → less chop liq.

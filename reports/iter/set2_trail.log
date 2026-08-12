@@ -1,0 +1,12 @@
+[data] BTCUSDT rows=2,630,880 2021-08-04 00:00:00+00:00 -> 2026-08-04 23:59:00+00:00
+[cfg] capital=100.0 lev=10.0x target=1000000.0
+[params] {'lookback': 60, 'atr_period': 14, 'min_atr_pct': 0.0005, 'sl_atr': 1.5, 'trail_atr': 6.0, 'ht_ema': 200, 'ht_rule': '15min', 'breakout_buffer_atr': 0.1, 'cooldown_bars': 45, 'allow_long': True, 'allow_short': True}
+
+========== RESULT ==========
+final=$0.00  multiple=0.0000x
+weekly~-50.436%  MDD=-100.00%
+trades=15481  WR=14.2%  PF=0.493
+fees=$62.87  liq=0
+hit_$1M=False  time=None
+max_roll60d_mult=1.00x
+[saved] reports\iter\set2_trail_summary.json

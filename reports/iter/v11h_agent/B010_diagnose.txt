@@ -1,0 +1,2 @@
+B010 BEFORE=B009 KEEP liq=32 med=4.477
+HYP: later close_frac 0.025->0.024 keep more runner, lift weak windows.

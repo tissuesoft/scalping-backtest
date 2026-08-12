@@ -1,0 +1,3 @@
+A294 BEFORE (=A288 KEEP) med=1.735 = 2025-01 (69 trades, pf 0.42, final 0)
+A293 cum-PnL size_mult REVERT (identical except 2023-10 3.55->3.21).
+HYPOTHESIS STRUCTURAL: first partial 0.68 cuts fat-bar (boost>=1.25) runners to 32% too early. Use 0.50 first scale on 1.25/1.35 tiers only; chop 1.0/1.10 keep 0.68 (load-bearing).

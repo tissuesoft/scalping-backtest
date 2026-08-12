@@ -1,0 +1,5 @@
+A76 BEFORE
+hits=0/59 med=1.514 max=50.145 ge2=20 mean=3.977 surv=23.7%
+lt2=39 ge10=5 wipe=45
+Diagnosis: A75 dual Donchian lifted median; stall still ~39 windows <2x. Fast path may still fire in chop. Require fast Donchian only when also HTF-aligned (already) AND ATR expanding on fast window — OR require close beyond fast channel by 1*buf extra.
+HYPOTHESIS STRUCTURAL: fast-path only if ATR > SMA(ATR,50) (local expand), keep slow/day paths unchanged.

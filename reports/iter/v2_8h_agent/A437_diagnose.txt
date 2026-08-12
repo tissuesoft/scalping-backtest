@@ -1,0 +1,1 @@
+A437: range_ok 0.8ATR->0.85ATR

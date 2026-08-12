@@ -1,0 +1,4 @@
+A43 BEFORE (A42 grace on)
+hits=0/59 med=1.186 max=45.010 ge2=8 surv=35.6% wipe=38
+Diagnosis: grace raised med/ge2 but wipe 21->38 — full size rides into adverse after grace. Partial trail can bank gains.
+HYPOTHESIS STRUCTURAL: partial_trail_frac=0.5 — first trail touch closes half.

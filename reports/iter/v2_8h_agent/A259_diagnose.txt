@@ -1,0 +1,3 @@
+A259 BEFORE (=A257 KEEP)
+A236 utc-60m day-path: 0 dn, 2024-01 26.3->37.4 on A212 (max-only then).
+HYPOTHESIS STRUCTURAL: same utc-60m filter stacked on range_ok may lift a median-band window this time.

@@ -1,0 +1,4 @@
+A140 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: after 2+ wins size_mult is 3+, one loss hard-resets to 1 and kills the compound path. Median/ge2 windows that peak then take one loss never recover. Step down one rung instead.
+HYPOTHESIS STRUCTURAL: on full losing exit, size_mult = max(1.0, size_mult / win_size_mult).

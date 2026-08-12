@@ -1,0 +1,5 @@
+B084 BEFORE (=B083 KEEP) med=4.540 liq=32
+
+HYPOTHESIS: later 0.012->0.011 runner chain.
+
+EDIT: compound_engine.py close_frac 0.011

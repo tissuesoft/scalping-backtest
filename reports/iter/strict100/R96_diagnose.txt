@@ -1,0 +1,14 @@
+R96 BEFORE DIAGNOSE (post-R95 KEEP)
+===================================
+hits=0/59 max=1467.762 med=1.000 mean=51.880
+survived=49.2%
+peak>100: 2  peak>=2: 14  <=1.01: 43
+liq_sum=10 wipe=30
+
+FAILURE MODE
+- R95 extreme-expand boost 1.08 raised max 1187->1468 and mean 42->52; still 0 hits; median still 1.0.
+- Crash path responds to size on violent ATR; calm windows unchanged (same count peak>1.01).
+- Next lever on same mechanism: slightly stronger boost while watching survival/liq.
+
+HYPOTHESIS
+- Raise size_boost from 1.08 to 1.12 when ATR>SMA*1.6.

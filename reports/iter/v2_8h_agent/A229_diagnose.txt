@@ -1,0 +1,4 @@
+A229 BEFORE (=A212 KEEP)
+A228 grace-vs-liq: 1 window +0.48, 0 down, keep-metrics flat → REVERT.
+15 trading 1.0x: chop, peak never >$100.
+HYPOTHESIS STRUCTURAL: require |HTF slope| >= 0.02% of ema over 180m (not just sign) to skip flat regime.

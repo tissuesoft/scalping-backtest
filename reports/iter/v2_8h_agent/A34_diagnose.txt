@@ -1,0 +1,4 @@
+A34 BEFORE (A33 risk-parity 8%)
+hits=0/59 med=1.141 max=5.095 ge2=7 mean=1.483 surv=61.0%
+Diagnosis: fixed 8% risk raised median but capped upside (ge2 19->7). Need scale-in aggression as equity grows.
+HYPOTHESIS STRUCTURAL: equity-scaled risk target — 8% at start, rises toward 25% as equity/eq0 grows (compound ramp).

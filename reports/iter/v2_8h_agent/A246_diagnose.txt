@@ -1,0 +1,3 @@
+A246 BEFORE (=A212 KEEP)
+body_ok is abs so opposite-color breakout bars still enter (wick-through).
+HYPOTHESIS STRUCTURAL: long only if close>open, short only if close<open (directional body).

@@ -1,0 +1,20 @@
+{"set": 71, "diagnose": "early trail clips winners?", "edit": "trail_arm_r=1.0", "before": 1186.655, "after": 1186.655, "survived": "50.8->49.2", "decision": "REVERT", "reason": "same peak, worse survival"}
+{"set": 72, "diagnose": "wick SL noise early", "edit": "sl_grace_bars=2", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 73, "diagnose": "BE lock cut giveback?", "edit": "be_at_r=1.0", "before": 1186.655, "after": 18.273, "decision": "REVERT"}
+{"set": 74, "diagnose": "too few windows; more expand entries", "edit": "expand_cap=1.28", "before": 1186.655, "after": 115.021, "decision": "REVERT"}
+{"set": 75, "diagnose": "stricter expand bigger dumps", "edit": "expand_cap=1.40", "before": 1186.655, "after": 145.436, "decision": "REVERT"}
+{"set": 76, "diagnose": "wick SL too tight", "edit": "sl_wick+0.1atr", "before": 1186.655, "after": 917.395, "decision": "REVERT"}
+{"set": 77, "diagnose": "filter weak shorts", "edit": "require_bearish_bar", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 78, "diagnose": "size near sweet spot", "edit": "notional*2.17", "before": 1186.655, "after": 1184.392, "decision": "REVERT"}
+{"set": 79, "diagnose": "1h HTF flippy", "edit": "ht_rule_force_4h", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 80, "diagnose": "cooldown480 miss cascade", "edit": "cooldown=360", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 81, "diagnose": "risk_cap clips SL", "edit": "risk_cap=0.0035", "before": 1186.655, "after": 1186.655, "survived": "50.8->49.2", "decision": "REVERT"}
+{"set": 82, "diagnose": "widen trail after +2R", "edit": "unlock_r=2 mult=1.5", "before": 1186.655, "after": 347.315, "decision": "REVERT"}
+{"set": 83, "diagnose": "press winners with pyramid", "edit": "pyramid_at_r=1 frac=0.5", "before": 1186.655, "after": 3.647, "decision": "REVERT"}
+{"set": 84, "diagnose": "stage boost after 10x", "edit": "size*1.1 if eq>=10x", "before": 1186.655, "after": 794.887, "decision": "REVERT"}
+{"set": 85, "diagnose": "weekend thin/gap", "edit": "skip_weekend_entries", "before": 1186.655, "after": 31.885, "decision": "REVERT"}
+{"set": 86, "diagnose": "faster Donchian", "edit": "lookback=360", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 87, "diagnose": "trail8 exits early", "edit": "trail=10", "before": 1186.655, "after": 730.712, "decision": "REVERT"}
+{"set": 88, "diagnose": "chop entries dilute", "edit": "vol_surge_1.5x_48h", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 89, "diagnose": "reentry miss cascade legs", "edit": "reentry=240", "before": 1186.655, "after": 1186.655, "decision": "REVERT", "reason": "identical"}
+{"set": 90, "diagnose": "median=1 short-only misses rallies", "edit": "force_allow_long", "before": 1186.655, "after": 1186.655, "survived": "50.8->11.9", "decision": "REVERT"}

@@ -1,0 +1,4 @@
+A30 BEFORE
+hits=0/59 med=1.000 max=9.423 ge2=19 mean=2.044 wipe=50
+Diagnosis: many wipe entries are dojis/opposite-body pierces of levels (weak conviction).
+HYPOTHESIS STRUCTURAL: require candle body direction matches side (close>open long, close<open short).

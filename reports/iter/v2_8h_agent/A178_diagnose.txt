@@ -1,0 +1,4 @@
+A178 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+15 windows overtrade then wipe. A99 loss-cd 720 was max-only (median collapsed).
+HYPOTHESIS STRUCTURAL: skip only the next 1 signal after a full losing close.

@@ -1,0 +1,45 @@
+---
+description: Goal and strict diagnose-edit-keep/revert loop (code edits required)
+alwaysApply: true
+---
+
+# Goal & iteration loop (STRICT — NO EXCEPTIONS)
+
+User reminder is NEVER required. If asked for N sets, do N full loops. Shortcuts are forbidden.
+
+## Goal (read carefully)
+- Each rolling **1–2 month** window starts at **$100** and must reach **10,000x ($1,000,000) inside that window**.
+- Success = **EVERY** window hits 10,000x. One lucky crash window is **failure**.
+- Optimizing **max peak on a single window** while median stays ~1 is the **wrong objective**.
+
+## Primary metrics (Keep order)
+1. `hits_10000x` count / hit rate
+2. **median** peak multiple across windows
+3. **min** peak multiple (worst window)
+4. max peak is informational only — never Keep solely because max rose
+
+## One set = this exact sequence (ALL steps mandatory)
+1. Run **one** window evaluation on **current code as-is** (do NOT reuse an old number as “before”).
+2. **Diagnose in writing** (`reports/iter/...`): hits_10000x, median/min/max peak, survival, trades, liquidations, which windows are dead (peak≈1 / wipe), failure mode, **one hypothesis** aimed at lifting **dead/weak windows** (not only the best window).
+3. Edit **source code** (strategy and/or engine) — **exactly one coherent change**. Parameter-JSON-only batches are NOT a set.
+4. Run **one** evaluation again (after-edit).
+5. **Keep** if primary metrics improve; else **Revert**.
+
+## Keep / Revert
+- Keep: more 10,000x hits, OR clearly higher median/min peak toward 10,000x without unjustified survival collapse.
+- Revert: no improvement on hits/median/min; OR max-only improvement with flat/worse median; OR identical peaks with worse survival.
+- Done: **all** windows `hit_10000x`.
+
+## Forbidden
+- Blind huge grids / batch param sweeps counted as “sets”.
+- Turning off fees/slippage to fake results.
+- Skipping step 1 by copying a previous max as baseline.
+- One-line “diagnose” with no failure-mode analysis.
+- Multiple unrelated code edits inside one set.
+- Treating “crash window max ↑” as success when other windows stay ~1x.
+
+## Absolute
+- ALWAYS follow this loop for every research set.
+- NEVER skip: eval(current) → diagnose → code edit → eval(after) → keep/revert.
+- NEVER treat param-JSON batch sweeps as satisfying a “set”.
+- When user says “N세트”, run N full loops end-to-end before summarizing.

@@ -1,0 +1,19 @@
+R92 BEFORE DIAGNOSE
+===================
+hits=0/59 peak max=1186.655 med=1.000 mean=42.293
+survived=50.8% median_final=0.010495
+best={'start': '2022-01-01 00:00:00+00:00', 'end': '2022-03-02 00:00:00+00:00', 'mult_peak': 1186.6551812482614}
+
+COUNTS
+- zero_trade=23  traded_flat=20  wipe=29
+- liq_windows=7 sum_liq=10
+- high_trade>=20 and wipe: 19 (avg trades 40.3)
+- peak<=1.01: 43  peak>10: 4
+
+FAILURE MODE (from R91+R92)
+- Crash window works with FEW trades (7). Chop windows grind 20-50 trades then wipe via fees/SL.
+- R91 loss-haircut raised survival but cut crash peak (half-size during cascade after first SL).
+- Need to STOP re-entering chop after a loss without shrinking size during a winning cascade.
+
+HYPOTHESIS
+- After a losing exit, block new entries for 240 bars (engine loss_cooldown). Cascade winners that never lost keep full pace; chop sequences pause.

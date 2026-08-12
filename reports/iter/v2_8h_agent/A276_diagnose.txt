@@ -1,0 +1,3 @@
+A276 BEFORE (=A269 KEEP)
+Second scale-out 0.28 of leftover may clip the 1.637 median runner after first 0.68 partial.
+HYPOTHESIS STRUCTURAL: second close_frac 0.28→0.25, leave more runner (0.32 REVERT was the other way).

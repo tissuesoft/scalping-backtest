@@ -1,0 +1,12 @@
+B002 BEFORE (=A463, B001 REVERT)
+
+METRICS: hits=1/59 med=4.469 ge2=42 liq=35 (19 win) dead=16 wipe=49 med_trades=55
+B001 REVERT: lev_cap 1.35 raised liq 35->36, med flat.
+
+FAILURE MODE: liq windows = high trade count chop (90-249 trades) at 100x;
+anti-martingale size_mult stacks then 1% adverse move → liq.
+
+HYPOTHESIS: cap cooldown 180→220 bars cuts re-entry churn → fewer liq in chop
+without shrinking winner sizing (2023 hit liq=0).
+
+EDIT: strategies/momentum_breakout.py cooldown min(...,220)

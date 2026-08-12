@@ -1,0 +1,31 @@
+R91 BEFORE DIAGNOSE (current champion)
+=====================================
+hits_10000x: 0/59 (0.00%)
+peak_mult: max=1186.655 median=1.000 mean=42.293
+survived (final>$1): 50.8%
+median_final_mult: 0.010495
+best_window: {'start': '2022-01-01 00:00:00+00:00', 'end': '2022-03-02 00:00:00+00:00', 'mult_peak': 1186.6551812482614}
+
+TRADE / LIQ / RISK
+- zero-trade windows: 23/59
+- windows with liq>0: 7  total_liq=10  mean_liq/window=0.17
+- wipe final<=$1: 29
+- median trades/window: 4  mean=15.0
+- mean MDD%: -56.7  mean PF: 34.66940409318407
+
+PEAK DISTRIBUTION
+- <=1.01: 43
+- 1.01-2: 2
+- 2-10: 10
+- 10-100: 2
+- >100: 2
+
+FAILURE MODE
+1) Edge is concentrated in ONE crash regime (2022-01→03 ~1187x). Almost all other windows peak≈1.
+2) Many windows DO trade but stay flat/wipe (traded_but_flat=20): fees+small adverse moves + lev100 kill equity before a cascade appears.
+3) Liquidations present (sum=10) — risk_cap/size already tuned; more size tends to kill peak.
+4) Median peak=1 means strategy never gets a runaway short trend in calm/bull regimes (short-only + expand/daily filters).
+
+HYPOTHESIS (one coherent code edit)
+- Non-crash windows die because early losers shrink equity before any trend; after a loss, next entry is still full size.
+- EDIT: after a losing exit, apply a temporary size haircut (e.g. size_mult *= 0.5, floor back to 1.0 only after a win) — defensive sizing, NOT anti-martingale win boost (already failed).

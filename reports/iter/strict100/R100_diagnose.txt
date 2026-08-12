@@ -1,0 +1,7 @@
+R100 BEFORE DIAGNOSE (post-R99 KEEP)
+hits=0/59 max=2071.755 med=1.000 mean=72.454
+survived=44.1% liq_sum=1
+peak<=1.01=43 peak>=2=14
+boost KEEP chain 1.08..1.22 -> max 1187->2072; surv 50.8->44.1.
+FAILURE: still 0/59 hits; median 1.0 unchanged; gap to 10k ~4.8x on best window.
+HYPOTHESIS: continue working lever size_boost 1.22 -> 1.25 on ATR>SMA*1.6.

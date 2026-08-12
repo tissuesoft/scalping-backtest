@@ -1,0 +1,3 @@
+A332 BEFORE (=A331 KEEP) med=2.267 ge2=32; 2023-04 1.965
+Trail chain diminishing; one more step.
+HYPOTHESIS STRUCTURAL: all-entry trail *0.01->0.005 after first scale.

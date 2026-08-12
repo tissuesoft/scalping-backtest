@@ -1,0 +1,4 @@
+A127 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: wipe windows take 40-80 trades. Donchian is a level (close>hh+buf) so after cooldown expires while still above the channel, it re-fires into chop. Day path is already first-cross.
+HYPOTHESIS STRUCTURAL: slow/fast Donchian require first-cross like A26 day path.

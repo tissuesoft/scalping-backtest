@@ -1,0 +1,4 @@
+A18 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3% wipe=50 zero=5
+Diagnosis: only ~5 zero-trade windows; dominant failure is wipe after entries (peak~1). Extreme ATR spikes + 100x lev = instant ruin on many non-crash windows.
+HYPOTHESIS STRUCTURAL: ATR% band — keep min 0.0015 AND reject extreme atr_pct > rolling 90th (1000) to skip liquidation spikes.

@@ -1,0 +1,4 @@
+A228 BEFORE (=A212 KEEP)
+15 trading 1.0x windows: peak never >$100, many liq, PF<<1.
+sl_grace=5 suppresses SL but liq at 0.5% still kills first 5 bars → stuck at 1.0x.
+HYPOTHESIS STRUCTURAL: during grace, if bar would liquidate, take SL instead of -99% liq.

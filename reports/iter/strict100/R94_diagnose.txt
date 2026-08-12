@@ -1,0 +1,23 @@
+R94 BEFORE DIAGNOSE
+===================
+hits=0/59 max=1186.655 med=1.000 mean=42.293
+survived=50.8%
+
+GIVEBACK windows (peak>=3 but final_mult<0.5): 9
+  2022-01-31 peak=1186.66 final=0.0000 trades=26 liq=1
+  2022-05-31 peak=3.26 final=0.0000 trades=59 liq=0
+  2022-06-30 peak=7.69 final=0.0000 trades=53 liq=1
+  2022-08-29 peak=4.81 final=0.0000 trades=48 liq=1
+  2024-05-20 peak=6.68 final=0.0040 trades=5 liq=0
+  2024-06-19 peak=6.68 final=0.0000 trades=15 liq=0
+  2025-09-12 peak=3.02 final=0.0069 trades=4 liq=0
+  2025-10-12 peak=3.02 final=0.0000 trades=28 liq=0
+  2026-03-11 peak=5.94 final=0.0000 trades=26 liq=0
+
+FAILURE MODE
+- R93 faster daily destroyed crash edge (overtrading).
+- Several windows REACH 3x-1187x then return to ~0 by continued entries (2022-01-31, 2022-06-30, 2024-06, etc.).
+- Peak is already made; subsequent chops liquidate the account. Goal needs both higher peaks AND retaining path to 10k — giveback blocks compounding across legs.
+
+HYPOTHESIS
+- After equity reaches 5x initial capital, block NEW entries (manage open position only). Preserves crash peak path if already above 5x; stops post-spike suicide trades.

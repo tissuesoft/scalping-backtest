@@ -1,0 +1,5 @@
+R98 BEFORE DIAGNOSE (post-R97 KEEP)
+hits=0/59 max=1750.875 med=1.0 mean=61.53 survived=45.8%
+boost 1.08->1.12->1.15 all KEEP with stable/acceptable survival.
+FAILURE: still 0 hits; best window needs ~5.7x more peak.
+HYPOTHESIS: size_boost 1.15 -> 1.18 on ATR>SMA*1.6.

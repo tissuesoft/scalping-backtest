@@ -1,0 +1,5 @@
+A11 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 zero_trade=5
+A10: persistence raised surv but cut ge2 - need more windows to fire with quality (dead=38, many zero-trade).
+HYPOTHESIS STRUCTURAL: disable ATR-expand gate (expand_ok=True) so mild-regime windows can enter; keep min_atr=0.0015 quality floor.

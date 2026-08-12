@@ -1,0 +1,4 @@
+A282 BEFORE (=A278 KEEP)
+Boost tiers exhausted (gap-fill and 1.30/1.45 all REVERT). A278 larger notionals hit 0.5% liq during 5-bar SL grace.
+A228/A258 were flat on smaller size. Now liq conversion may move 1.0x / 2024-07.
+HYPOTHESIS STRUCTURAL: during grace, if bar would liquidate, take SL instead.

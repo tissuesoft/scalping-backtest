@@ -1,0 +1,3 @@
+A167 BEFORE (=A154 KEEP)
+A142 expand_med 1440 almost noop. Faster 400-bar median may admit rising-vol breakouts sooner in 1.5x band.
+HYPOTHESIS STRUCTURAL: expand_med rolling 500/100 -> 400/80.

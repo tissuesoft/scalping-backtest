@@ -1,0 +1,4 @@
+A157 BEFORE (=A154 KEEP / A156 reverted)
+hits=0/59 med=1.563 ge2=22
+Diagnosis: size_mult almost never grows — trail partials skip it, then leftover full-close often resets to 1. Anti-martingale (A66) is dead. All ge2 windows still die.
+HYPOTHESIS STRUCTURAL: first trail_partial counts as win for size_mult; do not reset when leftover tail dies.

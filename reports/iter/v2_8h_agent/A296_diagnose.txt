@@ -1,0 +1,3 @@
+A296 BEFORE (=A295 KEEP) med=1.737 ge2=23; 2023-08 1.992 (near ge2)
+Fat-bar first partial 0.68->0.50->0.40 lifted med and 2023-08 1.83->1.99.
+HYPOTHESIS STRUCTURAL: 0.40->0.30 on boost>=1.25 so 2023-08 runner clears 2.0.

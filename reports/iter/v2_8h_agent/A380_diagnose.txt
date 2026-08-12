@@ -1,0 +1,3 @@
+A380 BEFORE (=A378 KEEP) hits=1 med=3.913 ge2=39; scale_max floor=10
+A379 scale_max12 REVERT. With more stages, each later clip can be smaller.
+HYPOTHESIS STRUCTURAL: later close_frac 0.12->0.08 (A347 failed at scale_max8; retry at 10).

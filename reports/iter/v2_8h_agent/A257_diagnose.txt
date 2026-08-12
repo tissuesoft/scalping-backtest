@@ -1,0 +1,3 @@
+A257 BEFORE (=A212 KEEP)
+Loss-pause is max-only (A99/A256). Fake breaks on doji/narrow bars still pass body_ok via wick.
+HYPOTHESIS STRUCTURAL: require bar range >= 0.8 ATR (skip inside-bar/doji breaks).

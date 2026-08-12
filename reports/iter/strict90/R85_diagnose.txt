@@ -1,0 +1,1 @@
+Stage hurt. Skip Sat/Sun entries to avoid thin/gap chop

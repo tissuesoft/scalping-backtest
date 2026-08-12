@@ -1,0 +1,1 @@
+R23 DIAGNOSE: cooldown 480 sparse in trends; edit: cooldown=240 hardcode

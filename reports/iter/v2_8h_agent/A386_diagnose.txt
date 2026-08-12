@@ -1,0 +1,3 @@
+A386 BEFORE (=A383 KEEP) hits=1 med=4.156 ge2=40
+A385 low boost REVERT. Trail*0.005 floor almost; nudge 0.004.
+HYPOTHESIS STRUCTURAL: post-first-scale trail *0.005->0.004.

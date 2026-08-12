@@ -1,0 +1,3 @@
+A314 BEFORE (=A313 KEEP) med=1.984 = 2025-01; ge2=29
+One more 0.022 step should put median over ge2.
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.40 after first scale.

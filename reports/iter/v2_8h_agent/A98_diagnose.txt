@@ -1,0 +1,4 @@
+A98 BEFORE (=champ after A97 REVERT)
+hits=0/59 med=1.539 ge2=19
+Diagnosis: A97 floored ALL sizing and killed runners (max 43->29). Real issue is lev_cap 1.5x giving 150x on tight wicks. Cut headroom only.
+HYPOTHESIS STRUCTURAL: lev_cap multiplier 1.5 -> 1.0 (max 100x * size_mult).

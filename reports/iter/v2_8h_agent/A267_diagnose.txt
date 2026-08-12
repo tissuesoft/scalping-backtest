@@ -1,0 +1,3 @@
+A267 BEFORE (=A257 KEEP)
+A229 |slope|>=0.02% ema: max-only, 2024-01 26->1.6. Flat HTF still feeds 1.0x chop.
+HYPOTHESIS STRUCTURAL: much milder floor 0.008% of ema — kill only dead-flat, keep 2024-01.

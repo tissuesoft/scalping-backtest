@@ -1,0 +1,4 @@
+A253 BEFORE (=A212 KEEP)
+Median-band 2025-07: 21 trades, peak 1.58 then giveback. First partial dumps 68%; leftover trail too tight.
+A221 leftover*1.15 after 2 scale-outs: tiny med down.
+HYPOTHESIS STRUCTURAL: after first scale-out, leftover trail *1.25 so the 32% runner can push median above 1.58.

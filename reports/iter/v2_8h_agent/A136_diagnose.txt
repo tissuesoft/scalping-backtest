@@ -1,0 +1,4 @@
+A136 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22 n_1.0=20
+Diagnosis: A92 min_periods=50 + fillna True wrecked Jan 2022 13x/8x (half-baked EMA). 5 early windows still 0 trades because EMA200 needs 200 daily bars. Span 100 with min_periods=100 is a real EMA, ready ~Nov 2021, without A92's 50d premature values.
+HYPOTHESIS STRUCTURAL: daily EMA span cap 200 -> 100, min_periods=100, fillna False kept.

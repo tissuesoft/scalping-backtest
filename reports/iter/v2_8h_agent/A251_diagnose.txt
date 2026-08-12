@@ -1,0 +1,4 @@
+A251 BEFORE (=A212 KEEP)
+1.0x-with-trades (e.g. 2024-04 PF 0.46) never exceed $100: a small win while underwater then win_size_mult 1.75 blows the next trade.
+Ge2/median-band already go above start so they still get anti-martingale.
+HYPOTHESIS STRUCTURAL: apply win_size_mult only when equity > start after the win.

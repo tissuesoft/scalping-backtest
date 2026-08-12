@@ -1,0 +1,3 @@
+A173 BEFORE (=A154 KEEP)
+Daily filter is only close vs EMA200. Price can sit above a still-falling daily EMA (late/chop) and overtrade 1.0x windows.
+HYPOTHESIS STRUCTURAL: require daily EMA 5-day slope to agree with side.

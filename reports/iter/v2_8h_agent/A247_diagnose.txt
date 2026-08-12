@@ -1,0 +1,4 @@
+A247 BEFORE (=A212 KEEP)
+sl_atr=0.8 is in params but SL was signal-bar wick → tiny risk_frac → oversized notional → 1.0x first-tick death.
+A232 sizing floor (SL unchanged) still got wicked out.
+HYPOTHESIS STRUCTURAL: SL = close ± sl_atr*ATR so stop and size both use the param.

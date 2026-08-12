@@ -1,0 +1,2 @@
+A391 BEFORE (=A390 KEEP) med=4.210
+HYPOTHESIS: second scale fat0.04 nonfat0.12

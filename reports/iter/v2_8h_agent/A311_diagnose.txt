@@ -1,0 +1,3 @@
+A311 BEFORE (=A310 KEEP) med=1.918 ge2=29; 34 up 1 dn
+Trail tighten chain still linear +0.022/step on median. Push 0.60->0.55.
+HYPOTHESIS STRUCTURAL: fat-bar trail *0.55 after first scale.

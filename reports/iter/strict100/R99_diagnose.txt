@@ -1,0 +1,6 @@
+R99 BEFORE DIAGNOSE (post-R98 KEEP)
+hits=0/59 max=1883.594 med=1.000 mean=66.047
+survived=45.8% liq_sum=1 wipe=32
+boost chain KEEP through 1.18; survival flat at 45.8% last two steps.
+FAILURE: median still 1.0; best 1884 vs goal 10000 (~5.3x gap).
+HYPOTHESIS: size_boost 1.18 -> 1.22 on ATR>SMA*1.6.

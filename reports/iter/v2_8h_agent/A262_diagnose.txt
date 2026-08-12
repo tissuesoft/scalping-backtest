@@ -1,0 +1,3 @@
+A262 BEFORE (=A257 KEEP) ge2=23 med=1.584 range>=0.8ATR
+A257 cut dojis vs ATR. Compression fake-breaks can still be wide vs ATR but tiny vs recent bars.
+HYPOTHESIS STRUCTURAL: also require bar range >= 20-bar median range.

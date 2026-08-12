@@ -1,0 +1,5 @@
+B023 BEFORE (=B022) med=4.516 liq=32
+
+HYPOTHESIS: later 0.017->0.016 continue chain.
+
+EDIT: compound_engine.py close_frac 0.016

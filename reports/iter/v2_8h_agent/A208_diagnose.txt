@@ -1,0 +1,3 @@
+A208 BEFORE (=A205 KEEP)
+A207 n_fast+20 again 4up/0dn median-flat. A204 0.10 left too much leftover. 8th trim at 0.12 banks a bit more.
+HYPOTHESIS STRUCTURAL: trail_scale_max 7 -> 8.

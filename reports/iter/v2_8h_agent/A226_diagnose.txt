@@ -1,0 +1,4 @@
+A226 BEFORE (=A212 KEEP)
+A225 no-op: (close>daily_ema) is False while ema NaN, fillna unused.
+5 early-2021 windows 0 trades = EMA200 warmup.
+HYPOTHESIS STRUCTURAL: where(ema.notna()) then fillna(bull/bear) enables HTF-only in warmup only.

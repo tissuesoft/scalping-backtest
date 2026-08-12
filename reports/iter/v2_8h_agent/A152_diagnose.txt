@@ -1,0 +1,4 @@
+A152 BEFORE (=A151 KEEP)
+hits=0/59 med=1.561 ge2=22
+Diagnosis: A147/A150/A151 staged scale-outs KEEP median three times. Continue 5th 50% scale-out until the lever saturates.
+HYPOTHESIS STRUCTURAL: fifth profitable trail SL closes 50% of remaining notional.

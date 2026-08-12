@@ -1,0 +1,194 @@
+{
+  "sets": 20,
+  "rounds": "51-70",
+  "start_max": 504.673,
+  "end_max": 1186.655,
+  "champion_set": 62,
+  "champion_edit": "notional*2.15",
+  "keeps": [
+    {
+      "set": 51,
+      "edit": "notional*1.30",
+      "after": 556.585
+    },
+    {
+      "set": 52,
+      "edit": "notional*1.35",
+      "after": 608.976
+    },
+    {
+      "set": 53,
+      "edit": "notional*1.40",
+      "after": 660.953
+    },
+    {
+      "set": 54,
+      "edit": "notional*1.50",
+      "after": 759.453
+    },
+    {
+      "set": 55,
+      "edit": "notional*1.75",
+      "after": 913.021
+    },
+    {
+      "set": 56,
+      "edit": "notional*2.00",
+      "after": 1138.393
+    },
+    {
+      "set": 58,
+      "edit": "notional*2.20",
+      "after": 1176.229
+    },
+    {
+      "set": 62,
+      "edit": "notional*2.15",
+      "after": 1186.655
+    }
+  ],
+  "all": [
+    {
+      "set": 51,
+      "decision": "KEEP",
+      "edit": "notional*1.30",
+      "before": 504.673,
+      "after": 556.585
+    },
+    {
+      "set": 52,
+      "decision": "KEEP",
+      "edit": "notional*1.35",
+      "before": 556.585,
+      "after": 608.976
+    },
+    {
+      "set": 53,
+      "decision": "KEEP",
+      "edit": "notional*1.40",
+      "before": 608.976,
+      "after": 660.953
+    },
+    {
+      "set": 54,
+      "decision": "KEEP",
+      "edit": "notional*1.50",
+      "before": 660.953,
+      "after": 759.453
+    },
+    {
+      "set": 55,
+      "decision": "KEEP",
+      "edit": "notional*1.75",
+      "before": 759.453,
+      "after": 913.021
+    },
+    {
+      "set": 56,
+      "decision": "KEEP",
+      "edit": "notional*2.00",
+      "before": 913.021,
+      "after": 1138.393
+    },
+    {
+      "set": 57,
+      "decision": "REVERT",
+      "edit": "notional*2.50",
+      "before": 1138.4,
+      "after": 643.3
+    },
+    {
+      "set": 58,
+      "decision": "KEEP",
+      "edit": "notional*2.20",
+      "before": 1138.393,
+      "after": 1176.229
+    },
+    {
+      "set": 59,
+      "decision": "REVERT",
+      "edit": "notional*2.30",
+      "before": 1176.2,
+      "after": 1100.7
+    },
+    {
+      "set": 60,
+      "decision": "REVERT",
+      "edit": "risk=0.0032",
+      "before": 1176.2,
+      "after": 92.9
+    },
+    {
+      "set": 61,
+      "decision": "REVERT",
+      "edit": "expand=1.34",
+      "before": 1176.2,
+      "after": 89.3
+    },
+    {
+      "set": 62,
+      "decision": "KEEP",
+      "edit": "notional*2.15",
+      "before": 1176.229,
+      "after": 1186.655
+    },
+    {
+      "set": 63,
+      "decision": "REVERT",
+      "edit": "notional*2.12",
+      "before": 1186.7,
+      "after": 1185.7
+    },
+    {
+      "set": 64,
+      "decision": "REVERT",
+      "edit": "win_size*1.2",
+      "before": 1186.7,
+      "after": 47.9
+    },
+    {
+      "set": 65,
+      "decision": "REVERT",
+      "edit": "daily_n=0",
+      "before": 1186.7,
+      "after": 7.7
+    },
+    {
+      "set": 66,
+      "decision": "REVERT",
+      "edit": "trail=7",
+      "before": 1186.7,
+      "after": 833.8
+    },
+    {
+      "set": 67,
+      "decision": "REVERT",
+      "edit": "lookback=400",
+      "before": 1186.7,
+      "after": 1186.7
+    },
+    {
+      "set": 68,
+      "decision": "REVERT",
+      "edit": "notional*2.16",
+      "before": 1186.7,
+      "after": 1185.8
+    },
+    {
+      "set": 69,
+      "decision": "REVERT",
+      "edit": "reentry=110",
+      "before": 1186.7,
+      "after": 1186.7
+    },
+    {
+      "set": 70,
+      "decision": "REVERT",
+      "edit": "buf=0.45*atr",
+      "before": 1186.655,
+      "after": 115.021
+    }
+  ],
+  "hits_10000x": 0,
+  "note": "size chain to *2.15; risk/expand/daily/trail/lookback/reentry/buffer probes REVERT"
+}

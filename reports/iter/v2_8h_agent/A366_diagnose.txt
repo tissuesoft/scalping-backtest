@@ -1,0 +1,3 @@
+A366 BEFORE (=A365 KEEP) hits=1/59 med=3.089 ge2=36; 2023-01 227690x FIRST HIT
+trail_atr 6->5 unlocked the 10000x. Continue tighten.
+HYPOTHESIS STRUCTURAL: trail_atr cap 5->4.

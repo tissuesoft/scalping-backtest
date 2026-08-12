@@ -1,0 +1,3 @@
+A169 BEFORE (=A154 KEEP)
+expand SMA 200 is slow to admit rising-vol. Median-band may enter late.
+HYPOTHESIS STRUCTURAL: atr_sma_period cap 200 -> 160.

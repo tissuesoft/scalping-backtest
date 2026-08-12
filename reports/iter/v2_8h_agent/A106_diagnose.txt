@@ -1,0 +1,4 @@
+A106 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A90/A94 wider/later trail hurt; A31 0.25*width is a floor vs 6 ATR. Raising width floor lets Donchian-scale moves run further on median-band windows without changing unlock_r.
+HYPOTHESIS STRUCTURAL: width trail 0.25 -> 0.30 of Donchian range.

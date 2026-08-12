@@ -1,0 +1,4 @@
+A245 BEFORE (=A212 KEEP)
+Aggression (size/unlock/antimart) is max-only. Warmup fills wreck Jan 2022.
+Chop 1.0x pass expand_med vs 500-bar (~8h) median too easily.
+HYPOTHESIS STRUCTURAL: expand_med rolling 500→800 so vol-regime is stickier; expand_sma OR unchanged.

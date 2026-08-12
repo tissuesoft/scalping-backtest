@@ -1,0 +1,4 @@
+A105 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: median band still ~1.55. A55 slope 180 is slow to flip; 1.5-2x windows may enter late.
+HYPOTHESIS STRUCTURAL: HTF EMA slope lookback 180 -> 120.

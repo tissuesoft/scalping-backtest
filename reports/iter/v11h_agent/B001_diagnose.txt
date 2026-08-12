@@ -1,0 +1,23 @@
+B001 BEFORE (=A463 champion on disk)
+
+GOAL: EVERY window 10,000x from $100; fees+slippage ON; liq=0 ALL windows.
+Keep order: hits > median > min > ge2; max-only NOT keep; liq increase = REVERT.
+
+METRICS
+hits=1/59  median=4.469  min=1.0  max=127638  ge2=42  ge10=11
+surv=16.9%  dead=16  wipe=49  liq_total=35  liq_windows=19/59
+zero_trade=5  med_trades=55
+
+FAILURE MODE
+- 19/59 windows had liquidations (total 35); liq-heavy windows show 90–249 trades
+  then MDD -100% — 100x + anti-martingale overtrading in chop → liq before compound.
+- 16 dead windows (peak≈1), 5 zero-trade — coverage gap in early/mild regimes.
+- Single hit 2023-01 (liq=0); nearest runner 2024-01 ~2106x (liq=0).
+- Weak band: 17 windows peak<2x; many liq windows peak 4–38x then wipe.
+
+HYPOTHESIS
+Cap max notional via lev_cap mult 1.5→1.35 to cut liq frequency without
+touching entry filters (protect 2023 hit path).
+
+EDIT (engine)
+compound_engine.py: lev_cap = equity * lev * size_mult * 1.35 * boost (was 1.5)

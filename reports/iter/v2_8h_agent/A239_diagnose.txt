@@ -1,0 +1,4 @@
+A239 BEFORE (=A212 KEEP)
+Median sits on 2025-07 (21 trades, 1.58) and 2025-01 (70, 1.54). They get a small runner.
+A220 smaller size hurt median. A67 steep curve KEEP.
+HYPOTHESIS STRUCTURAL: start risk_tgt 0.12→0.15 (same 0.35 cap) so early/few-trade windows compound more.

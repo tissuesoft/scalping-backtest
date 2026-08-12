@@ -1,0 +1,10 @@
+{"set": 1, "edit": "trail unlock +2R x3", "before_max": 13.687, "after_max": 4.749, "decision": "REVERT", "reason": "max_peak worsened"}
+{"set": 2, "edit": "hardcode same-side reentry <=120 bars", "before_max": 13.687, "after_max": 47.829, "decision": "KEEP", "reason": "max_peak 13.7->47.8"}
+{"set": 3, "edit": "anti-martingale size*1.5 after win (max4)", "before_max": 47.829, "after_max": 25.639, "decision": "REVERT"}
+{"set": 4, "edit": "trail arms only after +1.5R", "before_max": 47.829, "after_max": 41.316, "decision": "REVERT"}
+{"set": 5, "edit": "reentry 120->360", "before_max": 47.829, "after_max": 47.829, "survived": "71.2->69.5", "decision": "REVERT"}
+{"set": 6, "edit": "pyramid +1R add 1x BE", "before_max": 47.829, "after_max": 1.0, "decision": "REVERT"}
+{"set": 7, "edit": "structure SL at signal wick", "before_max": 47.829, "after_max": 83.456, "decision": "KEEP"}
+{"set": 8, "edit": "hardcode trail=12 ATR", "before_max": 83.456, "after_max": 37.543, "decision": "REVERT"}
+{"set": 9, "edit": "require bearish body 0.5ATR on shorts", "before_max": 83.456, "after_max": 83.456, "decision": "REVERT", "reason": "no improvement"}
+{"set": 10, "edit": "partial 50% on first trail touch + BE runner", "before_max": 83.456, "after_max": 81.277, "decision": "REVERT"}

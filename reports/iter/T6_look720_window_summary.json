@@ -1,0 +1,43 @@
+{
+  "tag": "T6_look720",
+  "symbol": "BTCUSDT",
+  "params": {
+    "lookback": 720,
+    "atr_period": 14,
+    "min_atr_pct": 0.0012,
+    "sl_atr": 0.8,
+    "trail_atr": 8.0,
+    "ht_ema": 50,
+    "ht_rule": "1h",
+    "breakout_buffer_atr": 0.7,
+    "cooldown_bars": 720,
+    "atr_expand_mult": 1.6,
+    "atr_sma_period": 200,
+    "daily_ema_period": 200,
+    "tp_atr": 0.0,
+    "body_min_atr": 0.0,
+    "allow_long": true,
+    "allow_short": true
+  },
+  "leverage": 100.0,
+  "pyramid_at_r": 0.0,
+  "pyramid_frac": 1.0,
+  "window_days": 60,
+  "step_days": 30,
+  "target_mult": 10000.0,
+  "summary": {
+    "n_windows": 59,
+    "n_hit": 0,
+    "hit_rate": 0.0,
+    "median_peak_mult": 1.0,
+    "mean_peak_mult": 1.5187051926320456,
+    "max_peak_mult": 5.086798852763738,
+    "median_final_mult": 0.06643982446268785,
+    "pct_survived": 0.7457627118644068,
+    "best_window": {
+      "start": "2025-12-11 00:00:00+00:00",
+      "end": "2026-02-09 00:00:00+00:00",
+      "mult_peak": 5.086798852763738
+    }
+  }
+}

@@ -1,0 +1,3 @@
+A285 BEFORE (=A278 KEEP) med=1.725 ge2=23
+Boost/trail/daily-gap axes exhausted. Median 2025-07 1.78 may be clipped by SL in the first 5 bars on fat entries.
+HYPOTHESIS STRUCTURAL: sl_grace 5→7 (liq still on); let A278 oversized bars run 2 more minutes before SL.

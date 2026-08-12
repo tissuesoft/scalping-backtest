@@ -1,0 +1,1 @@
+R27 DIAGNOSE: 0.35 champ, 0.32 bad; probe 0.37%

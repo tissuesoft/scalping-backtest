@@ -1,0 +1,19 @@
+{
+  "lookback": 240,
+  "atr_period": 14,
+  "min_atr_pct": 0.002,
+  "sl_atr": 0.8,
+  "trail_atr": 6.0,
+  "ht_ema": 20,
+  "ht_rule": "1h",
+  "breakout_buffer_atr": 0.5,
+  "cooldown_bars": 180,
+  "atr_expand_mult": 2.2,
+  "atr_sma_period": 200,
+  "daily_ema_period": 0,
+  "tp_atr": 0.0,
+  "body_min_atr": 1.0,
+  "allow_long": true,
+  "allow_short": true,
+  "_leverage": 100
+}

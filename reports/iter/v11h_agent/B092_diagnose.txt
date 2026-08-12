@@ -1,0 +1,3 @@
+B092 BEFORE champion
+HYPOTHESIS: second scale 0.02/0.08->0.018/0.075
+EDIT: compound_engine.py

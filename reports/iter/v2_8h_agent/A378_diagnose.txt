@@ -1,0 +1,3 @@
+A378 BEFORE (=A375 KEEP) hits=1 med=3.811 ge2=39
+A377 risk 0.52 REVERT. More scale-out stages may harvest runners on near-hit windows.
+HYPOTHESIS STRUCTURAL: trail_scale_max 8->10.

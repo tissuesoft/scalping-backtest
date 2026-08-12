@@ -1,0 +1,2 @@
+B094 BEFORE champion B092 med~4.568 liq=32
+HYP: later 0.007->0.006

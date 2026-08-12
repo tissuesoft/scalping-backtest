@@ -1,0 +1,3 @@
+A213 BEFORE (=A212 KEEP)
+second 0.20/0.24/0.28 KEEP. Continue 2nd-trim banking.
+HYPOTHESIS STRUCTURAL: second close_frac 0.28 -> 0.32.

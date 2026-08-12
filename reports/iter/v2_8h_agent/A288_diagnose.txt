@@ -1,0 +1,3 @@
+A288 BEFORE (=A278 KEEP)
+ROC boost was max-only. 1.15@1.2ATR may oversize merely-wide chop bars; 1.25/1.35 on fatter bars lifted median.
+HYPOTHESIS STRUCTURAL: 1.2ATR tier 1.15→1.10; keep 1.25@1.5 and 1.35@1.8.

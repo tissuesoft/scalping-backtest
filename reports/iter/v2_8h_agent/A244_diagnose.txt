@@ -1,0 +1,4 @@
+A244 BEFORE (=A212 KEEP)
+Warmup fills wreck Jan 2022 ge2. Median sits on 2025-07 which already has a win (1.58).
+A220 win_size 1.70 REVERT (smaller hurt). A66 1.75 KEEP.
+HYPOTHESIS STRUCTURAL: win_size_mult 1.75→2.0 so the first median-band win compounds faster.

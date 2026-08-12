@@ -1,0 +1,3 @@
+A297 BEFORE (=A296 KEEP) med=1.738 ge2=24 (2023-08 2.05 new)
+Fat-bar first partial 0.30@1.25 got ge2+1. Median window 2025-01 only +0.0006/step — its runner may be 1.10-tier.
+HYPOTHESIS STRUCTURAL: apply 0.30 first scale at boost>=1.10 (wide-bar) not only 1.25.

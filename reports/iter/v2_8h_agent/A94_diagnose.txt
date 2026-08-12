@@ -1,0 +1,4 @@
+A94 BEFORE (=champ after A93 REVERT)
+hits=0/59 med=1.539 max=43.903 ge2=19 n_1.0=21
+Diagnosis: 11 windows sit in 1.5-2.0 (the median band). Early ATR trail + partial 0.67 likely clips runners before 2x. A90 wider unlock hurt; A89 later unlock helped slightly. Arming trail later is a different lever than unlock_mult.
+HYPOTHESIS STRUCTURAL: trail_arm_r 0 -> 1.0 (no ATR trail until +1R; wick SL still live after grace).

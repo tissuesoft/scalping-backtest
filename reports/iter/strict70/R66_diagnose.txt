@@ -1,0 +1,1 @@
+R66 DIAG: with size2.15 trail8 may hold too long; probe trail=7

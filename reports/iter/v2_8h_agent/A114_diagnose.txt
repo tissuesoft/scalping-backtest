@@ -1,0 +1,4 @@
+A114 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A86 n//6 (~60) raised ge2+max but dropped median. A103 n//2 noop-ish/hurt mean. Try n//4 (~90) between A75 120 and A86 60.
+HYPOTHESIS STRUCTURAL: n_fast = max(60, n//4).

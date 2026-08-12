@@ -1,0 +1,4 @@
+A75 BEFORE
+hits=0/59 med=1.460 max=50.145 ge2=20
+Diagnosis: A17 dual Donchian was max-only on weak champ; retry on stronger base (med 1.46, risk-parity, A71 expand).
+HYPOTHESIS STRUCTURAL: OR fast Donchian (n//3) into long_brk/short_brk.

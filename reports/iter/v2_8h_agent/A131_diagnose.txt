@@ -1,0 +1,4 @@
+A131 BEFORE (=A117 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: A87 partial 0.67 KEEP median; A91 0.75 REVERT. 9 windows sit 1.5-2.0 — slightly more banking (0.70) may lock the median run without A91's over-bank.
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.67 -> 0.70.

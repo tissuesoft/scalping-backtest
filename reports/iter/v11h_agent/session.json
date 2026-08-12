@@ -1,0 +1,20 @@
+{
+  "mode": "agent_manual_only",
+  "champion": "B110",
+  "goal": "all windows 10000x, liq=0, fees+slippage on",
+  "end_epoch": 1786555279,
+  "next_set": "B111",
+  "forbidden": "research_loop_v11h.py",
+  "last_metrics": {
+    "hits": 1,
+    "med": 4.584,
+    "min": 1.0,
+    "ge2": 40,
+    "liq": 32,
+    "max": 126199
+  },
+  "progress_from_B080": {
+    "med_delta": 0.053,
+    "sets_run": "B081-B110"
+  }
+}

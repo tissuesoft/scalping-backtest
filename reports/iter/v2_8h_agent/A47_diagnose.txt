@@ -1,0 +1,4 @@
+A47 BEFORE
+hits=0/59 med=1.192 max=46.394 ge2=8 mean=2.448
+Diagnosis: equity-scaled risk only ramps after already winning — dead windows never unlock aggression. Need time-based ramp so late-window still presses.
+HYPOTHESIS STRUCTURAL: risk_tgt from bar progress in window (8%->25%) instead of equity growth.

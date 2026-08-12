@@ -1,0 +1,4 @@
+A132 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22 n_1.0=20 band_1.5_2=9
+Diagnosis: A106 wider-always and A107 tighter-always both dropped median. Time-progress risk (A47) KEEP. Apply the same idea to trail: early tighter to bank the 1.55 median band, late wider for runners.
+HYPOTHESIS STRUCTURAL: trail *= 0.85 + 0.30 * bar_progress (0.85x start -> 1.15x end).

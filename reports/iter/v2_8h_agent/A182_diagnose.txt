@@ -1,0 +1,3 @@
+A182 BEFORE (=A154 KEEP)
+risk_cap 0.33% binds many structure SLs. A24 no-cap collapsed. 0.38% is a small widen.
+HYPOTHESIS STRUCTURAL: risk_cap 0.0033 -> 0.0038.

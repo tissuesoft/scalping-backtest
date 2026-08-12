@@ -1,0 +1,1 @@
+HTF flat. Cooldown 480 may miss cascade legs; hardcode 360

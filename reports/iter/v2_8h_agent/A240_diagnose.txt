@@ -1,0 +1,4 @@
+A240 BEFORE (=A212 KEEP)
+A230 global shrink killed compounding. A239 more early risk was max-only.
+Chop 1.0x fire via expand_med OR without true expand_sma.
+HYPOTHESIS STRUCTURAL: size_boost 0.65 when not expand_sma, 1.0 when expanding — shrink chop only.

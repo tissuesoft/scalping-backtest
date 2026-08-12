@@ -1,0 +1,2 @@
+B096 BEFORE champion B092 med~4.568 liq=32
+HYP: ema_slope diff 200->210

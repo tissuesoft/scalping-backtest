@@ -1,0 +1,3 @@
+A310 BEFORE (=A309 KEEP) med=1.895 ge2=29 (+2023-08,+2024-10); n1 19->18
+Fat-bar trail 0.70->0.65 KEEP. Still lifting median and ge2 every step.
+HYPOTHESIS STRUCTURAL: 0.65->0.60.

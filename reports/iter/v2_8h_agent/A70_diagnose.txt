@@ -1,0 +1,4 @@
+A70 BEFORE
+hits=0/59 med=1.411 max=50.145 ge2=18 mean=3.725 surv=25.4%
+Diagnosis: after partial trail, SL snaps to BE — runners often die on noise before large trends. Keep trail SL instead.
+HYPOTHESIS STRUCTURAL: on partial, do NOT reset pos_sl to entry (keep trail).

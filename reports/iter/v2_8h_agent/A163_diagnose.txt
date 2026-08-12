@@ -1,0 +1,4 @@
+A163 BEFORE (=A154 KEEP)
+hits=0/59 med=1.563 ge2=22
+Median-band windows peak ~1.56 then die. A31 width 0.25 KEEP; 0.20/0.30 REVERT.
+HYPOTHESIS STRUCTURAL: width_tr 0.25 -> 0.27 (a bit more room for first runner).

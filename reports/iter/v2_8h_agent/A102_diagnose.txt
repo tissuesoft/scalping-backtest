@@ -1,0 +1,4 @@
+A102 BEFORE (=A100 KEEP, A101 REVERT)
+hits=0/59 med=1.539 ge2=20 max=37.2
+Diagnosis: 1.5-2.0 windows often peak then stall; ROC120 may lag the turn so we enter late into exhaustion.
+HYPOTHESIS STRUCTURAL: ROC 120 -> 90 (still sign-agree with side).

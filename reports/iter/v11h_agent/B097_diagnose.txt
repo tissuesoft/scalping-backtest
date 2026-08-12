@@ -1,0 +1,2 @@
+B097 BEFORE champion B092 med~4.568 liq=32
+HYP: risk_cap 0.0024->0.00245

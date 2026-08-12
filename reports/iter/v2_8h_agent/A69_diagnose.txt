@@ -1,0 +1,4 @@
+A69 BEFORE
+hits=0/59 med=1.411 max=50.145 ge2=18 mean=3.725
+Diagnosis: successive risk steepening (A60/A67) raised median. Continue toward 10000x.
+HYPOTHESIS STRUCTURAL: risk_tgt = min(0.40, 0.14 + 0.26 * progress).

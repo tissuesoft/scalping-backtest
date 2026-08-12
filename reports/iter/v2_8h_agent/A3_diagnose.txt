@@ -1,0 +1,5 @@
+A3 BEFORE DIAGNOSE
+GOAL all-window 10000x. A1 slope REVERT, A2 4h Donchian REVERT.
+hits=0/59 med=1.000 max=98.801 ge2=16 wipe=50 med_trades=28
+FAILURE: breakout bars include dojis/opposite bodies that reverse immediately -> SL wipe.
+HYPOTHESIS STRUCTURAL: require breakout candle body in trade direction (long: close>open, short: close<open).

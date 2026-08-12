@@ -1,0 +1,4 @@
+A117 BEFORE (=A116 KEEP)
+hits=0/59 med=1.547 ge2=21
+Diagnosis: A116 extra opposite-side entries after 180 bars lifted two median-band windows over 2x. Faster HTF EMA may align those entries better.
+HYPOTHESIS STRUCTURAL: 1h EMA span cap 50 -> 40.

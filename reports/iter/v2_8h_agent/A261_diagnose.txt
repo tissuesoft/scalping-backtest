@@ -1,0 +1,3 @@
+A261 BEFORE (=A257 KEEP) range>=0.8 ATR ge2=23
+Range filter cut dojis but a wide bar can still close near the wrong extreme (long wicks).
+HYPOTHESIS STRUCTURAL: long must close in top 40% of bar, short in bottom 40%.

@@ -1,0 +1,4 @@
+A103 BEFORE (=A100 KEEP)
+hits=0/59 med=1.539 ge2=20
+Diagnosis: A86 faster n_fast (n//6) raised max/ge2 but dropped median. A75 n//3 KEPT median. Try slower fast channel to cut wipe-window fake breaks.
+HYPOTHESIS STRUCTURAL: n_fast = max(60, n//2) instead of n//3.

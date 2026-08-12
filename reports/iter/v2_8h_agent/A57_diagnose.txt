@@ -1,0 +1,4 @@
+A57 BEFORE
+hits=0/59 med=1.286 max=26.983 ge2=16
+Diagnosis: daily regime is level-only (close vs ema); add daily EMA slope persistence like A55 on HTF.
+HYPOTHESIS STRUCTURAL: daily_ok also requires daily_ema rising (bull) / falling (bear) via diff of daily ema.

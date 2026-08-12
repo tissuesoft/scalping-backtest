@@ -1,0 +1,3 @@
+A369 BEFORE (=A367 KEEP) hits=1 med=3.577 ge2=37; trail cap floor=3.0
+A368 trail 2.5 REVERT med. Width floor may still keep trails wide.
+HYPOTHESIS STRUCTURAL: Donchian width trail 0.25->0.20.

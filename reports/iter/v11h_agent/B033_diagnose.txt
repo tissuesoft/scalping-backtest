@@ -1,0 +1,15 @@
+B033 BEFORE DIAGNOSE
+GOAL: all windows 10000x, liq=0, fees+slippage ON.
+Keep: hits > median > min > ge2; liq increase = REVERT; max-only NOT keep.
+
+METRICS hits=1/59 med=4.5311 min=1.0000 max=133268.8611
+ge2=40 liq=32 liq_windows=18 dead=17 wipe=49 surv=16.9%
+med_trades=54.0
+
+FAILURE MODE
+- 18 windows with liquidations (total 32).
+- 17 dead windows peak~1.
+- only 1 hit(s); need all-window 10000x.
+
+HYPOTHESIS: risk_cap +0.00005
+EDIT: risk+

@@ -1,0 +1,4 @@
+A135 BEFORE (=A131 KEEP)
+hits=0/59 med=1.547 ge2=22
+Diagnosis: 14-bar ATR is jumpy on 1m so vol_ok/trail/expand flicker. Slower ATR should stabilize gates and trail distance on median-band windows.
+HYPOTHESIS STRUCTURAL: ATR period floor 14 -> 21.

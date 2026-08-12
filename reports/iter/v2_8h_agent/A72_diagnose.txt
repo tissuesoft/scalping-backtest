@@ -1,0 +1,5 @@
+A72 BEFORE
+hits=0/59 med=1.460 max=50.145 ge2=20 mean=3.929 surv=23.7%
+lt2=39 ge10=5
+Diagnosis: A71 soft expand helped ge2; continue entry coverage with first-touch Donchian persistence 1-bar only on day path already. Try shorter cooldown structurally for more attempts in dead windows.
+HYPOTHESIS STRUCTURAL: force cooldown_bars effective = max(60, cooldown//2) in code (halve cooldown).

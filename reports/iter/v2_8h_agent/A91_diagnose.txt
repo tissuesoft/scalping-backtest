@@ -1,0 +1,4 @@
+A91 BEFORE
+hits=0/59 med=1.539 max=43.903 ge2=19
+Diagnosis: A87 ge2 20->19 from banking 67%. A43 was 0.5. Try 0.75 to push median further on stall windows (more banked equity).
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.67 -> 0.75.

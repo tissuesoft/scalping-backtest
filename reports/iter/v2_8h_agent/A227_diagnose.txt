@@ -1,0 +1,4 @@
+A227 BEFORE (=A212 KEEP)
+A226 HTF-fill flooded warmup (300+ trades, all died) and wrecked 2022-01 ge2.
+HYPOTHESIS STRUCTURAL: ewm min_periods=60 (span 200 unchanged) so early windows get a real daily bias, not unfiltered HTF.
+A216 span=100 changed the filter everywhere; this does not.

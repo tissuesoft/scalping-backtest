@@ -1,0 +1,72 @@
+{
+  "goal": "every 60d window: $100 -> 10000x",
+  "champion": "S5_ultra_rare_lev75",
+  "sets": [
+    {
+      "tag": "L0_champion",
+      "edit": "baseline champion",
+      "decision": "CHAMPION",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.2022585413329805,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.0
+    },
+    {
+      "tag": "S1_rare_lev50",
+      "edit": "rare entries + lev50",
+      "decision": "KEEP",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.785684452976466,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.3389830508474576
+    },
+    {
+      "tag": "S2_long_daily",
+      "edit": "long-only + daily EMA200",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.19943248419572,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.9830508474576272
+    },
+    {
+      "tag": "S3_asymmetric_tp",
+      "edit": "SL1 ATR / TP12 ATR",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 2.5172351657226564,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.4406779661016949
+    },
+    {
+      "tag": "S4_pyramid",
+      "edit": "pyramid at +1R",
+      "decision": "REVERT",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 1.0818851595432026,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.0
+    },
+    {
+      "tag": "S5_ultra_rare_lev75",
+      "edit": "ultra rare + lev75 + 1h EMA",
+      "decision": "KEEP",
+      "n_hit": 0,
+      "hit_rate": 0.0,
+      "max_peak_mult": 7.151696120364967,
+      "median_peak_mult": 1.0,
+      "n_windows": 59,
+      "pct_survived": 0.7288135593220338
+    }
+  ]
+}

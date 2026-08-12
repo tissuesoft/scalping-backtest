@@ -1,0 +1,5 @@
+A52 BEFORE (A51 unlock on)
+hits=0/59 med=1.233 max=25.507 ge2=16 mean=2.339 surv=33.9%
+lt2=43 ge10=2
+Diagnosis: winners stall ~2-25x; win_size_max=4 caps anti-martingale. Raise cap so compound streak can accelerate toward 10000x.
+HYPOTHESIS STRUCTURAL: win_size_max=8.0 (keep win_size_mult=1.5).

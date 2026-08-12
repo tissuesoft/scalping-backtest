@@ -1,0 +1,2 @@
+A399 BEFORE (=A397 KEEP) hits=1 med=4.346; 2024-01 1217x
+HYPOTHESIS: lev notional 1.5->1.6 on size_boost path

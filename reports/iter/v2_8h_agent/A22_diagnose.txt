@@ -1,0 +1,4 @@
+A22 BEFORE
+hits=0/59 med=1.000 max=106.145 ge2=15 surv=15.3%
+Diagnosis: many wipe entries likely in thin Asia hours; US session has cleaner continuation.
+HYPOTHESIS STRUCTURAL: session gate UTC hour in [12,21] only.

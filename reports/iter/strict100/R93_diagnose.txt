@@ -1,0 +1,29 @@
+R93 BEFORE DIAGNOSE
+===================
+hits=0/59 max=1186.655 med=1.000 mean=42.293
+survived=50.8% best={'start': '2022-01-01 00:00:00+00:00', 'end': '2022-03-02 00:00:00+00:00', 'mult_peak': 1186.6551812482614}
+
+zero_trade=23 wipe=29 liq_sum=10
+peak>=2 windows (14):
+  2022-01-01 peak=1186.66 final=1186.6552 trades=7 liq=0 pf=36.34
+  2022-01-31 peak=1186.66 final=0.0000 trades=26 liq=1 pf=1.00
+  2023-02-25 peak=14.70 final=14.7016 trades=2 liq=0 pf=999.00
+  2023-01-26 peak=14.70 final=14.7016 trades=2 liq=0 pf=999.00
+  2022-06-30 peak=7.69 final=0.0000 trades=53 liq=1 pf=0.87
+  2024-05-20 peak=6.68 final=0.0040 trades=5 liq=0 pf=0.85
+  2024-06-19 peak=6.68 final=0.0000 trades=15 liq=0 pf=0.85
+  2026-03-11 peak=5.94 final=0.0000 trades=26 liq=0 pf=0.84
+  2022-08-29 peak=4.81 final=0.0000 trades=48 liq=1 pf=0.79
+  2022-05-31 peak=3.26 final=0.0000 trades=59 liq=0 pf=0.83
+  2025-10-12 peak=3.02 final=0.0000 trades=28 liq=0 pf=0.67
+  2025-09-12 peak=3.02 final=0.0069 trades=4 liq=0 pf=0.67
+  2025-11-11 peak=2.94 final=0.0000 trades=33 liq=0 pf=0.66
+  2022-11-27 peak=2.25 final=0.0105 trades=10 liq=0 pf=0.59
+
+FAILURE MODE
+- Only 14/59 windows reach peak>=2. Daily EMA200 + expand1.35 + short-only gates out most mild bear legs.
+- R91/R92 proved: shrinking size or pausing after loss does not raise peak toward 10k; crash path needs uninterrupted full size.
+- To raise hits/median we need MORE valid dump windows to fire (without flooding chop).
+
+HYPOTHESIS
+- Daily EMA200 is too slow; many multi-week dumps stay above EMA200 early. Force daily EMA period=50 so bear regime turns on earlier for short entries.

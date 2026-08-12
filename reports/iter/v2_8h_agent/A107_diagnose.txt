@@ -1,0 +1,4 @@
+A107 BEFORE (=A104 KEEP)
+hits=0/59 med=1.547 ge2=19
+Diagnosis: A106 wider width trail dropped median. A87 more banking KEPT. Tighter width floor should lock median-band runs sooner then re-enter with size_mult.
+HYPOTHESIS STRUCTURAL: width trail 0.25 -> 0.20 of Donchian range.

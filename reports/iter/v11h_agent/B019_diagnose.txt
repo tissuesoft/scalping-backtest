@@ -1,0 +1,5 @@
+B019 BEFORE (=B018) med=4.506 liq=32
+
+HYPOTHESIS: cooldown cap 220->225 incremental (B008 230 hurt med; B002 220 helped liq).
+
+EDIT: momentum_breakout.py cooldown min(...,225)

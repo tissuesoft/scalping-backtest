@@ -1,0 +1,3 @@
+A205 BEFORE (=A203 KEEP, later frac 0.12)
+A204 0.10 REVERT (median down). Later leftover saturated. First partial still 0.70.
+HYPOTHESIS STRUCTURAL: partial_trail_frac 0.70 -> 0.68 (same leftover direction on first scale).

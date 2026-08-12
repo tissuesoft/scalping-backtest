@@ -1,0 +1,3 @@
+A180 BEFORE (=A154 KEEP)
+A75 dual n//3=120 KEEP; n//4 and n//6 REVERT. Small +20 slow-down of fast path untried.
+HYPOTHESIS STRUCTURAL: n_fast 120 -> 140.

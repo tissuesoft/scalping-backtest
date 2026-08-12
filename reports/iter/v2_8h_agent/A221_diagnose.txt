@@ -1,0 +1,3 @@
+A221 BEFORE (=A212 KEEP)
+Scale-out schedule saturated. A90 unlock_mult 1.75 on full position REVERT. Leftover after 2 trims is small — wider trail may let the stub run.
+HYPOTHESIS STRUCTURAL: after 2 scale-outs, trail * 1.15.

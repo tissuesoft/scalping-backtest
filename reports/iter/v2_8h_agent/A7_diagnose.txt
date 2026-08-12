@@ -1,0 +1,6 @@
+A7 BEFORE DIAGNOSE
+GOAL every window 10000x.
+hits=0/59 med=1.000 max=106.145 ge2=15 dead=38 wipe=50 med_trades=30
+A6: wider SL nullified by risk_cap.
+FAILURE: expand filter uses same ATR SMA for both sides; mild bull grind still takes short breakouts when daily briefly bears.
+HYPOTHESIS STRUCTURAL: disable expand filter (expand_ok=True always) and instead require |1h return over 60 bars| >= 0.3% momentum gate - different axis than expand.

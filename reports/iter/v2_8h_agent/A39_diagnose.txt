@@ -1,0 +1,4 @@
+A39 BEFORE
+hits=0/59 med=1.161 max=13.859 ge2=7
+Diagnosis: A38 noop — risk-parity path ignores size_mult (only lev_cap uses it; lev_cap not binding).
+HYPOTHESIS STRUCTURAL: scale risk_tgt notional by size_mult AND enable win_size_mult=1.5 so wins compound risk budget.

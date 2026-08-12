@@ -1,0 +1,4 @@
+B115 BASELINE hits=1/59 med=4.5889 ge2=40 liq=32
+DEAD~1: 17 windows
+HYPOTHESIS: size_boost 1.8ATR 1.35->1.37
+EDIT: momentum_breakout.py

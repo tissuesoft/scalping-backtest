@@ -1,0 +1,2 @@
+A275 BEFORE (=A269 KEEP)
+A244 win_size 2.0 was max-only on A212. A269 already sizes quality bars; a milder 1.75→1.85 may lift the second trade on the 1.63 median cluster.

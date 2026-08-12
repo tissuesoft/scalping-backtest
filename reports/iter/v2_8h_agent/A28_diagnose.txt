@@ -1,0 +1,4 @@
+A28 BEFORE
+hits=0/59 med=1.000 max=6.767 ge2=16 mean=1.714
+Diagnosis: A26 day path stays true all day above day_hi -> spam entries/cooldown waste. Need first-cross day break with ATR buffer.
+HYPOTHESIS STRUCTURAL: day path = first cross of (day_hi+buf)/(day_lo-buf) only; Donchian unchanged.

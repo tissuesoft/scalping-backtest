@@ -1,0 +1,2 @@
+A410 BEFORE (=A408 KEEP) hits=1 med=4.351 ge2=41
+HYPOTHESIS STRUCTURAL: require |ROC120|>=0.002 to skip noise flips.
