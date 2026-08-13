@@ -1,0 +1,6 @@
+C200 BEFORE (KEEP C199) — set 10/10
+hits=1 med=4.665741 liq=32 trail=2.9865
+Batch: scale KEEP; size_boost low med↓ REVERT.
+
+HYP: later 0.0056→0.0058 closes batch with med tick.
+EDIT: compound_engine.py later close_frac

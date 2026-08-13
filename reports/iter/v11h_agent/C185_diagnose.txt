@@ -1,0 +1,4 @@
+C185 BEFORE (KEEP C184) — set 5/10
+hits=1 med=4.665197 liq=32 trail=2.9865 floor
+HYP: second close_frac 0.019/0.064→0.020/0.066 continues weak-window compound.
+EDIT: compound_engine.py second close_frac

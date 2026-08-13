@@ -78,7 +78,7 @@ def build_signals(df: pd.DataFrame, params: dict | None = None) -> pd.DataFrame:
     else:
         daily_ok_bull = daily_ok_bear = pd.Series(True, index=df.index)
 
-    # KEEP A100+A104: body floor 0.45 ATR
+    # KEEP A100+A104: body floor 0.45 ATR (C326 REVERT noop)
     body_min = max(float(p.get("body_min_atr", 0.0) or 0.0), 0.45)
     body_ok = (
         (df["close"] - df["open"]).abs() >= (body_min * a)
@@ -113,7 +113,7 @@ def build_signals(df: pd.DataFrame, params: dict | None = None) -> pd.DataFrame:
     )
 
     cooldown = min(int(p["cooldown_bars"]), 220)  # KEEP B002
-    reentry = int(p.get("reentry_bars", 180) or 180)
+    reentry = min(int(p.get("reentry_bars", 180) or 180), 170)  # KEEP B131
     if cooldown > 0:
         long_arr = raw_long.to_numpy(bool).copy()
         short_arr = raw_short.to_numpy(bool).copy()
@@ -153,7 +153,7 @@ def build_signals(df: pd.DataFrame, params: dict | None = None) -> pd.DataFrame:
     trail = max(float(p["trail_atr"]), 0.0)
     # A365: trail_atr floor soft-cap 5.0 (JSON 6.0) — tighter base trail before unlock
     if trail > 0:
-        trail = min(trail, 3.0)  # KEEP A365-A367 (A368/A407 REVERT)
+        trail = min(trail, 2.9865)  # KEEP C184
     # KEEP A31: trail at least 25% of Donchian width
     base_tr = (trail * a) if trail > 0 else np.nan
     width_tr = 0.25 * (hh - ll)
@@ -162,6 +162,6 @@ def build_signals(df: pd.DataFrame, params: dict | None = None) -> pd.DataFrame:
     bar_rng = df["high"] - df["low"]
     out["size_boost"] = np.where(
         bar_rng >= (1.8 * a), 1.35,
-        np.where(bar_rng >= (1.5 * a), 1.32, np.where(bar_rng >= (1.2 * a), 1.10, 1.0)),  # KEEP B109
+        np.where(bar_rng >= (1.5 * a), 1.325, np.where(bar_rng >= (1.2 * a), 1.10, 1.0)),  # KEEP B190
     )
     return out

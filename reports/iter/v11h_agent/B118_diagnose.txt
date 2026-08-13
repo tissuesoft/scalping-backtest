@@ -1,0 +1,4 @@
+B118 BEFORE hits=1/59 med=4.5889 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat.
+HYP: range_ok 0.8->0.85ATR

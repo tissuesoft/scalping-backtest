@@ -1,0 +1,7 @@
+C181 BEFORE (as-is; workspace at C047/C048 scale, trail=3.0) — set 1/10
+hits=1 med≈4.655 liq=? max≈126207 surv=16.9%
+Failure: ~17 dead windows (peak≈1); only 1×10000x; median far from 10000x.
+Prior knowledge: trail soft-cap 3.0→2.99 lifted med with liq flat; scale ticks also KEEP.
+
+HYP: trail soft-cap 3.0→2.99 tightens exits enough to lift weak-window median without liq flood.
+EDIT: momentum_breakout.py trail soft-cap

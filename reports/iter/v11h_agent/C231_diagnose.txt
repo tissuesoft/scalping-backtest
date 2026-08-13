@@ -1,0 +1,5 @@
+C231 BEFORE (KEEP C230) — set 1/10
+hits=1/59 med=4.666869 min=1.0 max=127124.61 ge2=40 liq=32 dead≈17
+FAILURE: ~17 dead windows; only 1×10000x; median crawl only via close_frac ladder.
+HYP: second 0.040/0.106→0.041/0.108 continues proven second-scale survivor compound.
+EDIT: compound_engine.py second close_frac only

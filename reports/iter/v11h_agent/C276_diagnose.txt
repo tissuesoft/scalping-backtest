@@ -1,0 +1,5 @@
+C276 BEFORE (KEEP C274; C275 REVERT) — set 6/10
+hits=1/59 med=4.668415 min=1.0 max=127645.46 ge2=40 liq=32 dead≈17
+FAILURE: C275 reentry 172 was noop; return to second close_frac ladder.
+HYP: second 0.060/0.146→0.061/0.148 continues survivor compound.
+EDIT: compound_engine.py second close_frac only

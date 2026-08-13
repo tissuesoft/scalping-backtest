@@ -1,0 +1,6 @@
+C196 BEFORE (KEEP C195) — set 6/10
+hits=1 med=4.665611 liq=32
+Weak trade windows may under-size on mild-range breaks (1.2ATR tier).
+
+HYP: size_boost low 1.10→1.11 lifts weak-window compound without top-tier liq.
+EDIT: momentum_breakout.py size_boost 1.2ATR tier

@@ -1,0 +1,6 @@
+C213 BEFORE (KEEP C212) — set 3/10
+hits=1 med=4.666229 liq=32
+Weak windows may need faster size ramp after wins.
+
+HYP: win_size_mult 1.75→1.76 speeds anti-martingale on surviving windows without wipe.
+EDIT: compound_engine.py win_size_mult

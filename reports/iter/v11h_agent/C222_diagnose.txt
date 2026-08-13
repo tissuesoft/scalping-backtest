@@ -1,0 +1,5 @@
+C222 BEFORE (KEEP C221) — set 2/10
+hits=1/59 med=4.666551 min=1.0 max=127017.71 ge2=40 liq=32 dead≈17
+FAILURE: dead windows unchanged; median still ~4.67.
+HYP: later close_frac 0.0076→0.0078 continues multi-scale compound ladder.
+EDIT: compound_engine.py later close_frac only

@@ -1,0 +1,5 @@
+C286 BEFORE (KEEP C284; C285 REVERT) — set 6/10
+hits=1/59 med=4.668760 min=1.0 max=127759.62 ge2=40 liq=32 dead≈17
+FAILURE: C285 mid boost 1.33 was noop; return to later close_frac ladder.
+HYP: later 0.0132→0.0134 continues later-scale compound.
+EDIT: compound_engine.py later close_frac only

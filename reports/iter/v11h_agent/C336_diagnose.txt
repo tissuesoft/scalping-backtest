@@ -1,0 +1,5 @@
+C336 BEFORE (KEEP C335) — set 6/10
+hits=1/59 med=4.670454 min=1.0 max=128337.43 ge2=40 liq=32 dead≈17
+FAILURE: dead/wipe windows; first scale banks 0 so weak runs don't lock any equity.
+HYP: first close_frac 0.0→0.004 banks tiny on first trail so weak windows lift min/median toward ge2.
+EDIT: compound_engine.py first close_frac only

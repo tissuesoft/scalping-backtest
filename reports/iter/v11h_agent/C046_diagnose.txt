@@ -1,0 +1,5 @@
+C046 BEFORE hits=1/59 med=4.654946 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat ~1x; liq=32.
+HYP: trail_unlock_mult 1.3->1.28 lock more after unlock
+EDIT: compound_engine.py

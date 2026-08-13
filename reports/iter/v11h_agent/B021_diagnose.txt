@@ -1,5 +1,0 @@
-B021 BEFORE (=B020) med=4.511 liq=32
-
-HYPOTHESIS: trail 1e-6->5e-7 tighter post-scale lock (B015 chain).
-
-EDIT: compound_engine.py tr * 5e-7

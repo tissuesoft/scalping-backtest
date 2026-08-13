@@ -1,0 +1,4 @@
+C204 BEFORE (KEEP C202; C203 unlock_r 3.9 med↓ REVERT) — set 4/10
+hits=1 med=4.665857 liq=32
+HYP: second 0.027/0.080→0.028/0.082 continues med lift.
+EDIT: compound_engine.py second close_frac

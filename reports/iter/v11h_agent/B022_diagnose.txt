@@ -1,5 +1,0 @@
-B022 BEFORE (=B021 KEEP) med=4.511 liq=32 hits=1
-
-HYPOTHESIS: later close_frac 0.018->0.017 runner retention chain (B010-B020).
-
-EDIT: compound_engine.py later scale 0.017

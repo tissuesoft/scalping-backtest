@@ -1,0 +1,2 @@
+B137 hits=1/59 med=4.6543 liq=32
+HYP: reentry cap 170->165

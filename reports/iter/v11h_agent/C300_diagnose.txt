@@ -1,0 +1,5 @@
+C300 BEFORE (KEEP C299) — set 10/20
+hits=1/59 med=4.669277 min=1.0 max=127934.95 ge2=40 liq=32 dead≈17
+FAILURE: many windows peak=1 after early wipe; close_frac does not revive them.
+HYP: sl_grace_bars 5→6 gives first bar more room before hard SL so weak windows avoid instant wipe without loosening entry filters.
+EDIT: compound_engine.py sl_grace_bars only

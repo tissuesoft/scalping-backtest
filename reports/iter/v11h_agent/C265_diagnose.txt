@@ -1,0 +1,5 @@
+C265 BEFORE (KEEP C264) — set 5/10
+hits=1/59 med=4.668081 min=1.0 max=127530.21 ge2=40 liq=32 dead≈17
+FAILURE: weak windows churn/trade then wipe/liq; close_frac cannot revive dead.
+HYP: range_ok 0.8→0.82 ATR skips more doji/fake breaks so weak windows take fewer ruinous entries (liq/wipe) without loosening vol.
+EDIT: strategies/momentum_breakout.py range_ok threshold only

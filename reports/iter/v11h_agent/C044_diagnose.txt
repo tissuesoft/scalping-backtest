@@ -1,0 +1,5 @@
+C044 BEFORE hits=1/59 med=4.654946 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat ~1x; liq=32.
+HYP: range_ok 0.8->0.78 admit slightly thinner bars in dead windows
+EDIT: momentum_breakout.py

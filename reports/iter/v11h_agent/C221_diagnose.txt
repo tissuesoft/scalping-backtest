@@ -1,0 +1,5 @@
+C221 BEFORE (KEEP C220) — set 1/10
+hits=1/59 med=4.666504 min=1.0 max=127004.50 ge2=40 liq=32 dead≈17
+FAILURE: ~17 dead windows; only 1×10000x; median ~4.67 far from goal.
+HYP: second close_frac 0.035/0.096→0.036/0.098 continues survivor compound ladder (same as C212/215/217/219).
+EDIT: compound_engine.py second close_frac only

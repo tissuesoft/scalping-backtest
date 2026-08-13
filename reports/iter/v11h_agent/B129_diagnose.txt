@@ -1,0 +1,2 @@
+B129 BEFORE hits=1/59 med=4.5963 liq=32
+HYP: second scale 0.012/0.05->0.011/0.045

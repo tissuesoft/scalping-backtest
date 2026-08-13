@@ -1,0 +1,6 @@
+C210 BEFORE (KEEP C209) — set 10/10
+hits=1 med=4.666101 liq=32
+Batch: scale KEEP; trail_unlock_r 3.9 med↓ REVERT.
+
+HYP: second 0.030/0.086→0.031/0.088 closes batch with med tick.
+EDIT: compound_engine.py second close_frac

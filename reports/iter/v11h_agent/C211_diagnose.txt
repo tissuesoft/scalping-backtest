@@ -1,0 +1,6 @@
+C211 BEFORE (KEEP C210) — set 1/10
+hits=1 med=4.666148 liq=32 trail=2.9865
+Failure: 17 dead; scale ticks only; unlock_r earlier med↓.
+
+HYP: later 0.0066→0.0068 continues survivor compound.
+EDIT: compound_engine.py later close_frac

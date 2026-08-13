@@ -1,0 +1,5 @@
+C288 BEFORE (KEEP C287) — set 8/10
+hits=1/59 med=4.668834 min=1.0 max=127784.83 ge2=40 liq=32 dead≈17
+FAILURE: still 1 hit; dead≈17.
+HYP: later 0.0134→0.0136 continues later-scale compound.
+EDIT: compound_engine.py later close_frac only

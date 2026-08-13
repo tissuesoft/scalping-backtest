@@ -1,0 +1,6 @@
+C203 BEFORE (KEEP C202) — set 3/10
+hits=1 med=4.665857 liq=32
+Weak windows may unlock trail too late (at +4R) and miss run.
+
+HYP: trail_unlock_r 4.0→3.9 unlocks earlier → more run on weak windows without liq flood.
+EDIT: compound_engine.py trail_unlock_r

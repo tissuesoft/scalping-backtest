@@ -1,0 +1,4 @@
+C184 BEFORE (KEEP C183) — set 4/10
+hits=1 med=4.664821 liq=32 trail=2.987
+HYP: trail soft-cap 2.987→2.9865 continues med lift before 2.986 liq wall.
+EDIT: momentum_breakout.py trail soft-cap

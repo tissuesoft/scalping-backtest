@@ -1,0 +1,6 @@
+C191 BEFORE (KEEP C190) — set 1/10
+hits=1 med=4.665411 liq=32 trail=2.9865
+Failure: 17 dead; only scale+trail-softcap KEEP; trail below 2.9865 adds liq.
+
+HYP: later 0.0048→0.0050 continues survivor compound on weak windows.
+EDIT: compound_engine.py later close_frac

@@ -1,0 +1,5 @@
+C301 BEFORE (KEEP C299; C300 REVERT) — set 11/20
+hits=1/59 med=4.669277 min=1.0 max=127934.95 ge2=40 liq=32 dead≈17
+FAILURE: C300 sl_grace 6 cut med and raised liq 32→42; return to later close_frac ladder.
+HYP: later 0.0146→0.0148 continues later-scale compound.
+EDIT: compound_engine.py later close_frac only

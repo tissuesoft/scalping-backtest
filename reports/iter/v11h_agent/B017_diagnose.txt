@@ -1,5 +1,0 @@
-B017 BEFORE (=B016) med=4.501 liq=32
-
-HYPOTHESIS: HTF ema_slope diff 200->205 slightly smoother trend filter → fewer chop entries/liq.
-
-EDIT: strategies/momentum_breakout.py ema_ht.diff(205)

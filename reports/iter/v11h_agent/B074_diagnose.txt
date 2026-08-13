@@ -1,14 +1,15 @@
-B074 BEFORE (=B024 restored; auto B025-B073 stopped)
+B074 BEFORE DIAGNOSE
+GOAL: all windows 10000x, liq=0, fees+slippage ON.
+Keep: hits > median > min > ge2; liq increase = REVERT; max-only NOT keep.
 
-GOAL: all windows 10,000x, liq=0, fees+slippage ON.
-
-METRICS hits=1/59 med=4.521 min=1.0 max=127069 ge2=40 liq=32/18win dead=17 wipe=49
+METRICS hits=1/59 med=4.5320 min=1.0000 max=133542.1292
+ge2=40 liq=32 liq_windows=18 dead=17 wipe=49 surv=16.9%
+med_trades=54.0
 
 FAILURE MODE
-- 18 windows still liquidate (32 total); high trade count chop at 100x.
-- 17 dead windows never leave ~1x.
-- Single hit 2023-01; 2024 runner ~2105x.
+- 18 windows with liquidations (total 32).
+- 17 dead windows peak~1.
+- only 1 hit(s); need all-window 10000x.
 
-HYPOTHESIS: later close_frac 0.016->0.015 keeps more runner (manual B010-B024 chain).
-
-EDIT: compound_engine.py later scale 0.015
+HYPOTHESIS: fewer liq via lower lev_cap
+EDIT: lev-0.05

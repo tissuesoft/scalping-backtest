@@ -1,0 +1,5 @@
+C226 BEFORE (KEEP C224; C225 REVERT) — set 6/10
+hits=1/59 med=4.666664 min=1.0 max=127058.10 ge2=40 liq=32 dead≈17
+FAILURE: C225 vol loosen destroyed hit; stick to second close_frac ladder.
+HYP: second 0.037/0.100→0.038/0.102 continues survivor compound.
+EDIT: compound_engine.py second close_frac only

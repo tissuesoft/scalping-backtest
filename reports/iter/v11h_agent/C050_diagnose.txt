@@ -1,0 +1,5 @@
+C050 BEFORE hits=1/59 med=4.655029 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat ~1x; liq=32.
+HYP: risk_cap_pct 0.0024->0.00235 slightly tighter early risk
+EDIT: compound_engine.py

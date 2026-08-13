@@ -1,0 +1,4 @@
+C192 BEFORE (KEEP C191) — set 2/10
+hits=1 med=4.665446 liq=32
+HYP: second 0.022/0.070→0.023/0.072 continues med lift.
+EDIT: compound_engine.py second close_frac

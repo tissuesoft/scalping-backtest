@@ -1,0 +1,5 @@
+C017 BEFORE hits=1/59 med=4.6544 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat; liq=32.
+HYP: sl_grace_bars 5->6 more early SL immunity
+EDIT: compound_engine.py

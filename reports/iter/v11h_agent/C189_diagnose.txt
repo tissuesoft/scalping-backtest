@@ -1,0 +1,6 @@
+C189 BEFORE (KEEP C188) — set 9/10
+hits=1 med=4.665364 liq=32 trail=2.9865
+Prior: 2.986 adds liq; half-step may still hurt.
+
+HYP: trail soft-cap 2.9865→2.98625 lifts med if liq stays flat.
+EDIT: momentum_breakout.py trail soft-cap

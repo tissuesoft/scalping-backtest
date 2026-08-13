@@ -1,0 +1,5 @@
+C256 BEFORE (KEEP C254; C255 REVERT) — set 6/10
+hits=1/59 med=4.667729 min=1.0 max=127413.87 ge2=40 liq=32 dead≈17
+FAILURE: C255 cooldown 215 raised liq 32→39 with flat peaks; return to second close_frac ladder.
+HYP: second 0.051/0.128→0.052/0.130 continues survivor compound.
+EDIT: compound_engine.py second close_frac only

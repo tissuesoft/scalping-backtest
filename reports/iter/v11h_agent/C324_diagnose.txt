@@ -1,0 +1,5 @@
+C324 BEFORE (KEEP C323) — set 4/10
+hits=1/59 med=4.670072 min=1.0 max=128205.07 ge2=40 liq=32 dead≈17
+FAILURE: hits/dead stuck.
+HYP: later 0.0168→0.0170 continues later-scale ladder.
+EDIT: compound_engine.py later close_frac only

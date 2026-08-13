@@ -1,0 +1,8 @@
+B1208 BASELINE (bg_loop unattended)
+hits=1/59 med=4.6543 min=1.00 ge2=40 liq=32 max=125971
+
+DEAD/WIPE: peak~1 windows dominate; 58/59 never hit 10000x
+FAILURE MODE: weak windows flat; liq=32 total; single runner carries hits.
+
+HYPOTHESIS: post-scale trail 6.1653697404852474e-12->5.2405642794124606e-12
+EDIT: compound_engine.py

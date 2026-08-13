@@ -1,0 +1,5 @@
+C275 BEFORE (KEEP C274) — set 5/10
+hits=1/59 med=4.668415 min=1.0 max=127645.46 ge2=40 liq=32 dead≈17
+FAILURE: many windows churn then wipe/liq; close_frac does not cut liq.
+HYP: reentry cap 170→172 (KEEP B131) slightly lengthens post-exit wait so weak windows take fewer revenge reentries / fewer liqs.
+EDIT: strategies/momentum_breakout.py reentry cap only

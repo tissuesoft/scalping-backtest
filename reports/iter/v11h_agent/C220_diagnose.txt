@@ -1,0 +1,5 @@
+C220 BEFORE (KEEP C219) — set 10/10
+hits=1/59 med=4.666471 min=1.0 max=126990.84 ge2=40 liq=32 dead≈17
+FAILURE: dead windows unchanged; median still ~4.67; only 1 hit.
+HYP: later close_frac 0.0074→0.0076 continues micro compound on multi-scale survivors (same ladder as C211/214/216/218).
+EDIT: compound_engine.py later close_frac only

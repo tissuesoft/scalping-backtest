@@ -1,0 +1,5 @@
+C316 BEFORE (KEEP C315) — set 6/10
+hits=1/59 med=4.669814 min=1.0 max=128119.65 ge2=40 liq=32 dead≈17
+FAILURE: ~17 dead + many wipe; ladder only crawls median, not hits.
+HYP: trail_unlock_r 4.0→3.9 lets mid-strength runners unlock trail earlier so weak windows compound before wipe.
+EDIT: compound_engine.py trail_unlock_r only

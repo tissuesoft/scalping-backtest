@@ -1,0 +1,5 @@
+C321 BEFORE (KEEP C320) — set 1/10
+hits=1/59 med=4.669958 min=1.0 max=128168.42 ge2=40 liq=32 dead≈17
+FAILURE: hits/dead stuck; only close_frac ladder crawls median.
+HYP: second 0.081/0.188→0.082/0.190 continues second-scale ladder.
+EDIT: compound_engine.py second close_frac only

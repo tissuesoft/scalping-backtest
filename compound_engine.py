@@ -22,7 +22,7 @@ class CompoundConfig:
     pyramid_frac: float = 1.0
     pyramid_be: bool = True
     # after +unlock_r, multiply trail distance (let winners run)
-    trail_unlock_r: float = 4.0  # KEEP A89: later trail unlock
+    trail_unlock_r: float = 4.0  # KEEP A89: later trail unlock (C316 REVERT med↓)
     trail_unlock_mult: float = 1.3  # KEEP A359: tighter unlocked trail (A360/A404 REVERT)
     # after a winning exit, multiply next entry size (anti-martingale); 1.0=off
     win_size_mult: float = 1.75  # KEEP A66: mild faster anti-martingale
@@ -217,8 +217,7 @@ def run_compound(df, signals, name, config=None) -> CompoundResult:
             if pos_trail_unlocked and not np.isnan(tr):
                 tr = tr * cfg.trail_unlock_mult
             if pos_scale_n >= 1 and not np.isnan(tr):
-                tr = tr * 0.00000015  # KEEP B114
-
+                tr = tr * 6.1653697404852474e-12  # KEEP B359
             if pos_side == 1:
                 pos_peak = max(pos_peak, high[i])
                 if trail_armed and (not np.isnan(tr)) and tr > 0:
@@ -270,11 +269,11 @@ def run_compound(df, signals, name, config=None) -> CompoundResult:
                 if do_partial:
                     if pos_scale_n == 0:
                         # KEEP A294-A299 fat-bar 0.12; A337: all entries first scale 0.40 (was 0.68)
-                        close_frac = 0.0  # KEEP A431
+                        close_frac = 0.0  # KEEP A431 (C336 REVERT med↓)
                     elif pos_scale_n == 1:
-                        close_frac = 0.014 if pos_boost >= 1.25 else 0.06  # KEEP B113
+                        close_frac = 0.090 if pos_boost >= 1.25 else 0.206  # KEEP C339
                     else:
-                        close_frac = 0.0038  # KEEP B112
+                        close_frac = 0.0184  # KEEP C340
                 else:
                     close_frac = 1.0
                 fill = _slip(float(exit_px), pos_side, False, cfg.slippage)

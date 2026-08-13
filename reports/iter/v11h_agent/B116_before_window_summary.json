@@ -30,15 +30,15 @@
     "n_windows": 59,
     "n_hit": 1,
     "hit_rate": 0.01694915254237288,
-    "median_peak_mult": 4.568180479297389,
-    "mean_peak_mult": 2207.069285881383,
-    "max_peak_mult": 127323.61787022249,
+    "median_peak_mult": 4.588936747794679,
+    "mean_peak_mult": 2186.1739569248034,
+    "max_peak_mult": 126122.55257499684,
     "median_final_mult": 0.0,
     "pct_survived": 0.1694915254237288,
     "best_window": {
       "start": "2023-01-26 00:00:00+00:00",
       "end": "2023-03-27 00:00:00+00:00",
-      "mult_peak": 127323.61787022249
+      "mult_peak": 126122.55257499684
     }
   }
 }

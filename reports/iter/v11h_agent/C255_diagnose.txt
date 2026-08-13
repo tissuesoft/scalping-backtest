@@ -1,0 +1,5 @@
+C255 BEFORE (KEEP C254) — set 5/10
+hits=1/59 med=4.667729 min=1.0 max=127413.87 ge2=40 liq=32 dead≈17
+FAILURE: many dead windows trade then wipe; close_frac does not revive them; 2021 has 0 trades.
+HYP: cooldown cap 220→215 (KEEP B002) allows slightly more re-entries on weak/dead windows without loosening vol_ok.
+EDIT: strategies/momentum_breakout.py cooldown cap only

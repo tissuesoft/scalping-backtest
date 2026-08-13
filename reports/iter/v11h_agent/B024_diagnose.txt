@@ -1,7 +1,0 @@
-B024 BEFORE (=B022 KEEP) med=4.516 liq=32
-
-B023 skipped effective edit (disk still 0.017); re-attempt later 0.017->0.016.
-
-HYPOTHESIS: later close_frac 0.016 keeps more runner.
-
-EDIT: compound_engine.py close_frac 0.016

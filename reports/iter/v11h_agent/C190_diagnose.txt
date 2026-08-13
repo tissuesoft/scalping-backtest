@@ -1,0 +1,4 @@
+C190 BEFORE (KEEP C188; C189 trail→2.98625 liq32→33 REVERT) — set 10/10
+hits=1 med=4.665364 liq=32 trail=2.9865 floor
+HYP: second 0.021/0.068→0.022/0.070 closes batch with med tick.
+EDIT: compound_engine.py second close_frac

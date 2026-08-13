@@ -1,7 +1,0 @@
-B011 BEFORE (=B010 KEEP) hits=1 med=4.482 ge2=40 liq=32/18win
-
-FAILURE MODE: liq still 18 windows; weak/dead windows peak~1; 2024 runner ~2105x.
-
-HYPOTHESIS: later close_frac 0.024->0.023 keeps slightly more runner (B010 path worked).
-
-EDIT: compound_engine.py later scale close_frac 0.023

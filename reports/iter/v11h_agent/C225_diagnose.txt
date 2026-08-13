@@ -1,0 +1,5 @@
+C225 BEFORE (KEEP C224) — set 5/10
+hits=1/59 med=4.666664 min=1.0 max=127058.10 ge2=40 liq=32 dead≈17
+FAILURE: ~17 windows never leave ~1x; close_frac ladder only lifts survivor median crawl.
+HYP: vol_ok 0.0015→0.00148 admits slightly quieter bars so dead/flat windows get more first entries without loosening doji filter.
+EDIT: strategies/momentum_breakout.py vol_ok threshold only

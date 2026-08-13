@@ -1,0 +1,2 @@
+B131 BEFORE hits=1/59 med=4.5974 liq=32
+HYP: reentry_bars cap 180->170

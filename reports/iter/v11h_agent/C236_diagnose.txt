@@ -1,0 +1,5 @@
+C236 BEFORE (KEEP C234; C235 REVERT) — set 6/10
+hits=1/59 med=4.667027 min=1.0 max=127177.71 ge2=40 liq=32 dead≈17
+FAILURE: C235 trail 2.9864 raised liq 32→33; return to second close_frac ladder.
+HYP: second 0.042/0.110→0.043/0.112 continues survivor compound.
+EDIT: compound_engine.py second close_frac only

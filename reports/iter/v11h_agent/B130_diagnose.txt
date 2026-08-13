@@ -1,0 +1,2 @@
+B130 BEFORE hits=1/59 med=4.5974 liq=32
+HYP: post-scale trail 1.2e-7->1.0e-7

@@ -1,0 +1,5 @@
+C233 BEFORE (KEEP C232) — set 3/10
+hits=1/59 med=4.666948 min=1.0 max=127151.19 ge2=40 liq=32 dead≈17
+FAILURE: hits/dead stuck; only micro med lift from ladder.
+HYP: second 0.041/0.108→0.042/0.110 continues second-scale ladder.
+EDIT: compound_engine.py second close_frac only

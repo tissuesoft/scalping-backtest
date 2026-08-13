@@ -1,0 +1,5 @@
+C285 BEFORE (KEEP C284) — set 5/10
+hits=1/59 med=4.668760 min=1.0 max=127759.62 ge2=40 liq=32 dead≈17
+FAILURE: close_frac ladder does not lift dead/weak windows; med only crawls.
+HYP: mid size_boost 1.325→1.33 on 1.5ATR bars gives weak-but-trading windows slightly more size without touching low 1.10 rung (C196 REVERT).
+EDIT: strategies/momentum_breakout.py mid size_boost only

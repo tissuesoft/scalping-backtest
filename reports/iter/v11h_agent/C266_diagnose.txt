@@ -1,0 +1,5 @@
+C266 BEFORE (KEEP C264; C265 REVERT) — set 6/10
+hits=1/59 med=4.668081 min=1.0 max=127530.21 ge2=40 liq=32 dead≈17
+FAILURE: C265 range_ok 0.82 cut median and raised dead; return to later close_frac ladder.
+HYP: later 0.0114→0.0116 continues later-scale compound.
+EDIT: compound_engine.py later close_frac only

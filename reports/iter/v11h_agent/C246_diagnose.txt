@@ -1,0 +1,5 @@
+C246 BEFORE (KEEP C244; C245 REVERT) — set 6/10
+hits=1/59 med=4.667387 min=1.0 max=127296.26 ge2=40 liq=32 dead≈17
+FAILURE: C245 risk_cap tighten cut median (max-only lift); return to later close_frac ladder.
+HYP: later 0.0096→0.0098 continues later-scale compound.
+EDIT: compound_engine.py later close_frac only

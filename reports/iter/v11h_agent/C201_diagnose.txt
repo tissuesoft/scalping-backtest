@@ -1,0 +1,6 @@
+C201 BEFORE (KEEP C200) — set 1/10
+hits=1 med=4.665775 liq=32 trail=2.9865
+Failure: 17 dead; scale ticks only; size_boost probes med↓.
+
+HYP: second 0.026/0.078→0.027/0.080 continues weak-window compound.
+EDIT: compound_engine.py second close_frac

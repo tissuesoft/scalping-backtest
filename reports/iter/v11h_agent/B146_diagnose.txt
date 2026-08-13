@@ -1,0 +1,2 @@
+B146 med=4.6543 liq=32
+HYP: post-scale trail 1e-7->9e-8

@@ -1,0 +1,5 @@
+C241 BEFORE (KEEP C240) — set 1/10
+hits=1/59 med=4.667230 min=1.0 max=127243.64 ge2=40 liq=32 dead≈17
+FAILURE: only 1×10000x; ~17 dead; median crawl via close_frac only.
+HYP: later 0.0092→0.0094 continues later-scale survivor compound ladder.
+EDIT: compound_engine.py later close_frac only

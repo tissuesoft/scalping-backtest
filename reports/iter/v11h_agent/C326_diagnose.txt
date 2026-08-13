@@ -1,0 +1,5 @@
+C326 BEFORE (KEEP C325) — set 6/10
+hits=1/59 med=4.670143 min=1.0 max=128229.30 ge2=40 liq=32 dead≈17
+FAILURE: ~17 dead often 0-trade; ladder doesn't create entries.
+HYP: body_min floor 0.45→0.43 admits slightly thinner breakout bars so dead windows get trades.
+EDIT: strategies/momentum_breakout.py body_min floor only

@@ -1,0 +1,4 @@
+C188 BEFORE (KEEP C187) — set 8/10
+hits=1 med=4.665328 liq=32
+HYP: later 0.0046→0.0048 continues survivor compound.
+EDIT: compound_engine.py later close_frac

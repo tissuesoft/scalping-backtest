@@ -1,0 +1,2 @@
+B152 med=4.6543
+HYP: reentry cap 170->164

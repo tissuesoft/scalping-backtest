@@ -1,0 +1,5 @@
+C280 BEFORE (KEEP C279) — set 10/10
+hits=1/59 med=4.668566 min=1.0 max=127696.31 ge2=40 liq=32 dead≈17
+FAILURE: still only 1×10000x; ~17 dead.
+HYP: second 0.062/0.150→0.063/0.152 finishes batch on proven second-scale ladder.
+EDIT: compound_engine.py second close_frac only

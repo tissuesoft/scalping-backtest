@@ -1,20 +1,27 @@
 {
-  "mode": "agent_manual_only",
-  "champion": "B110",
-  "goal": "all windows 10000x, liq=0, fees+slippage on",
-  "end_epoch": 1786555279,
-  "next_set": "B111",
-  "forbidden": "research_loop_v11h.py",
-  "last_metrics": {
+  "champion": "C340",
+  "next_set": "C341",
+  "batch": "C331-C340",
+  "metrics": {
     "hits": 1,
-    "med": 4.584,
-    "min": 1.0,
+    "med": 4.670594077626986,
+    "mn": 1.0,
+    "mx": 128385.23179849023,
     "ge2": 40,
     "liq": 32,
-    "max": 126199
+    "dead": 17
   },
-  "progress_from_B080": {
-    "med_delta": 0.053,
-    "sets_run": "B081-B110"
-  }
+  "decisions": {
+    "C331": "KEEP",
+    "C332": "KEEP",
+    "C333": "KEEP",
+    "C334": "KEEP",
+    "C335": "KEEP",
+    "C336": "REVERT",
+    "C337": "KEEP",
+    "C338": "KEEP",
+    "C339": "KEEP",
+    "C340": "KEEP"
+  },
+  "notes": "second/later close_frac micro-ladder KEEP; C336 first close_frac 0→0.004 REVERT (med↓)"
 }

@@ -1,0 +1,4 @@
+C182 BEFORE (KEEP C181) — set 2/10
+hits=1 med=4.662561 liq=32 trail=2.99
+HYP: trail soft-cap 2.99→2.988 continues weak-window med lift (prior chain).
+EDIT: momentum_breakout.py trail soft-cap

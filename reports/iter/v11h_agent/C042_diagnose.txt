@@ -1,0 +1,5 @@
+C042 BEFORE hits=1/59 med=4.654898 min=1.00 ge2=40 liq=32
+dead~1=17 liq_windows=18
+FAILURE: 58/59 never 10000x; weak windows flat ~1x; liq=32.
+HYP: second 0.017/0.06->0.018/0.062 continue C038 chain
+EDIT: compound_engine.py

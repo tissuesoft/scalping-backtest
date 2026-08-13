@@ -1,0 +1,5 @@
+C232 BEFORE (KEEP C231) — set 2/10
+hits=1/59 med=4.666915 min=1.0 max=127137.74 ge2=40 liq=32 dead≈17
+FAILURE: dead/hits unchanged; median crawl only.
+HYP: later 0.0084→0.0086 continues later-scale compound ladder.
+EDIT: compound_engine.py later close_frac only

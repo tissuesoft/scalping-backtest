@@ -1,0 +1,5 @@
+C337 BEFORE (REVERT C336) — set 7/10
+hits=1/59 med=4.670454 min=1.0 max=128337.43 ge2=40 liq=32 dead≈17
+FAILURE: first bank hurt median; resume second ladder.
+HYP: second 0.088/0.202→0.089/0.204 continues proven median crawl.
+EDIT: compound_engine.py second close_frac only

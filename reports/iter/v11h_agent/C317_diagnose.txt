@@ -1,0 +1,5 @@
+C317 BEFORE (REVERT C316) — set 7/10
+hits=1/59 med=4.669814 min=1.0 max=128119.65 ge2=40 liq=32 dead≈17
+FAILURE: unlock_r 3.9 hurt median; resume second ladder.
+HYP: second 0.079/0.184→0.080/0.186 continues proven median crawl.
+EDIT: compound_engine.py second close_frac only

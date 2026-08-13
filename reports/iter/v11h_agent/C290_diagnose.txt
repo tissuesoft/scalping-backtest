@@ -1,0 +1,5 @@
+C290 BEFORE (KEEP C289) — set 10/10
+hits=1/59 med=4.668908 min=1.0 max=127809.99 ge2=40 liq=32 dead≈17
+FAILURE: still only 1×10000x; ~17 dead.
+HYP: later 0.0136→0.0138 finishes batch on proven later-scale ladder.
+EDIT: compound_engine.py later close_frac only
