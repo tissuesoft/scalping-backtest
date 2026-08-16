@@ -105,6 +105,12 @@ class BinanceFapi:
             signed=True,
         )
 
+    def leverage_bracket(self, symbol: str | None = None) -> Any:
+        params = {}
+        if symbol:
+            params["symbol"] = symbol
+        return self._request("GET", "/fapi/v1/leverageBracket", params, signed=True)
+
     def change_margin_type(self, symbol: str, margin_type: str = "ISOLATED") -> Any:
         return self._request(
             "POST",

@@ -77,19 +77,43 @@ class DemoRunner:
 
         _log(f"trade(demo) {self.cfg.trade_url} ...")
         self.trade.ping()
-        lev = max(1, min(int(self.cfg.leverage), 125))
+        want = max(1, min(int(self.cfg.leverage), 125))
         for sym in self.cfg.symbols:
             try:
                 self.trade.change_margin_type(sym, "ISOLATED")
             except BinanceFapiError as e:
                 if "No need to change" not in e.body and "-4046" not in e.body:
                     _log(f"marginType {sym}: {e}")
-            try:
-                self.trade.change_leverage(sym, lev)
-                _log(f"leverage {sym}={lev} ISOLATED")
-            except BinanceFapiError as e:
-                _log(f"leverage {sym}: {e}")
+            lev = self._resolve_leverage(sym, want)
+            applied = None
+            err = None
+            for try_lev in range(lev, 0, -1):
+                try:
+                    self.trade.change_leverage(sym, try_lev)
+                    applied = try_lev
+                    break
+                except BinanceFapiError as e:
+                    err = e
+                    continue
+            if applied is not None:
+                note = "" if applied == want else f" (capped from {want})"
+                _log(f"leverage {sym}={applied} ISOLATED{note}")
+            else:
+                _log(f"leverage {sym}: {err}")
 
+    def _resolve_leverage(self, symbol: str, want: int) -> int:
+        """Use min(want, exchange max leverage for symbol)."""
+        try:
+            data = self.trade.leverage_bracket(symbol)
+            # [{"symbol":"BTCUSDT","brackets":[{"initialLeverage":125,...}, ...]}]
+            if isinstance(data, list) and data:
+                brackets = data[0].get("brackets") or []
+                if brackets:
+                    max_lev = max(int(b.get("initialLeverage", 1)) for b in brackets)
+                    return max(1, min(want, max_lev))
+        except Exception as e:
+            _log(f"leverageBracket {symbol}: {e}; using want={want}")
+        return want
     def fetch_frames(self) -> dict[str, pd.DataFrame]:
         out = {}
         for sym in self.cfg.symbols:
