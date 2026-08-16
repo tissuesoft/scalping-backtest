@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.local
+
+# Live runtime
+live/state.json
+live/state.tmp
+live/logs/
+live/STOP
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Research artifacts (large; keep local)
+reports/iter/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

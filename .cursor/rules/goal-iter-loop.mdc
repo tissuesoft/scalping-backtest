@@ -10,25 +10,29 @@ User reminder is NEVER required. If asked for N sets, do N full loops. Shortcuts
 ## Goal (read carefully)
 - Each rolling **1–2 month** window starts at **$100** and must reach **10,000x ($1,000,000) inside that window**.
 - Success = **EVERY** window hits 10,000x. One lucky crash window is **failure**.
+- **Account liquidation = 0** (합산 계좌 전멸/wipe = 0창). Isolated **slot** liquidations are OK and informational only — do **not** treat slot-`liq` count as the goal or as automatic Revert.
+- **MDD is informational only** — log it, do **not** optimize, Keep, Revert, or gate Done on drawdown. Letting equity run (deep intra-window DD) is allowed if the window still hits 10,000x without an **account wipe**.
 - Optimizing **max peak on a single window** while median stays ~1 is the **wrong objective**.
 
 ## Primary metrics (Keep order)
 1. `hits_10000x` count / hit rate
 2. **median** peak multiple across windows
 3. **min** peak multiple (worst window)
-4. max peak is informational only — never Keep solely because max rose
+4. `n_account_liq` / wipe rate ← must stay **0** (계좌 청산); slot `liq` is secondary info
+5. max peak / `mdd` are informational only — never Keep solely because max rose, never Revert solely because MDD worsened
 
 ## One set = this exact sequence (ALL steps mandatory)
 1. Run **one** window evaluation on **current code as-is** (do NOT reuse an old number as “before”).
-2. **Diagnose in writing** (`reports/iter/...`): hits_10000x, median/min/max peak, survival, trades, liquidations, which windows are dead (peak≈1 / wipe), failure mode, **one hypothesis** aimed at lifting **dead/weak windows** (not only the best window).
+2. **Diagnose in writing** (`reports/iter/...`): hits_10000x, median/min/max peak, survival, trades, **account_liq (wipe)**, slot liquidations (info), mdd (info only), which windows are dead (peak≈1 / wipe), failure mode, **one hypothesis** aimed at lifting **dead/weak windows** (not only the best window).
 3. Edit **source code** (strategy and/or engine) — **exactly one coherent change**. Parameter-JSON-only batches are NOT a set.
 4. Run **one** evaluation again (after-edit).
 5. **Keep** if primary metrics improve; else **Revert**.
 
 ## Keep / Revert
-- Keep: more 10,000x hits, OR clearly higher median/min peak toward 10,000x without unjustified survival collapse.
-- Revert: no improvement on hits/median/min; OR max-only improvement with flat/worse median; OR identical peaks with worse survival.
-- Done: **all** windows `hit_10000x`.
+- Keep: more 10,000x hits, OR clearly higher median/min peak toward 10,000x without **account wipe** increase (`n_account_liq` must not rise).
+- Revert: no improvement on hits/median/min; OR max-only improvement with flat/worse median; OR identical peaks with worse **account** survival (`n_account_liq`↑ / wipe↑).
+- Do **not** Revert solely because isolated slot `liq` rose or because **MDD** worsened, if hits/median/min and account wipe did not worsen.
+- Done: **all** windows `hit_10000x` **and** `n_account_liq == 0`. MDD is not a Done gate.
 
 ## Forbidden
 - Blind huge grids / batch param sweeps counted as “sets”.
@@ -37,6 +41,20 @@ User reminder is NEVER required. If asked for N sets, do N full loops. Shortcuts
 - One-line “diagnose” with no failure-mode analysis.
 - Multiple unrelated code edits inside one set.
 - Treating “crash window max ↑” as success when other windows stay ~1x.
+
+## Per-symbol bull / bear / sideways (MANDATORY)
+PORT5 uses **three 1m strategies per symbol** (BTC/ETH/BNB/SOL/XRP × bull / bear / sideways), gated by `strategies/regime.py`.
+- The goal is reached by **editing those per-symbol regime strategies** (entry, indicators, SL/trail, cooldown) — not by parking on a shared classifier or engine-only micro-knobs.
+- Diagnose **which symbol + which regime** failed in weak/wipe windows, then change **exactly one** of: one symbol's `_bull` / `_bear` / `_sideways`, **or** (occasionally) shared `classify_regime`.
+- **Rotate** across symbols and regimes. Do **not** spend many consecutive sets only on `classify_regime` or only on `portfolio_engine.py` while the 15 strategy bodies stay untouched.
+- Shared regime classifier / engine risk is allowed as **one set** when diagnosis points there; then return to a **symbol-regime strategy** edit.
+- Keep/Revert still uses the primary metric order. User reminder is never required.
+
+## Exploration (when one axis stalls)
+- If repeating the same knob (e.g. trail `close_frac` micro-ups) only crawls median while **hits / dead / min stay flat**, stop farming that axis.
+- Rotate across: **per-symbol bull/bear/sideways strategy**, **add / modify / remove indicators**, entry structure, cooldown/reentry, and engine risk — still **one coherent edit per set**.
+- Prefer hypotheses that revive **dead/weak windows** (0-trade or wipe), not max-only crash-window gains.
+- Document the multi-angle policy in README; follow it without waiting for a user reminder.
 
 ## Absolute
 - ALWAYS follow this loop for every research set.

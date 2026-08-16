@@ -22,22 +22,22 @@ class CompoundConfig:
     pyramid_frac: float = 1.0
     pyramid_be: bool = True
     # after +unlock_r, multiply trail distance (let winners run)
-    trail_unlock_r: float = 4.0  # KEEP A89: later trail unlock (C316 REVERT med↓)
-    trail_unlock_mult: float = 1.3  # KEEP A359: tighter unlocked trail (A360/A404 REVERT)
+    trail_unlock_r: float = 4.0  # KEEP A89 (C428 REVERT noop)
+    trail_unlock_mult: float = 1.3  # KEEP A359 (C375 REVERT 1.28)
     # after a winning exit, multiply next entry size (anti-martingale); 1.0=off
-    win_size_mult: float = 1.75  # KEEP A66: mild faster anti-martingale
-    win_size_max: float = 5.0  # KEEP A397 (A398 6 REVERT med identical)
+    win_size_mult: float = 1.75  # KEEP A66 (C379 REVERT med↓ max↑)
+    win_size_max: float = 5.0  # KEEP A397 (C426 REVERT med flat max↓)
     # do not apply ATR trail until price moved +trail_arm_r * initial risk; 0=always trail
-    trail_arm_r: float = 0.0
+    trail_arm_r: float = 0.0  # C394 REVERT med↓
     # SET10: first trail touch closes frac; 0=off
     partial_trail_frac: float = 0.68  # KEEP A205: first partial 0.68
-    trail_scale_max: int = 10  # KEEP A378 (A379 12 REVERT)
+    trail_scale_max: int = 10  # KEEP A378 (C446 REVERT med↓)
     # R13: ignore initial SL for first N bars (liq still active); 0=off
     sl_grace_bars: int = 5  # KEEP A42: SL grace first 5 bars
     # R37: risk cap champion 0.33%
-    risk_cap_pct: float = 0.0024  # AUTO risk
+    risk_cap_pct: float = 0.0024  # AUTO risk (C385 REVERT med↓)
     # R22: after +1R, move SL to breakeven once; 0=off
-    be_at_r: float = 0.0
+    be_at_r: float = 0.0  # C362 REVERT: BE@1R killed hit/med
 
 
 @dataclass
@@ -176,7 +176,7 @@ def run_compound(df, signals, name, config=None) -> CompoundResult:
             risk_frac = pos_risk / fill if fill > 0 else 0.01
             # KEEP A47+A60+A67: steeper again toward 10000x
             progress = i / max(n - 1, 1)
-            risk_tgt = min(0.50, 0.12 + 0.38 * progress)  # KEEP A348-A350 (A351/A358/A377 REVERT)
+            risk_tgt = min(0.50, 0.12 + 0.38 * progress)  # KEEP A348-A350 (C359 REVERT)
             # KEEP A39: apply win size_mult to risk-parity budget (not only lev_cap)
             pos_notional = min(lev_cap, equity * risk_tgt * size_mult * boost / max(risk_frac, 1e-8))  # A269: size_boost scales risk-parity
             pos_peak = fill
@@ -271,9 +271,9 @@ def run_compound(df, signals, name, config=None) -> CompoundResult:
                         # KEEP A294-A299 fat-bar 0.12; A337: all entries first scale 0.40 (was 0.68)
                         close_frac = 0.0  # KEEP A431 (C336 REVERT med↓)
                     elif pos_scale_n == 1:
-                        close_frac = 0.090 if pos_boost >= 1.25 else 0.206  # KEEP C339
+                        close_frac = 0.119 if pos_boost >= 1.25 else 0.264  # KEEP C445
                     else:
-                        close_frac = 0.0184  # KEEP C340
+                        close_frac = 0.0242  # KEEP C443
                 else:
                     close_frac = 1.0
                 fill = _slip(float(exit_px), pos_side, False, cfg.slippage)

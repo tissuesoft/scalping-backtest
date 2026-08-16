@@ -100,7 +100,7 @@ def build_signals(df: pd.DataFrame, params: dict | None = None) -> pd.DataFrame:
     # KEEP A35: HTF EMA slope must agree with side
     ema_slope = ema_ht.diff(200)  # KEEP A447
     # KEEP A58: ROC(120) must agree with side
-    roc = df["close"].pct_change(120)  # KEEP A58: ROC(120) must agree with side
+    roc = df["close"].pct_change(120)  # KEEP A58 (C444 REVERT med↓ liq↑)
     bull = (df["close"] > ema_ht) & (ema_slope > 0) & (roc > 0)
     bear = (df["close"] < ema_ht) & (ema_slope < 0) & (roc < 0)
     raw_long = (
