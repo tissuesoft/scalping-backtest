@@ -58,15 +58,19 @@ def _ts_iso(ts: pd.Timestamp | datetime | None) -> str | None:
 class SupabaseLogger:
     """PostgREST client; no-op if env missing. No extra pip package."""
 
-    def __init__(self) -> None:
+    def __init__(self, *, dry_run: bool = False) -> None:
         self.url = (os.getenv("SUPABASE_URL") or "").rstrip("/")
         self.key = (
             os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_ANON_KEY") or ""
         ).strip()
+        self.dry_run = bool(dry_run)
         self.enabled = bool(self.url and self.key)
         self._seeded = False
         if self.enabled:
-            print(f"[supabase] enabled {self.url} bot={BOT_ID}", flush=True)
+            print(
+                f"[supabase] enabled {self.url} bot={BOT_ID} dry_run={self.dry_run}",
+                flush=True,
+            )
         else:
             print("[supabase] disabled (set SUPABASE_URL + SUPABASE_ANON_KEY)", flush=True)
 
@@ -107,6 +111,10 @@ class SupabaseLogger:
         payload = {k: v for k, v in record.items() if v is not None}
         payload.setdefault("bot", BOT_ID)
         payload.setdefault("timeframe", "1m")
+        payload.setdefault("dry_run", self.dry_run)
+        # Practice mode must not land in the live trade log.
+        if payload.get("dry_run"):
+            return None
         data = self._request(
             "POST",
             "trade_events",

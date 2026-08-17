@@ -73,7 +73,7 @@ class DemoRunner:
         self.state = load_state(cfg.state_path)
         self.lev_map = effective_leverage_map(cfg.leverage, BINANCE_DEMO_MAX_LEVERAGE)
         self.cfg.log_dir.mkdir(parents=True, exist_ok=True)
-        self.sb = SupabaseLogger()
+        self.sb = SupabaseLogger(dry_run=cfg.dry_run)
         self._hb_bar_ms = 0
 
     def setup_exchange(self) -> None:
@@ -172,6 +172,35 @@ class DemoRunner:
             _log(f"DRY order {side} {symbol} qty={qty} px~{px} reduceOnly={reduce_only}")
             return {"avgPrice": str(px), "executedQty": str(qty), "status": "DRY"}
         return self.trade.new_order(**params)
+
+    def _signed_position_amt(self, symbol: str) -> float:
+        """Exchange signed positionAmt. nan = lookup failed."""
+        if self.cfg.dry_run:
+            slot = self.state.slots.get(symbol)
+            return float(slot.qty * slot.side) if slot else 0.0
+        try:
+            rows = self.trade.position_risk(symbol)
+        except Exception as e:
+            _log(f"positionRisk {symbol}: {e}")
+            return float("nan")
+        if not isinstance(rows, list):
+            rows = [rows] if rows else []
+        for r in rows:
+            if r.get("symbol") == symbol:
+                return float(r.get("positionAmt") or 0)
+        return 0.0
+
+    def _drop_if_exchange_flat(self, slot: LiveSlot, why: str) -> bool:
+        """Drop ghost slot when demo account has no matching position."""
+        amt = self._signed_position_amt(slot.symbol)
+        if math.isnan(amt):
+            return False
+        same_side = (slot.side > 0 and amt > 0) or (slot.side < 0 and amt < 0)
+        if abs(amt) < 1e-12 or not same_side:
+            _log(f"FLAT {slot.symbol} {why} exch_amt={amt} drop slot")
+            self.state.slots.pop(slot.symbol, None)
+            return True
+        return False
 
     def _fill_price(self, order: dict, fallback: float) -> float:
         for k in ("avgPrice", "price"):
@@ -293,6 +322,18 @@ class DemoRunner:
             _log(f"close skip {slot.symbol}: qty=0")
             self.state.slots.pop(slot.symbol, None)
             return
+        if not self.cfg.dry_run:
+            amt = self._signed_position_amt(slot.symbol)
+            if not math.isnan(amt):
+                same_side = (slot.side > 0 and amt > 0) or (slot.side < 0 and amt < 0)
+                if abs(amt) < 1e-12 or not same_side:
+                    _log(f"CLOSE skip {slot.symbol}: already flat amt={amt} ({reason})")
+                    self.state.slots.pop(slot.symbol, None)
+                    return
+                qty = min(qty, round_qty(abs(amt), flt.step_size))
+                if qty <= 0:
+                    self.state.slots.pop(slot.symbol, None)
+                    return
         side = "SELL" if slot.side == 1 else "BUY"
         try:
             order = self._place_market(slot.symbol, side, qty, reduce_only=True)
@@ -352,6 +393,12 @@ class DemoRunner:
                 self.state.size_mult = min(self.state.size_mult * pc.win_size_mult, pc.win_size_max)
             else:
                 self.state.size_mult = 1.0
+        except BinanceFapiError as e:
+            if "-2022" in e.body or "ReduceOnly" in e.body:
+                if self._drop_if_exchange_flat(slot, "reduceOnly rejected"):
+                    return
+            _log(f"CLOSE ERROR {slot.symbol}: {e}")
+            return
         except Exception as e:
             _log(f"CLOSE ERROR {slot.symbol}: {e}")
             return
@@ -510,6 +557,9 @@ class DemoRunner:
             _log(f"OPEN ERROR {symbol}: {e}")
 
     def on_new_bars(self, frames: dict[str, pd.DataFrame]) -> None:
+        # drop slots the demo account already flattened (liq / UI / reduceOnly miss)
+        for slot in list(self.state.slots.values()):
+            self._drop_if_exchange_flat(slot, "reconcile")
         # manage existing: bar-close rules only on a newly closed 1m; tick stop between bars
         for sym, slot in list(self.state.slots.items()):
             df = frames[sym]
