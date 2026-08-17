@@ -21,6 +21,12 @@ from live.config import LiveConfig
 from live.filters import SymbolFilters, parse_exchange_filters, round_price, round_qty
 from live.signals import build_closed_signals, klines_to_df
 from live.state import LiveSlot, LiveState, load_state, save_state
+from live.supabase_log import (
+    SupabaseLogger,
+    bar_context,
+    exit_event_type,
+    snapshot_from_df,
+)
 from leverage_limits import (
     BINANCE_DEMO_MAX_LEVERAGE,
     effective_leverage_map,
@@ -67,6 +73,8 @@ class DemoRunner:
         self.state = load_state(cfg.state_path)
         self.lev_map = effective_leverage_map(cfg.leverage, BINANCE_DEMO_MAX_LEVERAGE)
         self.cfg.log_dir.mkdir(parents=True, exist_ok=True)
+        self.sb = SupabaseLogger()
+        self._hb_bar_ms = 0
 
     def setup_exchange(self) -> None:
         _log(f"market(charts) {self.cfg.market_url} ...")
@@ -221,6 +229,12 @@ class DemoRunner:
             reason = "tp"
         return reason
 
+    def _persist_bar(self, symbol: str, df: pd.DataFrame) -> dict[str, Any]:
+        ctx = bar_context(df)
+        self.sb.upsert_ohlcv_bars(symbol, df.iloc[[-1]])
+        self.sb.upsert_snapshot(snapshot_from_df(symbol, df))
+        return ctx
+
     def tick_stop(self, slot: LiveSlot, price: float) -> str | None:
         """Intra-bar stop vs last price (live-only; backtest uses bar H/L)."""
         pc = self.pc
@@ -290,6 +304,38 @@ class DemoRunner:
                 f"CLOSE {slot.symbol} {tag} side={slot.side} qty={qty}/{slot.qty} "
                 f"entry={slot.entry:.6g} exit={fill:.6g} pnl~{pnl:.4f}"
             )
+            ev_type = "TRAIL" if do_partial else exit_event_type(reason)
+            left_qty = slot.qty
+            if do_partial:
+                left = round_qty(slot.qty - qty, flt.step_size)
+                left_qty = left if left > 0 else 0.0
+            self.sb.insert_event(
+                {
+                    "symbol": slot.symbol,
+                    "event_type": ev_type,
+                    "direction": "LONG" if slot.side == 1 else "SHORT",
+                    "entry_price": slot.entry,
+                    "close_price": fill,
+                    "signal_price": px,
+                    "fill_price": fill,
+                    "quantity": qty,
+                    "quantity_remaining": left_qty if do_partial else 0.0,
+                    "executed_qty": qty,
+                    "profit_pct": slot.side * (fill / slot.entry - 1.0) * 100.0,
+                    "pnl_usd": pnl,
+                    "sl_price": slot.sl if not math.isnan(slot.sl) else None,
+                    "leverage": slot.leverage,
+                    "position_usd": slot.notional,
+                    "account_balance_usd": self.equity_estimate(),
+                    "holding_time_seconds": slot.bars_held * 60,
+                    "entry_event_id": slot.entry_event_id,
+                    "memo": tag,
+                    "regime": slot.regime,
+                    "trail_armed": slot.trail_unlocked,
+                    "add_count": slot.scale_n,
+                    "model_version": "port5_demo",
+                }
+            )
             if do_partial:
                 left = round_qty(slot.qty - qty, flt.step_size)
                 if left <= 0:
@@ -311,7 +357,14 @@ class DemoRunner:
             return
         self.state.slots.pop(slot.symbol, None)
 
-    def try_enter(self, symbol: str, sig_row: pd.Series, bar: pd.Series, bar_ms: int) -> None:
+    def try_enter(
+        self,
+        symbol: str,
+        sig_row: pd.Series,
+        bar: pd.Series,
+        bar_ms: int,
+        ctx: dict | None = None,
+    ) -> None:
         if symbol in self.state.slots:
             return
         if len(self.state.slots) >= 5:
@@ -416,9 +469,38 @@ class DemoRunner:
                 boost=boost,
                 entry_bar_ms=bar_ms,
                 bars_held=0,
+                leverage=float(lev),
+                signal_price=float(fill_px),
+                regime=(ctx or {}).get("regime"),
             )
             self.state.slots[symbol] = slot
             self.state.pending[symbol] = {"bar_ms": bar_ms}
+            eid = self.sb.insert_event(
+                {
+                    "symbol": symbol,
+                    "event_type": "ENTRY",
+                    "direction": "LONG" if side == 1 else "SHORT",
+                    "entry_price": entry,
+                    "close_price": entry,
+                    "signal_price": fill_px,
+                    "fill_price": entry,
+                    "quantity": qty,
+                    "quantity_remaining": qty,
+                    "executed_qty": qty,
+                    "sl_price": sl if not math.isnan(sl) else None,
+                    "leverage": lev,
+                    "position_usd": slot.notional,
+                    "account_balance_usd": self.equity_estimate(),
+                    "entry_reason": f"regime_{(ctx or {}).get('regime')}_entry",
+                    "memo": f"lev={lev:.0f} margin={margin:.2f}",
+                    "model_version": "port5_demo",
+                    "trail_armed": False,
+                    "add_count": 0,
+                    **{k: v for k, v in (ctx or {}).items() if k != "close_price"},
+                    "close_price": entry,
+                }
+            )
+            slot.entry_event_id = eid
             _log(
                 f"OPEN {symbol} side={side} qty={qty} entry={entry:.6g} lev={lev:.0f}x "
                 f"sl={sl:.6g} trail={trail:.6g} margin~{margin:.4f} notional~{slot.notional:.2f} "
@@ -466,13 +548,14 @@ class DemoRunner:
             self.state.last_bar_ms[sym] = bar_ms
             if prev is not None and bar_ms == prev:
                 continue
+            ctx = self._persist_bar(sym, df)
             if len(self.state.slots) >= 5:
                 break
             if any(int(p.get("bar_ms", -1)) == bar_ms for p in self.state.pending.values()):
                 continue
 
             sig = build_closed_signals(df, sym)
-            self.try_enter(sym, sig.iloc[-1], df.iloc[-1], bar_ms)
+            self.try_enter(sym, sig.iloc[-1], df.iloc[-1], bar_ms, ctx)
             if sym in self.state.slots and self.state.slots[sym].entry_bar_ms == bar_ms:
                 filled_bar_ms = bar_ms
                 for s in self.cfg.symbols:
@@ -485,8 +568,31 @@ class DemoRunner:
 
     def loop_once(self) -> None:
         frames = self.fetch_frames()
+        self.sb.seed_frames_once(frames)
         self.on_new_bars(frames)
         save_state(self.cfg.state_path, self.state)
+        newest = max(self.state.last_bar_ms.values()) if self.state.last_bar_ms else 0
+        if newest and newest != self._hb_bar_ms:
+            self._hb_bar_ms = newest
+            self.sb.insert_heartbeat(
+                {
+                    "equity": self.equity_estimate(),
+                    "free_cash": self.free_cash(),
+                    "size_mult": self.state.size_mult,
+                    "n_slots": len(self.state.slots),
+                    "dry_run": self.cfg.dry_run,
+                    "slots_json": {
+                        s.symbol: {
+                            "side": s.side,
+                            "entry": s.entry,
+                            "qty": s.qty,
+                            "sl": s.sl,
+                            "regime": s.regime,
+                        }
+                        for s in self.state.slots.values()
+                    },
+                }
+            )
         slots = ", ".join(
             f"{s.symbol}:{'L' if s.side==1 else 'S'}@{s.entry:.4g}/sl={s.sl:.4g}"
             for s in self.state.slots.values()

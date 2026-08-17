@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass, field, fields
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +25,10 @@ class LiveSlot:
     scale_n: int = 0
     entry_bar_ms: int = 0
     bars_held: int = 0
+    leverage: float = 100.0
+    entry_event_id: int | None = None
+    signal_price: float | None = None
+    regime: str | None = None
 
 
 @dataclass
@@ -44,7 +48,10 @@ class LiveState:
 
     @classmethod
     def from_json(cls, data: dict) -> "LiveState":
-        slots = {k: LiveSlot(**v) for k, v in (data.get("slots") or {}).items()}
+        allowed = {f.name for f in fields(LiveSlot)}
+        slots = {}
+        for k, v in (data.get("slots") or {}).items():
+            slots[k] = LiveSlot(**{kk: vv for kk, vv in v.items() if kk in allowed})
         return cls(
             size_mult=float(data.get("size_mult", 1.0)),
             last_bar_ms={k: int(v) for k, v in (data.get("last_bar_ms") or {}).items()},
