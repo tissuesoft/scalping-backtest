@@ -1,4 +1,4 @@
-"""Supabase logging for PORT5 demo (dedicated project, not autotrade).
+"""Supabase logging for PORT5 demo (dedicated project: scalping-backtest).
 
 Env:
   SUPABASE_URL
@@ -26,7 +26,7 @@ import pandas as pd
 from indicators import atr, bollinger, ema, macd, rsi, volume_sma
 from strategies.regime import classify_regime
 
-BOT_ID = "port5"
+BOT_ID = "scalping-backtest"
 
 
 def _finite(v: Any) -> float | None:
