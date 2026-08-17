@@ -1,14 +1,14 @@
-"""Supabase logging for PORT5 demo (same project/tables as autotrade-backtest).
+"""Supabase logging for PORT5 demo (dedicated project: scalping-backtest).
 
 Env:
   SUPABASE_URL
   SUPABASE_ANON_KEY  (or SUPABASE_SERVICE_ROLE_KEY)
 
 Tables:
-  trade_events       ENTRY / SL / TP / TRAIL_PARTIAL / sl_tick
-  market_snapshots   1m OHLCV + indicators + regime
-  ohlcv_bars         raw 1m candles (interval='1m')
-  port5_heartbeats   equity / slots
+  trade_events        ENTRY / SL / TP / TRAIL
+  market_snapshots    1m OHLCV + indicators + regime
+  ohlcv_bars          raw 1m candles
+  runner_heartbeats   equity / open slots
 """
 from __future__ import annotations
 
@@ -145,6 +145,7 @@ class SupabaseLogger:
                     "low": float(row["low"]),
                     "close": float(row["close"]),
                     "volume": float(row["volume"]),
+                    "quote_volume": float(row["quote_volume"]) if "quote_volume" in use.columns else None,
                     "updated_at": now_iso,
                 }
             )
@@ -166,7 +167,7 @@ class SupabaseLogger:
     def insert_heartbeat(self, record: dict[str, Any]) -> None:
         payload = {k: v for k, v in record.items() if v is not None}
         payload.setdefault("bot", BOT_ID)
-        self._request("POST", "port5_heartbeats", payload)
+        self._request("POST", "runner_heartbeats", payload)
 
     def seed_frames_once(self, frames: dict[str, pd.DataFrame]) -> None:
         if self._seeded or not self.enabled:
