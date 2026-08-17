@@ -1,0 +1,21 @@
+{
+  "source": "demo-fapi.binance.com /fapi/v1/leverageBracket",
+  "queried_at_utc": "2026-08-16",
+  "slot_frac": 0.18,
+  "policy": "Per new slot: margin budget = 18% equity (if <4 open). If 4 already open, last slot uses all remaining free cash. Notional sized via brackets so exchange margin never exceeds that budget.",
+  "exchange_max": {
+    "BTCUSDT": 125,
+    "ETHUSDT": 100,
+    "BNBUSDT": 75,
+    "SOLUSDT": 50,
+    "XRPUSDT": 75
+  },
+  "effective_want_100": {
+    "BTCUSDT": 100,
+    "ETHUSDT": 100,
+    "BNBUSDT": 75,
+    "SOLUSDT": 50,
+    "XRPUSDT": 75
+  },
+  "note": "Always applied in portfolio_engine + live runner (live parity). No opt-out."
+}

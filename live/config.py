@@ -35,7 +35,7 @@ class LiveConfig:
     symbols: tuple[str, ...] = PORTFOLIO_SYMBOLS
     dry_run: bool = True
     poll_sec: float = 15.0
-    kline_limit: int = 1200
+    kline_limit: int = 1500
     leverage: float = 100.0
     state_path: Path = ROOT / "live" / "state.json"
     log_dir: Path = ROOT / "live" / "logs"
@@ -54,6 +54,9 @@ class LiveConfig:
             )
         else:
             self.portfolio.leverage = float(self.leverage)
+            from leverage_limits import effective_leverage_map
+
+            self.portfolio.leverage_by_symbol = effective_leverage_map(self.leverage)
 
 
 def load_live_config(

@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 TRACKED = [
     ROOT / "portfolio_engine.py",
+    ROOT / "leverage_limits.py",
     ROOT / "strategies" / "btc_trend.py",
     ROOT / "strategies" / "eth_breakout.py",
     ROOT / "strategies" / "bnb_structure.py",
@@ -75,6 +76,8 @@ def run_eval(tag: str, out_dir: Path) -> dict:
         "-u",
         str(ROOT / "eval_portfolio_windows.py"),
         "--capital",
+        "100",
+        "--leverage",
         "100",
         "--tag",
         tag,

@@ -17,7 +17,7 @@ def _shared_bb(df: pd.DataFrame, a: pd.Series):
     vw = vwap(df)
     vol_ma = volume_sma(df["volume"], 20)
     vol_ok = df["volume"] >= (1.35 * vol_ma)
-    body_ok = (df["close"] - df["open"]).abs() >= (0.40 * a)
+    body_ok = (df["close"] - df["open"]).abs() >= (0.35 * a)
     squeeze = width < (0.92 * width_ma)
     break_up = (df["close"] > upper) & (df["close"].shift(1) <= upper.shift(1))
     break_dn = (df["close"] < lower) & (df["close"].shift(1) >= lower.shift(1))
@@ -26,7 +26,7 @@ def _shared_bb(df: pd.DataFrame, a: pd.Series):
 
 def _bull(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
     lower, mid, upper, r, vw, _vol_ok, body_ok, squeeze, break_up, break_dn = _shared_bb(df, a)
-    body_strict = (df["close"] - df["open"]).abs() >= (0.60 * a)
+    body_strict = (df["close"] - df["open"]).abs() >= (0.65 * a)
     vol_ok = df["volume"] >= (2.05 * volume_sma(df["volume"], 20))  # P1084: skip thin BNB breakouts
 
     raw_long = (
@@ -79,8 +79,9 @@ def _sideways(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
 
     touch_low = df["low"] <= lower
     touch_hi = df["high"] >= upper
-    raw_long = touch_low & (r < 22) & (r > r.shift(1)) & (df["close"] > df["open"]) & (df["close"] > vw) & vol_ok & a.notna()
-    raw_short = touch_hi & (r > 78) & (r < r.shift(1)) & (df["close"] < df["open"]) & (df["close"] < vw) & vol_ok & a.notna()
+    body_fade = (df["close"] - df["open"]).abs() >= (0.25 * a)
+    raw_long = touch_low & (r < 22) & (r > r.shift(1)) & (df["close"] > df["open"]) & (df["close"] > vw) & vol_ok & body_fade & a.notna()
+    raw_short = touch_hi & (r > 78) & (r < r.shift(1)) & (df["close"] < df["open"]) & (df["close"] < vw) & vol_ok & body_fade & a.notna()
     raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 200, 130)
 
     out = pd.DataFrame(index=df.index)
@@ -90,7 +91,7 @@ def _sideways(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
     out["sl_short"] = np.maximum(df["high"], upper) + 0.12 * a
     out["tp_long"] = mid
     out["tp_short"] = mid
-    out["trail_atr"] = 0.5 * a
+    out["trail_atr"] = 0.4 * a
     out["size_boost"] = 1.0
     return out
 

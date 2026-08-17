@@ -1,4 +1,4 @@
-"""5심볼 포트폴리오 엔진: 20% 배분 + 마지막 슬롯 잔액 전액, 격리 청산."""
+"""5심볼 포트폴리오 엔진: 슬롯당 자산 18% 마진 + 4슬롯 이후 잔액 전액, 격리 청산."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from compound_engine import Trade, _slip
+from leverage_limits import size_for_margin_budget
 from strategies.registry import PORTFOLIO_SYMBOLS
 
 # 1m 선물 실전 근사: 심볼 스프레드 + 체결금액/봉거래대금 충격 + 봉 변동성
@@ -50,12 +51,15 @@ class PortfolioConfig:
     initial_capital: float = 100.0
     target_equity: float = 1_000_000.0
     leverage: float = 100.0
+    # Always filled with Binance demo per-symbol caps (min(want, exchange max)).
+    leverage_by_symbol: Dict[str, float] = field(default_factory=dict)
     fee_rate: float = 0.0004
     slippage: float = 0.0001
     mmr: float = 0.005
-    slot_frac: float = 0.15  # P1064 REVERT: 0.22 crushed median under live slip
-    trail_unlock_r: float = 3.0
-    trail_unlock_mult: float = 1.4
+    # 18% equity margin budget per new slot; when 4 slots already open, last uses all free cash.
+    slot_frac: float = 0.18
+    trail_unlock_r: float = 2.5
+    trail_unlock_mult: float = 1.3
     win_size_mult: float = 1.2
     win_size_max: float = 5.0
     sl_grace_bars: int = 46
@@ -67,15 +71,32 @@ class PortfolioConfig:
     # trail partials (aligned with compound champion spirit)
     use_partial_trail: bool = True
     first_close_frac: float = 0.0
-    second_close_frac_fat: float = 0.10
+    second_close_frac_fat: float = 0.08
     second_close_frac_thin: float = 0.264
-    later_close_frac: float = 0.08
+    later_close_frac: float = 0.09
     trail_scale_max: int = 10
-    fat_boost_thresh: float = 1.25
+    fat_boost_thresh: float = 1.15
     # cap notional vs 1m quote volume so live-slip impact does not explode with equity
     liq_notional_frac: float = 0.22
     # skip entry if modeled live slip exceeds this (0 = off)
     max_entry_slip: float = 0.0020
+
+    def __post_init__(self) -> None:
+        # Live-parity: never run flat 100x on BNB/SOL/XRP — always apply exchange max map.
+        if not self.leverage_by_symbol:
+            from leverage_limits import effective_leverage_map
+
+            self.leverage_by_symbol = effective_leverage_map(self.leverage)
+
+    def leverage_for(self, symbol: str) -> float:
+        if self.leverage_by_symbol and symbol in self.leverage_by_symbol:
+            return float(self.leverage_by_symbol[symbol])
+        from leverage_limits import BINANCE_DEMO_MAX_LEVERAGE
+
+        mx = BINANCE_DEMO_MAX_LEVERAGE.get(symbol)
+        if mx is not None:
+            return float(min(self.leverage, mx))
+        return float(self.leverage)
 
 
 @dataclass
@@ -92,6 +113,7 @@ class Slot:
     peak: float
     risk: float
     boost: float
+    leverage: float = 100.0
     trail_unlocked: bool = False
     scale_n: int = 0
 
@@ -186,8 +208,11 @@ def run_portfolio(
     account_liq = False
     trades_by_symbol = {s: 0 for s in symbols}
     liq_by_symbol = {s: 0 for s in symbols}
-    liq_dist = max(1.0 / cfg.leverage - cfg.mmr, 0.01)
     slip_on = float(cfg.slippage) > 0.0
+
+    def _liq_dist(sym: str, lev: float | None = None) -> float:
+        L = float(lev if lev is not None else cfg.leverage_for(sym))
+        return max(1.0 / max(L, 1e-9) - cfg.mmr, 0.01)
 
     def _bar_range_pct(sym: str, i: int, px: float) -> float:
         hi = float(ohlc[sym]["high"][i])
@@ -317,16 +342,15 @@ def run_portfolio(
             risk_frac = risk / fill if fill > 0 else 0.01
             progress = i / max(n - 1, 1)
             risk_tgt = min(cfg.risk_tgt_max, cfg.risk_tgt_start + cfg.risk_tgt_span * progress)
-            # P001: hard-cap at stated leverage on alloc budget (no size_mult/1.5/boost inflate)
-            lev_cap = budget * cfg.leverage
-            notional = min(lev_cap, budget * risk_tgt * size_mult * boost / max(risk_frac, 1e-8))
+            want_lev = cfg.leverage_for(sym)
+            risk_wish = budget * risk_tgt * size_mult * boost / max(risk_frac, 1e-8)
             bqv = _bar_quote_vol(sym, i, mid)
             if cfg.liq_notional_frac > 0 and bqv > 1.0:
-                notional = min(notional, bqv * cfg.liq_notional_frac)
-            margin = min(budget, max(notional / cfg.leverage, budget * 0.01))
+                risk_wish = min(risk_wish, bqv * cfg.liq_notional_frac)
+            # Bracket-aware: exchange margin = notional/bracket_lev <= budget (18% or leftover).
+            notional, margin, lev = size_for_margin_budget(sym, budget, want_lev, risk_wish)
             if margin > cash:
-                margin = cash
-                notional = min(notional, margin * cfg.leverage)
+                notional, margin, lev = size_for_margin_budget(sym, cash, want_lev, risk_wish)
             if notional <= 0 or margin <= 0:
                 del pending[sym]
                 continue
@@ -369,6 +393,7 @@ def run_portfolio(
                 peak=fill,
                 risk=float(risk),
                 boost=boost,
+                leverage=float(lev),
             )
             del pending[sym]
             filled_this_bar = True
@@ -400,7 +425,7 @@ def run_portfolio(
                         sl.sl = trail_sl
                 hit_sl = (not np.isnan(sl.sl)) and low <= sl.sl
                 hit_tp = (not np.isnan(sl.tp)) and high >= sl.tp
-                liq_px = sl.entry * (1.0 - liq_dist)
+                liq_px = sl.entry * (1.0 - _liq_dist(sym, sl.leverage))
                 hit_liq = low <= liq_px
             else:
                 sl.peak = min(sl.peak, low)
@@ -410,7 +435,7 @@ def run_portfolio(
                         sl.sl = trail_sl
                 hit_sl = (not np.isnan(sl.sl)) and high >= sl.sl
                 hit_tp = (not np.isnan(sl.tp)) and low <= sl.tp
-                liq_px = sl.entry * (1.0 + liq_dist)
+                liq_px = sl.entry * (1.0 + _liq_dist(sym, sl.leverage))
                 hit_liq = high >= liq_px
 
             if cfg.sl_grace_bars > 0 and (i - sl.entry_i) < cfg.sl_grace_bars:

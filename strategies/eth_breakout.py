@@ -67,7 +67,7 @@ def _sideways(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
     lower, mid, upper = bollinger(df["close"], 20, 2.0)
     r = rsi(df["close"], 7)
     vol_ma = volume_sma(df["volume"], 20)
-    vol_ok = df["volume"] >= (1.80 * vol_ma)
+    vol_ok = df["volume"] >= (1.90 * vol_ma)
 
     raw_long = (df["low"] <= lower) & (r < 20) & (r > r.shift(1)) & (df["close"] > df["open"]) & vol_ok & a.notna()
     raw_short = (df["high"] >= upper) & (r > 80) & (r < r.shift(1)) & (df["close"] < df["open"]) & vol_ok & a.notna()
@@ -80,7 +80,7 @@ def _sideways(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
     out["sl_short"] = np.maximum(df["high"], upper) + 0.12 * a
     out["tp_long"] = mid
     out["tp_short"] = mid
-    out["trail_atr"] = 0.7 * a
+    out["trail_atr"] = 0.6 * a
     out["size_boost"] = 1.0
     return out
 

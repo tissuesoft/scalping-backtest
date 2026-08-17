@@ -18,15 +18,15 @@ def _bull(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
     _macd, _sig, hist = macd(df["close"], 12, 26, 9)
     cross_up = (e9 > e21) & (e9.shift(1) <= e21.shift(1))
     cross_dn = (e9 < e21) & (e9.shift(1) >= e21.shift(1))
-    vol_ok = df["volume"] >= (1.85 * vol_ma)
+    vol_ok = df["volume"] >= (1.95 * vol_ma)
 
     raw_long = (
-        cross_up & (df["close"] > vw) & (r > 48) & (r < 68) & (hist > 0) & vol_ok & a.notna()
+        cross_up & (df["close"] > vw) & (r > 48) & (r < 66) & (hist > 0) & vol_ok & a.notna()
     )
     raw_short = (
         cross_dn & (df["close"] < vw) & (r < 55) & (r > 28) & (hist < 0) & vol_ok & a.notna()
     )
-    raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 240, 160)
+    raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 260, 170)
 
     out = pd.DataFrame(index=df.index)
     out["entry_long"] = raw_long

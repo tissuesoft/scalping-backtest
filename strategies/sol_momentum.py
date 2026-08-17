@@ -17,14 +17,14 @@ def _momentum_core(df: pd.DataFrame, a: pd.Series, short_bias: bool = False) -> 
     e9 = ema(df["close"], 9)
     vol_ma = volume_sma(df["volume"], 20)
 
-    stoch_up = (k > d) & (k.shift(1) <= d.shift(1)) & (k < 80)
+    stoch_up = (k > d) & (k.shift(1) <= d.shift(1)) & (k < 75)
     stoch_dn = (k < d) & (k.shift(1) >= d.shift(1)) & (k > 20)
     macd_bull = (hist > 0) & (macd_line > macd_sig)
     macd_bear = (hist < 0) & (macd_line < macd_sig)
     vol_expand = (a > 1.08 * atr_ma) & (atr_pct >= 0.0020)
     if short_bias:
         vol_expand = (a > 1.22 * atr_ma) & (atr_pct >= 0.0020)
-    vol_ok = df["volume"] >= (1.20 * vol_ma)
+    vol_ok = df["volume"] >= (1.15 * vol_ma)
 
     raw_long = stoch_up & macd_bull & (df["close"] > e9) & vol_expand & vol_ok & a.notna()
     raw_short = stoch_dn & macd_bear & (df["close"] < e9) & vol_expand & vol_ok & a.notna()
@@ -32,7 +32,7 @@ def _momentum_core(df: pd.DataFrame, a: pd.Series, short_bias: bool = False) -> 
     if short_bias:
         raw_long = raw_long & (k < 35) & (hist > hist.shift(1))
     else:
-        raw_short = raw_short & (k > 65) & (hist < hist.shift(1))
+        raw_short = raw_short & (k > 70) & (hist < hist.shift(1))
 
     raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 110, 80)
 
@@ -55,7 +55,7 @@ def _sideways(df: pd.DataFrame, a: pd.Series) -> pd.DataFrame:
 
     raw_long = (k < 19) & (k > d) & (k.shift(1) <= d.shift(1)) & (k > k.shift(1)) & vol_ok & a.notna()
     raw_short = (k > 81) & (k < d) & (k.shift(1) >= d.shift(1)) & (k < k.shift(1)) & vol_ok & a.notna()
-    raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 70, 50)
+    raw_long, raw_short = apply_cooldown(raw_long.fillna(False), raw_short.fillna(False), 75, 52)
 
     out = pd.DataFrame(index=df.index)
     out["entry_long"] = raw_long

@@ -21,6 +21,12 @@ from live.config import LiveConfig
 from live.filters import SymbolFilters, parse_exchange_filters, round_price, round_qty
 from live.signals import build_closed_signals, klines_to_df
 from live.state import LiveSlot, LiveState, load_state, save_state
+from leverage_limits import (
+    BINANCE_DEMO_MAX_LEVERAGE,
+    effective_leverage_map,
+    leverage_for_notional,
+    size_for_margin_budget,
+)
 
 
 def _log(msg: str) -> None:
@@ -59,6 +65,7 @@ class DemoRunner:
         self.trade = BinanceFapi(cfg.api_key, cfg.api_secret, cfg.trade_url)
         self.filters: dict[str, SymbolFilters] = {}
         self.state = load_state(cfg.state_path)
+        self.lev_map = effective_leverage_map(cfg.leverage, BINANCE_DEMO_MAX_LEVERAGE)
         self.cfg.log_dir.mkdir(parents=True, exist_ok=True)
 
     def setup_exchange(self) -> None:
@@ -78,13 +85,16 @@ class DemoRunner:
         _log(f"trade(demo) {self.cfg.trade_url} ...")
         self.trade.ping()
         want = max(1, min(int(self.cfg.leverage), 125))
+        self.lev_map = effective_leverage_map(want, BINANCE_DEMO_MAX_LEVERAGE)
         for sym in self.cfg.symbols:
             try:
                 self.trade.change_margin_type(sym, "ISOLATED")
             except BinanceFapiError as e:
                 if "No need to change" not in e.body and "-4046" not in e.body:
                     _log(f"marginType {sym}: {e}")
-            lev = self._resolve_leverage(sym, want)
+            lev = int(self.lev_map.get(sym, want))
+            # still resolve against live bracket in case exchange changed
+            lev = self._resolve_leverage(sym, lev)
             applied = None
             err = None
             for try_lev in range(lev, 0, -1):
@@ -96,6 +106,7 @@ class DemoRunner:
                     err = e
                     continue
             if applied is not None:
+                self.lev_map[sym] = float(applied)
                 note = "" if applied == want else f" (capped from {want})"
                 _log(f"leverage {sym}={applied} ISOLATED{note}")
             else:
@@ -162,7 +173,7 @@ class DemoRunner:
         return fallback
 
     def manage_slot(self, slot: LiveSlot, bar: pd.Series, price: float) -> str | None:
-        """Update trail/SL on closed bar; return exit reason or None."""
+        """Bar-close trail/SL/TP — same rules as portfolio_engine (incl. partial trail)."""
         pc = self.pc
         assert pc is not None
         high = float(bar["high"])
@@ -177,6 +188,8 @@ class DemoRunner:
         tr_use = slot.trail_atr
         if slot.trail_unlocked and not math.isnan(tr_use):
             tr_use = tr_use * pc.trail_unlock_mult
+        if slot.scale_n >= 1 and not math.isnan(tr_use):
+            tr_use = tr_use * 6.1653697404852474e-12
 
         if slot.side == 1:
             slot.peak = max(slot.peak, high)
@@ -184,49 +197,113 @@ class DemoRunner:
                 trail_sl = slot.peak - tr_use
                 if math.isnan(slot.sl) or trail_sl > slot.sl:
                     slot.sl = trail_sl
-            # SL hit on bar
-            grace = slot.bars_held < pc.sl_grace_bars
-            if not grace and not math.isnan(slot.sl) and low <= slot.sl:
-                return "sl"
-            if not math.isnan(slot.tp) and high >= slot.tp:
-                return "tp"
+            hit_sl = (not math.isnan(slot.sl)) and low <= slot.sl
+            hit_tp = (not math.isnan(slot.tp)) and high >= slot.tp
         else:
             slot.peak = min(slot.peak, low)
             if not math.isnan(tr_use) and tr_use > 0:
                 trail_sl = slot.peak + tr_use
                 if math.isnan(slot.sl) or trail_sl < slot.sl:
                     slot.sl = trail_sl
-            grace = slot.bars_held < pc.sl_grace_bars
-            if not grace and not math.isnan(slot.sl) and high >= slot.sl:
-                return "sl"
-            if not math.isnan(slot.tp) and low <= slot.tp:
-                return "tp"
+            hit_sl = (not math.isnan(slot.sl)) and high >= slot.sl
+            hit_tp = (not math.isnan(slot.tp)) and low <= slot.tp
 
-        # live tick stop vs last price
-        if not grace and not math.isnan(slot.sl):
-            if slot.side == 1 and price <= slot.sl:
-                return "sl_tick"
-            if slot.side == -1 and price >= slot.sl:
-                return "sl_tick"
+        grace = slot.bars_held < pc.sl_grace_bars
+        if grace:
+            hit_sl = False
+
+        reason = None
+        if hit_sl and hit_tp:
+            reason = "sl" if pc.same_bar_priority == "sl" else "tp"
+        elif hit_sl:
+            reason = "sl"
+        elif hit_tp:
+            reason = "tp"
+        return reason
+
+    def tick_stop(self, slot: LiveSlot, price: float) -> str | None:
+        """Intra-bar stop vs last price (live-only; backtest uses bar H/L)."""
+        pc = self.pc
+        assert pc is not None
+        if slot.bars_held < pc.sl_grace_bars:
+            return None
+        if math.isnan(slot.sl):
+            return None
+        if slot.side == 1 and price <= slot.sl:
+            return "sl_tick"
+        if slot.side == -1 and price >= slot.sl:
+            return "sl_tick"
         return None
 
-    def close_slot(self, slot: LiveSlot, reason: str) -> None:
-        side = "SELL" if slot.side == 1 else "BUY"
-        qty = round_qty(slot.qty, self.filters[slot.symbol].step_size)
+    def _partial_frac(self, slot: LiveSlot, reason: str, exit_px: float) -> float:
+        pc = self.pc
+        assert pc is not None
+        if not pc.use_partial_trail or reason != "sl" or slot.scale_n >= pc.trail_scale_max:
+            return 1.0
+        in_profit = (slot.side == 1 and exit_px > slot.entry) or (
+            slot.side == -1 and exit_px < slot.entry
+        )
+        if not in_profit:
+            return 1.0
+        if slot.scale_n == 0:
+            return float(pc.first_close_frac)
+        if slot.scale_n == 1:
+            return float(
+                pc.second_close_frac_fat
+                if slot.boost >= pc.fat_boost_thresh
+                else pc.second_close_frac_thin
+            )
+        return float(pc.later_close_frac)
+
+    def close_slot(self, slot: LiveSlot, reason: str, exit_px: float | None = None) -> None:
+        pc = self.pc
+        assert pc is not None
+        px = float(exit_px) if exit_px is not None else 0.0
+        if exit_px is None:
+            try:
+                px = self.market.ticker_price(slot.symbol)
+            except Exception:
+                px = slot.entry
+        frac = self._partial_frac(slot, reason, px)
+        if frac <= 0:
+            slot.scale_n += 1
+            _log(
+                f"TRAIL_SCALE {slot.symbol} scale_n={slot.scale_n} (close_frac=0, keep position)"
+            )
+            return
+
+        flt = self.filters[slot.symbol]
+        close_qty = slot.qty if frac >= 1.0 - 1e-12 else slot.qty * frac
+        qty = round_qty(close_qty, flt.step_size)
         if qty <= 0:
             _log(f"close skip {slot.symbol}: qty=0")
             self.state.slots.pop(slot.symbol, None)
             return
+        side = "SELL" if slot.side == 1 else "BUY"
         try:
             order = self._place_market(slot.symbol, side, qty, reduce_only=True)
-            px = self._fill_price(order, self.market.ticker_price(slot.symbol))
-            pnl = slot.side * (px / slot.entry - 1.0) * slot.notional
+            fill = self._fill_price(order, px)
+            pnl = slot.side * (fill / slot.entry - 1.0) * (qty * fill)
+            do_partial = frac < 1.0 - 1e-12 and qty + 1e-12 < slot.qty
+            tag = "trail_partial" if do_partial else reason
             _log(
-                f"CLOSE {slot.symbol} {reason} side={slot.side} qty={qty} "
-                f"entry={slot.entry:.6g} exit={px:.6g} pnl~{pnl:.4f}"
+                f"CLOSE {slot.symbol} {tag} side={slot.side} qty={qty}/{slot.qty} "
+                f"entry={slot.entry:.6g} exit={fill:.6g} pnl~{pnl:.4f}"
             )
+            if do_partial:
+                left = round_qty(slot.qty - qty, flt.step_size)
+                if left <= 0:
+                    do_partial = False
+                else:
+                    remain = left / slot.qty if slot.qty else 0.0
+                    slot.qty = left
+                    slot.notional *= remain
+                    slot.margin *= remain
+                    slot.scale_n += 1
+                    self.state.slots[slot.symbol] = slot
+                    return
             if pnl > 0:
-                self.state.size_mult = min(self.state.size_mult * self.pc.win_size_mult, self.pc.win_size_max)
+                self.state.size_mult = min(self.state.size_mult * pc.win_size_mult, pc.win_size_max)
             else:
                 self.state.size_mult = 1.0
         except Exception as e:
@@ -274,6 +351,7 @@ class DemoRunner:
         open_n = len(self.state.slots)
         eq_now = self.equity_estimate()
         free = self.free_cash()
+        # 0~3 open: 18% of equity; already 4 open → dump remaining free into last slot
         if open_n >= 4:
             budget = free
         else:
@@ -284,20 +362,14 @@ class DemoRunner:
         risk = abs(fill_px - sl) if not math.isnan(sl) else fill_px * 0.01
         risk_frac = risk / fill_px if fill_px > 0 else 0.01
         risk_tgt = min(pc.risk_tgt_max, pc.risk_tgt_start + pc.risk_tgt_span * 0.5)
-        lev_cap = budget * pc.leverage
-        notional = min(
-            lev_cap,
-            budget * risk_tgt * self.state.size_mult * boost / max(risk_frac, 1e-8),
-        )
-        # soft cap vs bar quote volume
+        want_lev = float(getattr(self, "lev_map", {}).get(symbol) or pc.leverage_for(symbol))
+        risk_wish = budget * risk_tgt * self.state.size_mult * boost / max(risk_frac, 1e-8)
         bqv = float(bar.get("quote_volume", 0) or 0)
         if pc.liq_notional_frac > 0 and bqv > 1.0:
-            notional = min(notional, bqv * pc.liq_notional_frac)
+            risk_wish = min(risk_wish, bqv * pc.liq_notional_frac)
 
-        margin = min(budget, max(notional / pc.leverage, budget * 0.01))
-        if margin > free:
-            margin = free
-            notional = min(notional, margin * pc.leverage)
+        cap_budget = min(budget, free)
+        notional, margin, lev = size_for_margin_budget(symbol, cap_budget, want_lev, risk_wish)
         if notional <= 0 or margin <= 0:
             return
 
@@ -306,9 +378,26 @@ class DemoRunner:
         if qty < flt.min_qty or qty * fill_px < flt.min_notional:
             _log(f"skip {symbol}: qty/notional too small qty={qty}")
             return
+        notional = qty * fill_px
+        lev = min(want_lev, leverage_for_notional(symbol, notional))
+        margin = min(cap_budget, notional / max(lev, 1e-9))
+        # If rounding pushed notional into a lower bracket, shrink to budget again
+        if margin > cap_budget + 1e-9:
+            notional, margin, lev = size_for_margin_budget(symbol, cap_budget, want_lev, notional)
+            qty = round_qty(notional / fill_px, flt.step_size)
+            if qty < flt.min_qty or qty * fill_px < flt.min_notional:
+                return
+            notional = qty * fill_px
+            lev = min(want_lev, leverage_for_notional(symbol, notional))
+            margin = min(cap_budget, notional / max(lev, 1e-9))
 
         order_side = "BUY" if side == 1 else "SELL"
         try:
+            if not self.cfg.dry_run:
+                try:
+                    self.trade.change_leverage(symbol, int(max(1, round(lev))))
+                except BinanceFapiError as e:
+                    _log(f"change_leverage {symbol}→{lev}: {e}")
             order = self._place_market(symbol, order_side, qty, reduce_only=False)
             entry = self._fill_price(order, fill_px)
             risk = abs(entry - sl) if not math.isnan(sl) else entry * 0.01
@@ -331,32 +420,42 @@ class DemoRunner:
             self.state.slots[symbol] = slot
             self.state.pending[symbol] = {"bar_ms": bar_ms}
             _log(
-                f"OPEN {symbol} side={side} qty={qty} entry={entry:.6g} "
-                f"sl={sl:.6g} trail={trail:.6g} margin~{margin:.4f} notional~{slot.notional:.2f}"
+                f"OPEN {symbol} side={side} qty={qty} entry={entry:.6g} lev={lev:.0f}x "
+                f"sl={sl:.6g} trail={trail:.6g} margin~{margin:.4f} notional~{slot.notional:.2f} "
+                f"budget~{cap_budget:.2f}"
             )
         except Exception as e:
             _log(f"OPEN ERROR {symbol}: {e}")
 
     def on_new_bars(self, frames: dict[str, pd.DataFrame]) -> None:
-        # manage existing first
+        # manage existing: bar-close rules only on a newly closed 1m; tick stop between bars
         for sym, slot in list(self.state.slots.items()):
             df = frames[sym]
             bar = df.iloc[-1]
+            bar_ms = int(df.index[-1].timestamp() * 1000)
             try:
                 px = self.market.ticker_price(sym)
             except Exception:
                 px = float(bar["close"])
-            # refresh trail atr from latest signal row if present
-            try:
-                sig = build_closed_signals(df, sym)
-                tr = float(sig["trail_atr"].iloc[-1])
-                if not math.isnan(tr):
-                    slot.trail_atr = tr
-            except Exception:
-                pass
-            reason = self.manage_slot(slot, bar, px)
-            if reason:
-                self.close_slot(slot, reason)
+            prev = self.state.last_bar_ms.get(sym)
+            is_new = prev is None or bar_ms != prev
+            if is_new:
+                try:
+                    sig = build_closed_signals(df, sym)
+                    tr = float(sig["trail_atr"].iloc[-1])
+                    if not math.isnan(tr):
+                        slot.trail_atr = tr
+                except Exception:
+                    pass
+                reason = self.manage_slot(slot, bar, px)
+                if reason:
+                    exit_px = slot.sl if reason == "sl" else (slot.tp if reason == "tp" else px)
+                    self.close_slot(slot, reason, exit_px)
+                    continue
+            else:
+                reason = self.tick_stop(slot, px)
+                if reason:
+                    self.close_slot(slot, reason, px)
 
         # entries: only when symbol got a new closed bar
         filled_bar_ms = None
@@ -367,25 +466,18 @@ class DemoRunner:
             self.state.last_bar_ms[sym] = bar_ms
             if prev is not None and bar_ms == prev:
                 continue
-            if filled_bar_ms is not None and bar_ms != filled_bar_ms:
-                # keep one entry per wall-clock bar across symbols
-                pass
             if len(self.state.slots) >= 5:
                 break
-            # already opened one this cycle
             if any(int(p.get("bar_ms", -1)) == bar_ms for p in self.state.pending.values()):
-                # allow other symbols same bar? backtest = one per bar total
                 continue
 
             sig = build_closed_signals(df, sym)
             self.try_enter(sym, sig.iloc[-1], df.iloc[-1], bar_ms)
             if sym in self.state.slots and self.state.slots[sym].entry_bar_ms == bar_ms:
                 filled_bar_ms = bar_ms
-                # mark all pending for this bar so only one entry
                 for s in self.cfg.symbols:
                     self.state.pending[s] = {"bar_ms": bar_ms}
 
-        # prune stale pending markers
         newest = max(self.state.last_bar_ms.values()) if self.state.last_bar_ms else 0
         self.state.pending = {
             k: v for k, v in self.state.pending.items() if int(v.get("bar_ms", 0)) >= newest - 120_000
@@ -406,9 +498,13 @@ class DemoRunner:
 
     def run(self) -> None:
         self.setup_exchange()
+        pc = self.pc
+        assert pc is not None
         _log(
-            f"start demo runner dry_run={self.cfg.dry_run} lev={self.cfg.leverage} "
-            f"poll={self.cfg.poll_sec}s stop_file={self.cfg.stop_file}"
+            f"start demo runner dry_run={self.cfg.dry_run} want_lev={self.cfg.leverage} "
+            f"per-symbol={self.lev_map} slot_frac={pc.slot_frac} "
+            f"partial_trail={pc.use_partial_trail} sl_grace={pc.sl_grace_bars} "
+            f"klines={self.cfg.kline_limit} poll={self.cfg.poll_sec}s stop_file={self.cfg.stop_file}"
         )
         while True:
             if self.cfg.stop_file.exists():

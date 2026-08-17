@@ -8,6 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 from data_loader import load_parquet_dir
+from leverage_limits import effective_leverage_map
 from portfolio_engine import PortfolioConfig, PORTFOLIO_SYMBOLS, align_frames, run_portfolio
 from strategies.registry import STRATEGY_BUILDERS, build_symbol_signals
 
@@ -17,7 +18,12 @@ def parse_args():
     p.add_argument("--data-root", default="data")
     p.add_argument("--capital", type=float, default=100.0)
     p.add_argument("--target-mult", type=float, default=10_000.0)
-    p.add_argument("--leverage", type=float, default=100.0)
+    p.add_argument(
+        "--leverage",
+        type=float,
+        default=100.0,
+        help="Wanted leverage; always capped per symbol to Binance demo max (BTC100/ETH100/BNB75/SOL50/XRP75)",
+    )
     p.add_argument("--fee", type=float, default=0.0004)
     p.add_argument("--slippage", type=float, default=0.0001)
     p.add_argument("--window-days", type=int, default=60)
@@ -95,6 +101,7 @@ def evaluate_portfolio_windows(
         initial_capital=cfg.initial_capital,
         target_equity=target_eq,
         leverage=cfg.leverage,
+        leverage_by_symbol=dict(cfg.leverage_by_symbol),
         fee_rate=cfg.fee_rate,
         slippage=cfg.slippage,
         mmr=cfg.mmr,
@@ -212,15 +219,18 @@ def main():
         cut = pd.Timestamp(args.start, tz="UTC")
         signals = {s: sig[sig.index >= cut].copy() for s, sig in signals.items()}
     frames = eval_frames
+    # Always match live/demo exchange max per symbol (not optional).
+    lev_map = effective_leverage_map(args.leverage)
     cfg = PortfolioConfig(
         initial_capital=args.capital,
         target_equity=args.capital * args.target_mult,
         leverage=args.leverage,
+        leverage_by_symbol=lev_map,
         fee_rate=args.fee,
         slippage=args.slippage,
     )
     print(
-        f"[cfg] PORT5 capital={args.capital} lev={args.leverage} "
+        f"[cfg] PORT5 capital={args.capital} per-symbol lev={lev_map} "
         f"slot_frac={cfg.slot_frac} fee={args.fee} slip={args.slippage}"
     )
     out = evaluate_portfolio_windows(
@@ -242,6 +252,7 @@ def main():
         "symbol": "PORT5",
         "symbols": symbols,
         "leverage": args.leverage,
+        "leverage_by_symbol": lev_map,
         "window_days": args.window_days,
         "step_days": args.step_days,
         "target_mult": args.target_mult,

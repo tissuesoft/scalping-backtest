@@ -9,7 +9,7 @@ from indicators import bb_width, ht_ema_on_1m
 
 def classify_regime(
     df: pd.DataFrame,
-    ht_period: int = 50,
+    ht_period: int = 45,
     ht_rule: str = "15min",
     slope_bars: int = 20,
     roc_bars: int = 60,
